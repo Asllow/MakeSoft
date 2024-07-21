@@ -1,15 +1,28 @@
 <?php
 @$pagina = $_GET['a'];
 
-$mysqli_connection = new MySQLi('localhost', 'u683874167_XGGN0', '^ejYM@;sB0|', 'u683874167_VZXgk');
-if($mysqli_connection->connect_error){
-   echo "Desconectado! Erro: " . $mysqli_connection->connect_error;
-}else{
-    echo "Conectado";
+$servername = "localhost";
+$username = "u683874167_XGGN0";
+$password = "^ejYM@;sB0|";
+$dbname = "u683874167_VZXgk";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+if ($conn->connect_error) {
+    die("Falha na conexão " . $conn->connect_error);
 }
 
-$result = $mysqli->query("SELECT * FROM products", MYSQLI_USE_RESULT);
-echo $result;
+$sql = "SELECT * FROM product";
+$result = $conn->query($sql);
+
+if ($result->num_rows > 0) {
+    // output data of each row
+    while($row = $result->fetch_assoc()) {
+        echo "id: " . $row["id"];
+    }
+} else {
+    echo "0 results";
+}
+$conn->close();
 
 ?>
 
