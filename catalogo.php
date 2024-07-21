@@ -25,7 +25,7 @@
 		<div class="card-body">
 				<h5 class="card-title corTitulo">Dragão Articulado</h5>
 				<p class="fs-6 fw-light">C: 11cm x L: 11cm x A: 20cm</p>
-				<h5>R$ 35,00</h5>
+				<h5>R$ 38,00</h5>
 			<?php
 				echo $cores;
 				echo "<a style=\"width:100%;\" href=\"index.php?a=pix35.php\" class=\"btn btn-outline-dark\"><i class=\"fa-solid fa-qrcode\"></i> QR code</a>";
