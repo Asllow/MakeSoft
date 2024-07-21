@@ -1,0 +1,139 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0d6c3;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+header, footer, nav {
+  background-color: #273d30;
+  color: #d4c09e;
+  text-align: center;
+}
+
+header {
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d4c09e;
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d4c09e;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav a.sem_efeito::before {
+  transform: scaleX(0);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 1.5%;
+  text-align: center;
+  padding: 50px 0;
+  background-color: #ecd8b2;
+  border: 5px solid;
+  border-color:  #d4c09e;
+  border-radius: 30px;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d4c09e;
+  font-size: 20px;
+}
+
+.pix-item {
+  width: 100%;
+  margin: 0;
+  vertical-align: top;
+}
+
+.pix-item img {
+  width: 30%;
+  height: auto;
+}
+
+.pix-item p {
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #000000;
+}
+
+ion-icon {
+  font-size: 25px;
+  vertical-align: middle;
+}

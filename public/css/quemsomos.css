@@ -1,0 +1,151 @@
+body, h1, h2, p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #e0d6c3;
+  color: #000000;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  text-align: center;
+}
+
+header, footer, nav {
+  background-color: #273d30;
+  color: #d4c09e;
+  text-align: center;
+}
+
+header {
+  padding: 10px 0;
+}
+
+nav {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #d4c09e;
+  position: relative;
+}
+
+nav a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #d4c09e;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+
+nav a:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+nav a.sem_efeito::before {
+  transform: scaleX(0);
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.container {
+  width: 80%;
+  margin: 1.5% auto;
+  text-align: justify;
+  padding: 50px 0;
+  background-color: #ecd8b2;
+  border: 5px solid #d4c09e;
+  border-radius: 30px;
+}
+
+.container:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+}
+
+.container p {
+  display: inline-block;
+  vertical-align: middle;
+  color: #273d30;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  text-align: center
+}
+
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+nav {
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #d4c09e;
+  font-size: 20px;
+}
+
+.index-item {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  vertical-align: top;
+  text-align: center;
+}
+
+.index-item p {
+  color: #273d30;
+  font-size: 21px;
+}
+
+ion-icon {
+  font-size: 25px;
+  vertical-align: middle;
+}
