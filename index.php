@@ -11,7 +11,7 @@ if ($conn->connect_error) {
     die("Falha na conexão " . $conn->connect_error);
 }
 
-$sql = "SELECT * FROM product";
+$sql = "SELECT * FROM products";
 $result = $conn->query($sql);
 
 if ($result->num_rows > 0) {
