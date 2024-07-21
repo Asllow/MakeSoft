@@ -1,11 +1,12 @@
 <?php
 @$pagina = $_GET['a'];
+$use = 1;
 
+/*
 $servername = "localhost";
 $username = "u683874167_XGGN0";
 $password = "^ejYM@;sB0|";
 $dbname = "u683874167_VZXgk";
-
 $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
     die("Falha na conexão " . $conn->connect_error);
@@ -13,17 +14,14 @@ if ($conn->connect_error) {
 
 $sql = "SELECT * FROM products";
 $result = $conn->query($sql);
-
 if ($result->num_rows > 0) {
     // output data of each row
     while($row = $result->fetch_assoc()) {
         echo "id: " . $row["id_produto"];
     }
-} else {
-    echo "0 results";
 }
 $conn->close();
-
+*/
 ?>
 
 <!DOCTYPE html>
@@ -173,7 +171,9 @@ $conn->close();
               <?php
               if (isset($pagina)) {
                 include $pagina;
-              } else {
+              } elseif ($use == 1){
+                  include "catalogo_database.php";
+              } else{
                 include "catalogo.php";
               }
               ?>
