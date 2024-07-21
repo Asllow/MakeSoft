@@ -1,12 +1,12 @@
 <?php
 @$pagina = $_GET['a'];
 
-// $mysqli_connection = new MySQLi('localhost', 'u683874167_MakeAdmin', '04042024LabMaker$', 'u683874167_BD_Makesoft');
-// if($mysqli_connection->connect_error){
-//    echo "Desconectado! Erro: " . $mysqli_connection->connect_error;
-// }else{
-//   echo "console.log(Conectado!)";
-// }
+$mysqli_connection = new MySQLi('localhost', 'u683874167_XGGN0', '^ejYM@;sB0|', 'u683874167_VZXgk');
+if($mysqli_connection->connect_error){
+   echo "Desconectado! Erro: " . $mysqli_connection->connect_error;
+}else{
+    echo "Conectado";
+}
 
 // $result = $mysqli->query("SELECT nome FROM usuario", MYSQLI_USE_RESULT);
 // echo $result;
