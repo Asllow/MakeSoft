@@ -8,8 +8,8 @@ if($mysqli_connection->connect_error){
     echo "Conectado";
 }
 
-// $result = $mysqli->query("SELECT nome FROM usuario", MYSQLI_USE_RESULT);
-// echo $result;
+$result = $mysqli->query("SELECT * FROM products", MYSQLI_USE_RESULT);
+echo $result;
 
 ?>
 
