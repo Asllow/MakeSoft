@@ -16,16 +16,21 @@ $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             <h1>Impressões 3D</h1>
             </div>";
 echo $setting;
-//if ($result->num_rows > 0) {
-    //while($row = $result->fetch_assoc()) {
-        echo"  
+
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        $link_image = $row["img_produto"];
+        $nome_product = $row["nome_produto"];
+        $dimensao = $row["dimensao_produto"];
+        $preco = $row["preco_produto"];
+        echo`
             <div class='col-lg-3 col-md-6 col-xs-3 top15px'>
                 <div class='card'>
-                    <img src='public/img/dragaocomsuporte.png' class='card-img-top\' alt='...'>
+                    <img src='$link_image' class='card-img-top\' alt='...'>
                     <div class='card-body'>
-                            <h5 class='card-title corTitulo'>Dragão Articulado</h5>
-                            <p class='fs-6 fw-light'>C: 11cm x L: 11cm x A: 20cm</p>
-                            <h5>R$ 35,00</h5>
+                            <h5 class='card-title corTitulo'>$nome_product</h5>
+                            <p class='fs-6 fw-light'>$dimensao</p>
+                            <h5>$preco</h5>
                             <i class='fa-solid fa-droplet colorWhite'></i>
                             <i class='fa-solid fa-droplet colorBlack'></i>
                             <i class='fa-solid fa-droplet colorGray'></i>
@@ -42,6 +47,6 @@ echo $setting;
                             <a style='width:100%;' href='index.php?a=pix35.php' class='btn btn-outline-dark'><i class='fa-solid fa-qrcode'></i> QR code</a>
                     </div>
                 </div>
-            </div>";
-    //}
-//}
+            </div>`;
+    }
+}
