@@ -13,7 +13,7 @@ $result = $conn->query($sql);
 $conn->close();
 
 $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
-            <h1>Impressões 3Ds</h1>
+            <h1>Impressões 3D</h1>
             </div>";
 echo $setting;
 

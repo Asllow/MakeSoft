@@ -1,6 +1,6 @@
 <?php
 @$pagina = $_GET['a'];
-$use = 1;
+$use = 0;
 
 /*
 $servername = "localhost";
