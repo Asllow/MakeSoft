@@ -2,7 +2,7 @@
 @$pagina = $_GET['a'];
 $use = 1;
 
-/*
+
 $servername = "localhost";
 $username = "u683874167_XGGN0";
 $password = "^ejYM@;sB0|";
@@ -21,7 +21,7 @@ if ($result->num_rows > 0) {
     }
 }
 $conn->close();
-*/
+
 ?>
 
 <!DOCTYPE html>
