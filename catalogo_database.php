@@ -26,11 +26,8 @@ if ($result->num_rows > 0) {
         $nome_product = $row["nome_produto"];
         $dimensao = $row["dimensao_produto"];
         $preco = $row["preco_produto"];
-        echo $link_image;
-        echo $nome_product;
-        echo $dimensao;
-        echo $preco;
-        echo`
+
+        echo"
             <div class='col-lg-3 col-md-6 col-xs-3 top15px'>
                 <div class='card'>
                     <img src='$link_image' class='card-img-top\' alt='...'>
@@ -54,6 +51,6 @@ if ($result->num_rows > 0) {
                             <a style='width:100%;' href='index.php?a=pix35.php' class='btn btn-outline-dark'><i class='fa-solid fa-qrcode'></i> QR code</a>
                     </div>
                 </div>
-            </div>`;
+            </div>";
     }
 }
