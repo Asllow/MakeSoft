@@ -12,14 +12,6 @@ $sql = "SELECT * FROM `products`";
 $result = $conn->query($sql);
 $conn->close();
 
-if ($result->num_rows > 0) {
-    echo "ok";
-    while($row = $result->fetch_assoc()) {
-        echo $row['id_produto'];
-    }
-} else{
-    echo 'NOT OKAY';
-}
 
 $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             <h1>Impressões 3D</h1>
