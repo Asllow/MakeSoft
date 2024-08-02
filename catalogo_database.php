@@ -19,7 +19,7 @@ echo $setting;
 
 echo $result->num_rows;
 
-/*
+
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $link_image = $row["img_produto"];
@@ -53,4 +53,3 @@ if ($result->num_rows > 0) {
             </div>`;
     }
 }
-*/
