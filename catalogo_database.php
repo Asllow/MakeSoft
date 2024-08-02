@@ -12,11 +12,17 @@ $sql = "SELECT * FROM products";
 $result = $conn->query($sql);
 $conn->close();
 
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo $row['id_produto'];
+    }
+}
+
 $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             <h1>Impressões 3D</h1>
             </div>";
 echo $setting;
-
+/*
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
         $link_image = $row["img_produto"];
