@@ -17,7 +17,11 @@ $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             </div>";
 echo $setting;
 
-echo "<h2>asdjnjsadn</h2>";
+if ($result->num_rows > 0) {
+    while($row = $result->fetch_assoc()) {
+        echo $row["id_produto"];
+    }
+}
 
 /*
 if ($result->num_rows > 0) {
