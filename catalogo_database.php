@@ -21,12 +21,15 @@ echo $result->num_rows;
 
 
 if ($result->num_rows > 0) {
-    echo "ok";
     while($row = $result->fetch_assoc()) {
         $link_image = $row["img_produto"];
         $nome_product = $row["nome_produto"];
         $dimensao = $row["dimensao_produto"];
         $preco = $row["preco_produto"];
+        echo $link_image;
+        echo $nome_product;
+        echo $dimensao;
+        echo $preco;
         echo`
             <div class='col-lg-3 col-md-6 col-xs-3 top15px'>
                 <div class='card'>
