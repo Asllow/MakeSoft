@@ -21,6 +21,7 @@ echo $result->num_rows;
 
 
 if ($result->num_rows > 0) {
+    echo "ok";
     while($row = $result->fetch_assoc()) {
         $link_image = $row["img_produto"];
         $nome_product = $row["nome_produto"];
