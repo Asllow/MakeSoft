@@ -13,6 +13,7 @@ $result = $conn->query($sql);
 $conn->close();
 
 if ($result->num_rows > 0) {
+    echo "ok";
     while($row = $result->fetch_assoc()) {
         echo $row['id_produto'];
     }
