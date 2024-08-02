@@ -17,11 +17,7 @@ $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             </div>";
 echo $setting;
 
-if ($result->num_rows > 0) {
-    while($row = $result->fetch_assoc()) {
-        print_r($row);
-    }
-}
+echo $result->num_rows();
 
 /*
 if ($result->num_rows > 0) {
