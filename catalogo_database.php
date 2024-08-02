@@ -17,7 +17,7 @@ $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             </div>";
 echo $setting;
 
-echo $result->num_rows();
+echo $result->num_rows;
 
 /*
 if ($result->num_rows > 0) {
