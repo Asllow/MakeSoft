@@ -39,7 +39,7 @@ if ($result->num_rows > 0) {
         <div class='pix-item'>
             <img src='' alt='PIX'>
             <h5>R$$preco</h5>
-            <p></p>
+            <p>$pix</p>
         </div>
     </div>";
 }
