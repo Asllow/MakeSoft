@@ -46,7 +46,7 @@ if ($result->num_rows > 0) {
                             <i class='fa-solid fa-droplet colorPurple'></i>
                             <i class='fa-solid fa-droplet colorPink'></i>
                             <hr>
-                            <a style='width:100vh;' href='?b=$id' class='btn btn-outline-dark'><i class='fa-solid fa-qrcode'></i> QR code</a>
+                            <a style='width:100%;' href='?b=$id' class='btn btn-outline-dark'><i class='fa-solid fa-qrcode'></i> QR code</a>
                     </div>
                 </div>
             </div>";
