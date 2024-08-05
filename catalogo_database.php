@@ -18,7 +18,7 @@ $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
 echo $setting;
 
 echo $result->num_rows;
-echo substr("abcdef", 0, 3);
+
 
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {

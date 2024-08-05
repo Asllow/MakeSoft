@@ -203,8 +203,8 @@ $conn->close();
               ?>
             </li>
             <li class="nav-item">
-              <a class="hoverYellow nav-link px-2 text-body-secondary" href="https://www.instagram.com/MakeSoftSolutions" target="_blank">
-                <i class="fa-brands fa-instagram"></i> @makesoftsolutions
+              <a class="hoverYellow nav-link px-2 text-body-secondary" href="https://www.instagram.com/makesoft_solutions_" target="_blank">
+                <i class="fa-brands fa-instagram"></i> @makesoft_solutions_
               </a>
             </li>
             <li class="nav-item">
