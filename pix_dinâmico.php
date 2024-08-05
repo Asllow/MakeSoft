@@ -15,7 +15,7 @@ $result = $conn->query($sql);
 $conn->close();
 
 if ($result->num_rows > 0) {
-    print_r($result);
+    print_r($result->fetch_assoc());
     echo "
     <div class='container'>
         <div class='pix-item'>
