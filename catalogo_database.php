@@ -17,11 +17,9 @@ $setting = "<div class=\"col-lg-12\" style=\"margin-top:10px;\">
             </div>";
 echo $setting;
 
-echo $result->num_rows;
-
-
 if ($result->num_rows > 0) {
     while($row = $result->fetch_assoc()) {
+        $id = $row["id_produto"];
         $link_image = $row["img_produto"];
         $nome_product = $row["nome_produto"];
         $dimensao = $row["dimensao_produto"];
@@ -48,7 +46,7 @@ if ($result->num_rows > 0) {
                             <i class='fa-solid fa-droplet colorPurple'></i>
                             <i class='fa-solid fa-droplet colorPink'></i>
                             <hr>
-                            <a style='width:100%;' href='index.php?a=pix35.php' class='btn btn-outline-dark'><i class='fa-solid fa-qrcode'></i> QR code</a>
+                            <a style='width:100%;' href='?a=$id' class='btn btn-outline-dark'><i class='fa-solid fa-qrcode'></i> QR code</a>
                     </div>
                 </div>
             </div>";

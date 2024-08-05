@@ -169,8 +169,10 @@ $conn->close();
           <div style="margin-bottom: 10px;">
             <div class="row">
               <?php
-              if (isset($pagina)) {
-                include $pagina;
+              if (isset($pagina) and $use == 1) {
+                  include "pix_dinâmico.php";
+              } elseif (isset($pagina)){
+                  include $pagina;
               } elseif ($use == 1){
                   include "catalogo_database.php";
               } else{
