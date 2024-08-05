@@ -1,5 +1,6 @@
 <?php
 @$pagina = $_GET['a'];
+@$pagina2 = $_GET['b'];
 $use = 1;
 
 /*
@@ -169,12 +170,12 @@ $conn->close();
           <div style="margin-bottom: 10px;">
             <div class="row">
               <?php
-              if (isset($pagina) and $use == 1) {
+              if (isset($pagina2) and $use == 1) {
                   include "pix_dinâmico.php";
-              } elseif (isset($pagina)){
-                  include $pagina;
               } elseif ($use == 1){
                   include "catalogo_database.php";
+              }elseif (isset($pagina)){
+                  include $pagina;
               } else{
                 include "catalogo.php";
               }
