@@ -20,6 +20,19 @@ $conn->close();
 if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $preco = $row['preco_produto'];
+    $px[00]="01";
+    $px[26][00]="BR.GOV.BCB.PIX"; //Indica arranjo específico; “00” (GUI) obrigatório e valor fixo: br.gov.bcb.pix
+    $px[26][01]="53471409000152"; // CNPJ somente numeros.
+    $px[52]="0000"; //Merchant Category Code “0000” ou MCC ISO18245
+    $px[53]="986"; //Moeda, “986” = BRL: real brasileiro - ISO4217
+    $px[54]="$preco"; //Valor da transação, se comentado o cliente especifica o valor da transação no próprio app. Utilizar o . como separador decimal. Máximo: 13 caracteres.
+    $px[58]="BR"; //“BR” – Código de país ISO3166-1 alpha 2
+    $px[59]="MAKESOFT SOLUTIONS"; //Nome do beneficiário/recebedor. Máximo: 25 caracteres.
+    $px[60]="DIVINOPOLIS"; //Nome cidade onde é efetuada a transação. Máximo 15 caracteres.
+    $px[62][05]="***"; //Identificador de transação, quando gerado automaticamente usar ***. Limite 25 caracteres. Vide nota abaixo.
+    $pix=montaPix($px);
+    $pix.="6304";
+    $pix.=crcChecksum($pix);
 
     echo "
     <div class='container'>
