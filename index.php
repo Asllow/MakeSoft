@@ -172,10 +172,10 @@ $conn->close();
               <?php
               if (isset($pagina2) and $use == 1) {
                   include "pix_dinâmico.php";
+              } elseif (isset($pagina)){
+                  include $pagina;
               } elseif ($use == 1){
                   include "catalogo_database.php";
-              }elseif (isset($pagina)){
-                  include $pagina;
               } else{
                 include "catalogo.php";
               }
