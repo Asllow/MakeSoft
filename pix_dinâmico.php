@@ -22,7 +22,7 @@ if ($result->num_rows > 0) {
     $preco = $row['preco_produto'];
     $pix = $row['pix_produto'];
     $data = new QRCode();
-    $data2 = $data->render(urlencode($pix));
+    $data2 = $data->render($pix);
     echo "
     <div class='container'>
         <div class='pix-item'>
