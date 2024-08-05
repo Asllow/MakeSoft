@@ -44,7 +44,7 @@ if ($result->num_rows > 0) {
         <div class='pix-item'>
             <img src='data:image/png;base64,$imageString' alt='PIX'>
             <h5>R$$preco</h5>
-            <p style='width:100vh;'>$pix</p>
+            <p style='width: 20rem;'>$pix</p>
         </div>
     </div>";
 }
