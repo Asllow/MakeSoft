@@ -1,7 +1,5 @@
 <?php
 
-use chillerlan\QRCode\QRCode;
-
 @$pagina = $_GET['a'];
 
 $servername = "localhost";
