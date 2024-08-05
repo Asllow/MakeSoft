@@ -19,11 +19,12 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $preco = $row['preco_produto'];
     $pix = $row['pix_produto'];
+    $data = urldecode($pix)
     echo "
     <div class='container'>
         <div class='pix-item'>
-            <img src='' alt='PIX'>
-            <h5>$preco</h5>
+            <img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=$data' alt='PIX'>
+            <h5>R$$preco</h5>
             <p>$pix</p>
         </div>
     </div>";
