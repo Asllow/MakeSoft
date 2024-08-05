@@ -109,10 +109,10 @@ $conn->close();
       <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <?php
-          echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php\"><i class=\"fa-solid fa-house\"></i> Página Inicial</a></li>";
+          echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"..\"><i class=\"fa-solid fa-house\"></i> Página Inicial</a></li>";
           // echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=quemsomos.php\"><i class=\"fa-solid fa-user\"></i> Quem Somos</a></li>";
           // echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=catalogo.php\"><i class=\"fa-solid fa-book\"></i> Catálogo</a></li>";
-          echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
+          echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
           // echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=cartaoCNPJ.php\"><i class=\"fas fa-users\"></i>  Cartão CNPJ</a></li>";
           ?>
         </ul>
@@ -139,8 +139,8 @@ $conn->close();
             echo "<ul class=\"nav flex-column\">";
             // echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"index.php\"><i class=\"fa-solid fa-house\"></i> Página Inicial</a></li>";
             // echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"index.php?a=quemsomos.php\"><i class=\"fa-solid fa-user\"></i> Quem Somos</a></li>";
-            echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"index.php?a=catalogo.php\"><i class=\"fa-solid fa-book\"></i> Catálogo</a></li>";
-            echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"index.php?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
+            echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"..\"><i class=\"fa-solid fa-book\"></i> Catálogo</a></li>";
+            echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
             echo "<hr class=\"my-3\">";
             echo "</ul>";
             ?>
@@ -152,7 +152,7 @@ $conn->close();
                 </a>
               </li>
               <?php
-              echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=cartaoCNPJ.php\"><i class=\"fas fa-users\"></i>  Cartão CNPJ</a></li>";
+              echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"?a=cartaoCNPJ.php\"><i class=\"fas fa-users\"></i>  Cartão CNPJ</a></li>";
               ?>
               <li class="nav-item">
                 <a class="nav-link d-flex align-items-center gap-2" href="https://api.whatsapp.com/send/?phone=5537991154972" target="_blank">
@@ -202,7 +202,7 @@ $conn->close();
             </li> -->
             <li class="nav-item">
               <?php
-                echo "<li class=\"nav-item\"><a class=\"hoverYellow nav-link px-2 text-body-secondary\" href=\"index.php?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
+                echo "<li class=\"nav-item\"><a class=\"hoverYellow nav-link px-2 text-body-secondary\" href=\"?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
               ?>
             </li>
             <li class="nav-item">
