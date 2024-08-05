@@ -34,10 +34,15 @@ if ($result->num_rows > 0) {
     $pix.="6304";
     $pix.=crcChecksum($pix);
 
+    ob_start();
+    QRCode::png($pix, null,'M',5);
+    $imageString = base64_encode( ob_get_contents() );
+    ob_end_clean();
+
     echo "
     <div class='container'>
         <div class='pix-item'>
-            <img src='' alt='PIX'>
+            <img src='data:image/png;base64,$imageString' alt='PIX'>
             <h5>R$$preco</h5>
             <p>$pix</p>
         </div>
