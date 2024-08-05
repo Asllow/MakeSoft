@@ -21,11 +21,10 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $preco = $row['preco_produto'];
     $pix = $row['pix_produto'];
-    $data = new QRCode;
     echo "
     <div class='container'>
         <div class='pix-item'>
-            <img src='$data->render($pix)' alt='PIX'>
+            <img src='' alt='PIX'>
             <h5>$preco</h5>
             <p>$pix</p>
         </div>
