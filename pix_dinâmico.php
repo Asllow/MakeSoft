@@ -1,5 +1,7 @@
 <?php
 
+use chillerlan\QRCode\QRCode;
+
 @$pagina = $_GET['a'];
 
 $servername = "localhost";
@@ -19,11 +21,12 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $preco = $row['preco_produto'];
     $pix = $row['pix_produto'];
-    $data = urldecode($pix);
+    $data = new QRCode();
+    $data2 = $data->render(urlencode($pix));
     echo "
     <div class='container'>
         <div class='pix-item'>
-            <img src='https://chart.googleapis.com/chart?cht=qr&chs=300x300&chl=$data' alt='PIX'>
+            <img src='$data2' alt='PIX'>
             <h5>R$$preco</h5>
             <p>$pix</p>
         </div>
