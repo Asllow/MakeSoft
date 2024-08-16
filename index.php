@@ -1,7 +1,7 @@
 <?php
 @$pagina = $_GET['a'];
 @$pagina2 = $_GET['b'];
-$use = 1;
+$use = 0;
 
 /*
 $servername = "localhost";
