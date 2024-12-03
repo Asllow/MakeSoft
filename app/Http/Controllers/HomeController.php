@@ -34,8 +34,7 @@ class HomeController extends Controller
         $pix .= "6304";
         $pix .= $this->crcChecksum($pix);
         $out = (new QRCode)->render($pix);
-        header('Content-type: image/png');
-        echo $out;
+        echo "<img src='data:image/png;base64,$out' alt='PIX'>";
     }
 
     private function montaPix($px): string
