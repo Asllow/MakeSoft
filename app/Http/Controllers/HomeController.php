@@ -34,6 +34,7 @@ class HomeController extends Controller
         $pix .= "6304";
         $pix .= $this->crcChecksum($pix);
         $out = (new QRCode)->render($pix);
+        header('Content-type: image/png');
         echo $out;
     }
 
