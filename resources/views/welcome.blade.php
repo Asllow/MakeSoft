@@ -12,7 +12,7 @@
                     <div class='card-body'>
                         <h5 class='card-title corTitulo'>{{ $rs->nome_produto }}</h5>
                         <p class='fs-6 fw-light'>{{ $rs->dimensao_produto }}</p>
-                        <h5>{{ $rs->preco_produto }}</h5>
+                        <h5>{{ $rs->preco_produto }} $</h5>
                         <i class='fa-solid fa-droplet colorWhite'></i>
                         <i class='fa-solid fa-droplet colorBlack'></i>
                         <i class='fa-solid fa-droplet colorGray'></i>
@@ -26,8 +26,10 @@
                         <i class='fa-solid fa-droplet colorPurple'></i>
                         <i class='fa-solid fa-droplet colorPink'></i>
                         <hr>
-                        <a style='width:100%;' href='?b=$id' class='btn btn-outline-dark'><i
-                                class='fa-solid fa-qrcode'></i> QR code</a>
+                        <a style='width:100%;' href='{{ route('makesoft.pix', $rs->id_produto) }}'
+                           class='btn btn-outline-dark'>
+                            <i class='fa-solid fa-qrcode'></i> QR code
+                        </a>
                     </div>
                 </div>
             </div>
