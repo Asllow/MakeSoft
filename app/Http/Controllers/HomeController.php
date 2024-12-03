@@ -44,11 +44,10 @@ class HomeController extends Controller
         $options->outputInterface = QRMarkupSVG::class;
         $options->outputBase64 = false;
 // if set to false, the light modules won't be rendered
-        $options->drawLightModules = true;
+        $options->drawLightModules = false;
         $options->svgUseFillAttributes = false;
 // draw the modules as circles isntead of squares
-        $options->drawCircularModules = true;
-        $options->circleRadius = 0.4;
+        $options->drawCircularModules = false;
 // connect paths
         $options->connectPaths = true;
 // keep modules of these types as square
@@ -58,10 +57,6 @@ class HomeController extends Controller
             QRMatrix::M_ALIGNMENT_DARK,
         ];
 // https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient
-        $options->svgDefs = '
-                    <style><![CDATA[
-                        .dark{fill: #000000);}}
-                    ]]></style>';
 
 
         try {
