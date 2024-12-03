@@ -14,4 +14,9 @@ class HomeController extends Controller
         $product = Product::orderBy('created_at', 'DESC')->get();
         return view('welcome', compact('product'));
     }
+
+    public function pix(string $id)
+    {
+        $product = Product::findOrFail($id);
+    }
 }
