@@ -59,10 +59,9 @@ class HomeController extends Controller
         ];
 // https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient
         $options->svgDefs = '
-	<style><![CDATA[
-		.dark{fill: url(#rainbow);}
-		.light{fill: #eee;}
-	]]></style>';
+                    <style><![CDATA[
+                        .dark{fill: #000000);}}
+                    ]]></style>';
 
 
         try {
