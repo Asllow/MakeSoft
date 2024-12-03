@@ -3,10 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Product;
+use chillerlan\QRCode\Data\QRMatrix;
+use chillerlan\QRCode\Output\QRMarkupSVG;
 use chillerlan\QRCode\QRCode;
+use chillerlan\QRCode\QROptions;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
+use Throwable;
 
 class HomeController extends Controller
 {
@@ -33,8 +37,61 @@ class HomeController extends Controller
         $pix = $this->montaPix($px);
         $pix .= "6304";
         $pix .= $this->crcChecksum($pix);
-        $out = (new QRCode)->render($pix);
-        echo "<img src='data:image/png;base64,$out' alt='PIX'>";
+
+        $options = new QROptions;
+
+        $options->version = 7;
+        $options->outputInterface = QRMarkupSVG::class;
+        $options->outputBase64 = false;
+// if set to false, the light modules won't be rendered
+        $options->drawLightModules = true;
+        $options->svgUseFillAttributes = false;
+// draw the modules as circles isntead of squares
+        $options->drawCircularModules = true;
+        $options->circleRadius = 0.4;
+// connect paths
+        $options->connectPaths = true;
+// keep modules of these types as square
+        $options->keepAsSquare = [
+            QRMatrix::M_FINDER_DARK,
+            QRMatrix::M_FINDER_DOT,
+            QRMatrix::M_ALIGNMENT_DARK,
+        ];
+// https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient
+        $options->svgDefs = '
+	<linearGradient id="rainbow" x1="1" y2="1">
+		<stop stop-color="#e2453c" offset="0"/>
+		<stop stop-color="#e07e39" offset="0.2"/>
+		<stop stop-color="#e5d667" offset="0.4"/>
+		<stop stop-color="#51b95b" offset="0.6"/>
+		<stop stop-color="#1e72b7" offset="0.8"/>
+		<stop stop-color="#6f5ba7" offset="1"/>
+	</linearGradient>
+	<style><![CDATA[
+		.dark{fill: url(#rainbow);}
+		.light{fill: #eee;}
+	]]></style>';
+
+
+        try {
+            $out = (new QRCode($options))->render($pix);
+        } catch (Throwable $e) {
+            // handle the exception in whatever way you need
+            exit($e->getMessage());
+        }
+
+
+        if (PHP_SAPI !== 'cli') {
+            header('Content-type: image/svg+xml');
+
+            if (extension_loaded('zlib')) {
+                header('Vary: Accept-Encoding');
+                header('Content-Encoding: gzip');
+                $out = gzencode($out, 9);
+            }
+        }
+
+        echo $out;
     }
 
     private function montaPix($px): string
