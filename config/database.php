@@ -43,7 +43,7 @@ return [
         ],
 
         'labmaker' => [
-            'driver' => env('DB_CONNECTION'),
+            'driver' => 'mysql',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST', '127.0.0.1'),
             'port' => env('DB_PORT', '3306'),
@@ -63,7 +63,7 @@ return [
         ],
 
         'makesoft' => [
-            'driver' => env('DB_CONNECTION_2'),
+            'driver' => 'mysql',
             'url' => env('DB_URL'),
             'host' => env('DB_HOST_2', '127.0.0.1'),
             'port' => env('DB_PORT_2', '3306'),
