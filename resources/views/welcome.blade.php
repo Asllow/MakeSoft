@@ -12,7 +12,7 @@
                     <div class='card-body'>
                         <h5 class='card-title corTitulo'>{{ $rs->nome_produto }}</h5>
                         <p class='fs-6 fw-light'>{{ $rs->dimensao_produto }}</p>
-                        <h5>{{ $rs->preco_produto }} $</h5>
+                        <h5>{{ $rs->preco_produto }}$</h5>
                         <i class='fa-solid fa-droplet colorWhite'></i>
                         <i class='fa-solid fa-droplet colorBlack'></i>
                         <i class='fa-solid fa-droplet colorGray'></i>
