@@ -22,18 +22,16 @@
                 console.log($(this).attr('id') + " created");
                 embed_pdfs[$(this).attr('id')] = 'created';
 
-                // Esconde o elemento com id especificado no início do carregamento
-                const pdfUrl = $(this).data('url');
-                $('#loading').css('display', 'none'); // Esconde imediatamente
-                console.log("Escondendo #seu-elemento ao iniciar o carregamento");
-
                 // Inicia o carregamento do PDF
+                const pdfUrl = $(this).data('url');
                 $pdfViewer.attr('src', 'https://docs.google.com/viewer?url=' + pdfUrl + '&embedded=true');
+                console.log("Carregamento iniciado para o PDF em: " + pdfUrl);
 
                 // Configurar evento de carregamento completo
                 $pdfViewer.on('load', function () {
                     embed_pdfs[$(this).parent('.embed-pdf').attr('id')] = 'loaded';
                     $(this).siblings('.loader').remove(); // Remove o loader, se existir
+                    $('#loading').css('display', 'none'); // Oculta o ícone ao finalizar o carregamento
                     console.log($(this).parent('.embed-pdf').attr('id') + " fully loaded");
                 });
             });
@@ -59,6 +57,5 @@
                 }
             }, 1000);
         });
-
     </script>
 @endsection
