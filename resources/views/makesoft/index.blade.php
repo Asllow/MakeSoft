@@ -106,7 +106,7 @@
                     <a class="nav-link" href="{{ route('quemsomos') }}"><i class="fa-solid fa-user"></i> Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('makesoft.pix'), 'original' }}"><i
+                    <a class="nav-link" href="{{ route('makesoft.pix', null) }}"><i
                             class="fa-solid fa-qrcode"></i>
                         Chave Pix</a>
                 </li>
