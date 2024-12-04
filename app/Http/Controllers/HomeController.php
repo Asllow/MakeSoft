@@ -38,32 +38,7 @@ class HomeController extends Controller
         $pix .= "6304";
         $pix .= $this->crcChecksum($pix);
 
-        $options = new QROptions;
-
-        $options->version = 7;
-        $options->outputInterface = QRMarkupSVG::class;
-        $options->outputBase64 = false;
-        $options->drawLightModules = false;
-        $options->svgUseFillAttributes = false;
-        $options->drawCircularModules = false;
-        $options->connectPaths = true;
-        $options->keepAsSquare = [
-            QRMatrix::M_FINDER_DARK,
-            QRMatrix::M_FINDER_DOT,
-            QRMatrix::M_ALIGNMENT_DARK,
-        ];
-
-        $out = (new QRCode($options))->render($pix);
-
-        if (PHP_SAPI !== 'cli') {
-            header('Content-type: image/svg+xml');
-
-            if (extension_loaded('zlib')) {
-                header('Vary: Accept-Encoding');
-                header('Content-Encoding: gzip');
-                $out = gzencode($out, 9);
-            }
-        }
+        $out = (new QRCode())->render($pix);
 
         return view('makesoft.pix');
     }
