@@ -8,7 +8,7 @@ Route::controller(HomeController::class)->group(function () {
         ->name('welcome');
     Route::get('/pix/{id}', 'pix')
         ->name('makesoft.pix')
-        ->defaults('id', null);
+        ->defaults('id', 'original');
 });
 
 Route::view('/quemsomos', 'makesoft.directory')->name('quemsomos');
