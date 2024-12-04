@@ -10,12 +10,12 @@
     <div id="test-id-1" style="text-align: center; width: 100%; height: 600px" class="embed-pdf"
          data-url="https://makesoft.net.br/public/pdf/cartaoCNPJ.pdf"><span class="loader">Please wait...</span></div>
     <script>
-        (document).ready(function () {
+        $(document).ready(function () {
 
             let embed_pdfs = {};
 
             $('.embed-pdf').each(function () {
-                var $pdfViewer = $('<iframe src="https://docs.google.com/viewer?url=' + $(this).data('url') + '&embedded=true" style="width: 100%; height: 100%" frameborder="0" scrolling="no"></iframe>');
+                const $pdfViewer = $('<iframe src="https://docs.google.com/viewer?url=' + $(this).data('url') + '&embedded=true" style="width: 100%; height: 100%" frameborder="0" scrolling="no"></iframe>');
                 $pdfViewer.appendTo($(this));
                 console.log($(this).attr('id') + " created");
                 embed_pdfs[$(this).attr('id')] = 'created';
