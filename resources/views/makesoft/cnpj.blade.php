@@ -6,7 +6,7 @@
 @section('content')
     <div id="test-id-1" style="text-align: center; width: 100%; height: 600px" class="embed-pdf"
          data-url="https://makesoft.net.br/public/pdf/cartaoCNPJ.pdf">
-        <div class="spinner-border" role="status">
+        <div id="loading" class="spinner-border" role="status">
             <span class="sr-only">Loading...</span>
         </div>
     </div>
@@ -16,7 +16,7 @@
             let embed_pdfs = {};
 
             $('.embed-pdf').each(function () {
-                var $pdfViewer = $('<iframe src="https://docs.google.com/viewer?url=' + $(this).data('url') + '&embedded=true" style="width: 100%; height: 100%" frameborder="0" scrolling="no"></iframe>');
+                const $pdfViewer = $('<iframe src="https://docs.google.com/viewer?url=' + $(this).data('url') + '&embedded=true" style="width: 100%; height: 100%" frameborder="0" scrolling="no"></iframe>');
                 $pdfViewer.appendTo($(this));
                 console.log($(this).attr('id') + " created");
                 embed_pdfs[$(this).attr('id')] = 'created';
@@ -30,12 +30,12 @@
 
             let embed_pdf_check = setInterval(function () {
                 let remaining_embeds = 0;
-                $.each(embed_pdfs, function (key, value) {
+                $.each(embed_pdfs, function (key) {
                     try {
-                        if ($($('#' + key)).find('iframe').contents().find("body").contents().length == 0) {
+                        if ($($('#' + key)).find('iframe').contents().find("body").contents().length === 0) {
                             remaining_embeds++;
                             console.log(key + " resetting");
-                            $($('#' + key)).find('iframe').attr('src', src = 'https://docs.google.com/viewer?url=' + $('#' + key).data('url') + '&embedded=true');
+                            $($('#' + key)).find('iframe').attr('src', 'https://docs.google.com/viewer?url=' + $('#' + key).data('url') + '&embedded=true');
                         }
                     } catch (err) {
                         console.log(key + " reloading");
@@ -47,6 +47,5 @@
                 }
             }, 1000);
         });
-
     </script>
 @endsection
