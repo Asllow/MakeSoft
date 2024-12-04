@@ -281,9 +281,6 @@ nav.show div.bi-x {
     #header {
         border-bottom: none;
     }
-    .container {
-        max-width: 1120px;
-    }
 
     .section {
         padding: 10rem 0;

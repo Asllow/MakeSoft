@@ -9,7 +9,6 @@
     <title>@yield('title')</title>
     <link href="{{asset("public/css/app.css")}}" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet"/>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
     {{-- Favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset("public/favicon/apple-touch-icon.png")}}">
