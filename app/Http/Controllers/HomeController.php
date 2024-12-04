@@ -38,8 +38,39 @@ class HomeController extends Controller
         $pix .= "6304";
         $pix .= $this->crcChecksum($pix);
 
+        $options = new QROptions;
 
-        return view('makesoft.pix');
+        $options->version = 7;
+        $options->outputInterface = QRMarkupSVG::class;
+        $options->outputBase64 = false;
+        $options->drawLightModules = false;
+        $options->svgUseFillAttributes = false;
+        $options->drawCircularModules = false;
+        $options->connectPaths = true;
+        $options->keepAsSquare = [
+            QRMatrix::M_FINDER_DARK,
+            QRMatrix::M_FINDER_DOT,
+            QRMatrix::M_ALIGNMENT_DARK,
+        ];
+
+        try {
+            $out = (new QRCode($options))->render($pix);
+        } catch (Throwable $e) {
+            // handle the exception in whatever way you need
+            exit($e->getMessage());
+        }
+
+        if (PHP_SAPI !== 'cli') {
+            header('Content-type: image/svg+xml');
+
+            if (extension_loaded('zlib')) {
+                header('Vary: Accept-Encoding');
+                header('Content-Encoding: gzip');
+                $out = gzencode($out, 9);
+            }
+        }
+
+        return view('makesoft.pix', compact('product', 'out', 'pix'));
     }
 
     private function montaPix($px): string
