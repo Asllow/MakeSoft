@@ -92,17 +92,22 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="/"><img src="public/img/logo2.png" alt="Logo" style="width:40px"
+        <a class="navbar-brand" href="{{ route('welcome') }}"><img src="public/img/logo2.png" alt="Logo"
+                                                                   style="width:40px"
                                               class="d-inline-block align-text-top"> MakeSoft - Solutions</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <?php
-                echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"..\"><i class=\"fa-solid fa-house\"></i> Página Inicial</a></li>";
-                // echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=quemsomos.php\"><i class=\"fa-solid fa-user\"></i> Quem Somos</a></li>";
-                // echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=catalogo.php\"><i class=\"fa-solid fa-book\"></i> Catálogo</a></li>";
-                echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
-                // echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"index.php?a=cartaoCNPJ.php\"><i class=\"fas fa-users\"></i>  Cartão CNPJ</a></li>";
-                ?>
+
+                <li class="nav-item"><a class="nav-link" href="{{ route('welcome') }}"><i class="fa-solid fa-house"></i>
+                        Página Inicial</a></li>
+                ;
+                <li class="nav-item"><a class="nav-link" href="index.php?a=quemsomos.php"><i
+                            class="fa-solid fa-user"></i> Quem Somos</a></li>
+                ;
+                <li class="nav-item"><a class="nav-link" href="?a=pix.php"><i class="fa-solid fa-qrcode"></i> Chave Pix</a>
+                </li>
+                ;
+
             </ul>
             <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
@@ -125,15 +130,15 @@
                 </div>
                 <!-- Opçoes Menu Lateral -->
                 <div class="offcanvas-body d-md-flex flex-column p-0 pt-lg-3 overflow-y-auto">
-                    <?php
-                    echo "<ul class=\"nav flex-column\">";
-                    // echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"index.php\"><i class=\"fa-solid fa-house\"></i> Página Inicial</a></li>";
-                    // echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"index.php?a=quemsomos.php\"><i class=\"fa-solid fa-user\"></i> Quem Somos</a></li>";
-                    echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"..\"><i class=\"fa-solid fa-book\"></i> Catálogo</a></li>";
-                    echo "<li class=\"nav-item\"><a class=\"nav-link d-flex align-items-center gap-2\" href=\"?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
-                    echo "<hr class=\"my-3\">";
-                    echo "</ul>";
-                    ?>
+
+                    <ul class="nav flex-column">
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center gap-2"
+                                                href="{{ route('welcome') }}"><i class="fa-solid fa-book"></i> Catálogo</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center gap-2" href="?a=pix.php"><i
+                                    class="fa-solid fa-qrcode"></i> Chave Pix</a></li>
+                        <hr class="my-3">
+                    </ul>
 
                     <ul class="nav flex-column mb-auto">
                         <li class="nav-item">
@@ -142,9 +147,8 @@
                                 <i class="fa-brands fa-instagram"></i> @makesoftsolutions
                             </a>
                         </li>
-                        <?php
-                        echo "<li class=\"nav-item\"><a class=\"nav-link\" href=\"?a=cartaoCNPJ.php\"><i class=\"fas fa-users\"></i>  Cartão CNPJ</a></li>";
-                        ?>
+                        <li class="nav-item"><a class="nav-link" href="?a=cartaoCNPJ.php"><i class="fas fa-users"></i>
+                                Cartão CNPJ</a></li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2"
                                href="https://api.whatsapp.com/send/?phone=5537991154972" target="_blank">
