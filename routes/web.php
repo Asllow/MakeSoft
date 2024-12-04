@@ -12,3 +12,4 @@ Route::controller(HomeController::class)->group(function () {
 });
 
 Route::view('/quemsomos', 'makesoft.directory')->name('quemsomos');
+Route::view('/cartaocnpj', 'makesoft.cnpj')->name('cartaocnpj');

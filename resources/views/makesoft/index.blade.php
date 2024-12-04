@@ -150,7 +150,8 @@
                                 <i class="fa-brands fa-instagram"></i> @makesoftsolutions
                             </a>
                         </li>
-                        <li class="nav-item"><a class="nav-link" href="?a=cartaoCNPJ.php"><i class="fas fa-users"></i>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('cartaocnpj') }}"><i
+                                    class="fas fa-users"></i>
                                 Cartão CNPJ</a></li>
                         <li class="nav-item">
                             <a class="nav-link d-flex align-items-center gap-2"
