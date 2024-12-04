@@ -25,7 +25,7 @@ class HomeController extends Controller
         if ($id != 'original') {
             $product = Product::findOrFail($id);
         } else {
-            $product = null;
+            $product = 'original';
         }
         $px = [];
         $px[00] = "01";
