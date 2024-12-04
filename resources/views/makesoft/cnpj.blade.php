@@ -5,7 +5,11 @@
 
 @section('content')
     <div id="test-id-1" style="text-align: center; width: 100%; height: 600px" class="embed-pdf"
-         data-url="https://makesoft.net.br/public/pdf/cartaoCNPJ.pdf"><span class="loader">Please wait...</span></div>
+         data-url="https://makesoft.net.br/public/pdf/cartaoCNPJ.pdf">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <script>
         $(document).ready(function () {
 
