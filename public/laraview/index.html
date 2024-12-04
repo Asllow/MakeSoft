@@ -203,7 +203,7 @@
                 t[d.pageIndex] === l.BLANK && (t[d.pageIndex] = l.RUNNING, a = c[d.pageIndex], b = B[d.pageIndex], a = a.getElementsByTagName("canvas")[0], d.render({
                     canvasContext: a.getContext("2d"),
                     textLayer: b,
-                    viewport: d.getViewport(5)
+                    viewport: d.getViewport(2)
                 }).promise.then(function () {
                     t[d.pageIndex] === l.RUNNINGOUTDATED ? (t[d.pageIndex] = l.BLANK, s(d)) : t[d.pageIndex] = l.FINISHED
                 }))
