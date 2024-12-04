@@ -10,4 +10,4 @@ Route::controller(HomeController::class)->group(function () {
         ->name('makesoft.pix');
 });
 
-Route::get('/quemsomos', 'makesoft.directory')->name('quemsomos');
+Route::view('/quemsomos', 'makesoft.directory')->name('quemsomos');
