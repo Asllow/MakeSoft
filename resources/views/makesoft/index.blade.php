@@ -106,7 +106,7 @@
                     <a class="nav-link" href="{{ route('quemsomos') }}"><i class="fa-solid fa-user"></i> Quem Somos</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="?a=pix.php"><i class="fa-solid fa-qrcode"></i> Chave Pix</a>
+                    <a class="nav-link" href="{{ route('makesoft.pix') }}"><i class="fa-solid fa-qrcode"></i> Chave Pix</a>
                 </li>
             </ul>
             <!-- <form class="d-flex" role="search">
