@@ -92,7 +92,7 @@
                 aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="{{ route('welcome') }}"><img src="public/img/logo2.png" alt="Logo"
+        <a class="navbar-brand" href="{{ route('welcome') }}"><img src="{{ asset('img') }}" alt="Logo"
                                                                    style="width:40px"
                                               class="d-inline-block align-text-top"> MakeSoft - Solutions</a>
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
