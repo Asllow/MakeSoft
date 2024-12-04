@@ -70,7 +70,7 @@ class HomeController extends Controller
             }
         }
 
-        return view('makesoft.pix', compact('product', 'out', 'pix'));
+        echo $out;
     }
 
     private function montaPix($px): string
