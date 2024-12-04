@@ -6,7 +6,7 @@
 
 @section('main')
     <main id="main">
-        <nav class="container">
+        <nav class="section">
             <h1>Rios de Dados</h1>
             <h2>Monitoramento em tempo real da qualidade da água</h2>
             <div class="project-presentation">

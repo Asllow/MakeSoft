@@ -210,6 +210,23 @@ nav.show ul.grid {
     padding-top: 0.5rem;
 }
 
+nav .bi-x {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    transition: 0.2s;
+    color: var(--title-color);
+}
+
+nav.show div.bi-x {
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+    color: var(--title-color);
+    z-index: 2;
+}
 /****************BAck to Top**********/
 .back-to-top {
     background: var(--base-color);
@@ -231,4 +248,99 @@ nav.show ul.grid {
     visibility: visible;
     opacity: 1;
     transform: translateY(0%);
+}
+
+@media screen and (min-width: 720px) {
+    :root {
+        --title-font-size: 1.5rem;
+        --subtitle-font-size: 1rem;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    div.background {
+        border-bottom: 12rem solid var(--body-color);
+    }
+
+    nav.show .menu ul {
+        margin-top: -8rem;
+    }
+}
+
+@media screen and (max-height: 500px) /* 550 */ {
+    div.background {
+        display: none;
+    }
+
+    nav.show .menu ul {
+        margin-top: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1120px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 10rem 0;
+    }
+
+    .section header {
+        max-width: 32rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .button {
+        height: 3.125rem;
+    }
+
+    nav .menu {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav .menu ul {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    nav .menu ul li a.title {
+        font: 400 1rem var(--body-font);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    div.background {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: var(--base-color);
+    }
+
+    nav ul li a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: var(--base-color);
+        position: absolute;
+        left: 0;
+        bottom: -1.7rem; /*-1.5rem*/
+        transition: width 0.2s;
+    }
 }
