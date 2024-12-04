@@ -22,10 +22,10 @@ class HomeController extends Controller
 
     public function pix(string $id)
     {
-        if ($id != -99) {
+        if ($id != null) {
             $product = Product::findOrFail($id);
         } else {
-            $product = -99;
+            $product = null;
         }
         $px = [];
         $px[00] = "01";
@@ -33,7 +33,7 @@ class HomeController extends Controller
         $px[26][01] = "53471409000152"; // CNPJ somente numeros.
         $px[52] = "0000"; //Merchant Category Code “0000” ou MCC ISO18245
         $px[53] = "986"; //Moeda, “986” = BRL: real brasileiro - ISO4217
-        if ($id != -99) {
+        if ($id != null) {
             $px[54] = "$product->preco_produto"; //Valor da transação, se comentado o cliente especifica o valor da transação no próprio app. Utilizar o . como separador decimal. Máximo: 13 caracteres.
         }
         $px[58] = "BR"; //“BR” – Código de país ISO3166-1 alpha 2

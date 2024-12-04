@@ -4,7 +4,7 @@
 @endsection
 
 @section('content')
-    @if($product == -99)
+    @if($product == null)
         <div class='container'>
             <div class='pix-item'>
                 <img src='{{ $out }}' style="width: 20rem" alt='PIX'>
