@@ -905,7 +905,7 @@ PDFJS.build = '3fd44fd';
 
             this.width = width;
             this.height = height;
-            this.fontScale = scale;
+            this.fontScale = scale * 2;
         }
 
         PageViewport.prototype = /** @lends PDFJS.PageViewport.prototype */ {
