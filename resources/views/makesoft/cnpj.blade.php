@@ -24,11 +24,11 @@
 
                 // Configurar evento de carregamento do iframe
                 $pdfViewer.on('load', function () {
-                    embed_pdfs[$(this).parent('.embed-pdf').attr('id')] = 'loaded';
-                    $(this).siblings('.loader').remove(); // Remove o loader, se existir
-
                     // Oculta o elemento com id específico
                     $('#loading').css('display', 'none');
+
+                    embed_pdfs[$(this).parent('.embed-pdf').attr('id')] = 'loaded';
+                    $(this).siblings('.loader').remove(); // Remove o loader, se existir
 
                     console.log($(this).parent('.embed-pdf').attr('id') + " loaded");
                 });
