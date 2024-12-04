@@ -86,7 +86,7 @@
                                 q = new gui.ShadowCursor(b);
                                 c = new gui.SessionController(e, "localuser", q, {});
                                 v = c.getEventManager();
-                                z = new gui.CaretManager(c, f.getViewport(5));
+                                z = new gui.CaretManager(c, f.getViewport());
                                 l = new gui.SelectionViewManager(gui.SvgSelectionView);
                                 new gui.SessionView({caretAvatarsInitiallyVisible: !1}, "localuser", e, c.getSessionConstraints(), z, l);
                                 l.registerCursor(q);
@@ -203,7 +203,7 @@
                 t[d.pageIndex] === l.BLANK && (t[d.pageIndex] = l.RUNNING, a = c[d.pageIndex], b = B[d.pageIndex], a = a.getElementsByTagName("canvas")[0], d.render({
                     canvasContext: a.getContext("2d"),
                     textLayer: b,
-                    viewport: d.getViewport(g)
+                    viewport: d.getViewport(2)
                 }).promise.then(function () {
                     t[d.pageIndex] === l.RUNNINGOUTDATED ? (t[d.pageIndex] = l.BLANK, s(d)) : t[d.pageIndex] = l.FINISHED
                 }))
@@ -222,7 +222,7 @@
             function q(d) {
                 var a, b, f, m, h, n;
                 a = d.pageIndex + 1;
-                n = d.getViewport(g);
+                n = d.getViewport(1 / 2);
                 h = document.createElement("div");
                 h.id = "pageContainer" + a;
                 h.className = "page";
