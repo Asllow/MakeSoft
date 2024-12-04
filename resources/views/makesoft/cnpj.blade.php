@@ -17,20 +17,24 @@
 
             // Criação dos visualizadores de PDF
             $('.embed-pdf').each(function () {
-                const $pdfViewer = $('<iframe src="https://docs.google.com/viewer?url=' + $(this).data('url') + '&embedded=true" style="width: 100%; height: 100%" frameborder="0" scrolling="no"></iframe>');
+                const $pdfViewer = $('<iframe style="width: 100%; height: 100%" frameborder="0" scrolling="no"></iframe>');
                 $pdfViewer.appendTo($(this));
                 console.log($(this).attr('id') + " created");
                 embed_pdfs[$(this).attr('id')] = 'created';
 
-                // Configurar evento de carregamento do iframe
-                $pdfViewer.on('load', function () {
-                    // Oculta o elemento com id específico
-                    $('#loading').css('display', 'none');
+                // Esconde o elemento com id especificado no início do carregamento
+                const pdfUrl = $(this).data('url');
+                $('#loading').css('display', 'none'); // Esconde imediatamente
+                console.log("Escondendo #seu-elemento ao iniciar o carregamento");
 
+                // Inicia o carregamento do PDF
+                $pdfViewer.attr('src', 'https://docs.google.com/viewer?url=' + pdfUrl + '&embedded=true');
+
+                // Configurar evento de carregamento completo
+                $pdfViewer.on('load', function () {
                     embed_pdfs[$(this).parent('.embed-pdf').attr('id')] = 'loaded';
                     $(this).siblings('.loader').remove(); // Remove o loader, se existir
-
-                    console.log($(this).parent('.embed-pdf').attr('id') + " loaded");
+                    console.log($(this).parent('.embed-pdf').attr('id') + " fully loaded");
                 });
             });
 
@@ -55,5 +59,6 @@
                 }
             }, 1000);
         });
+
     </script>
 @endsection
