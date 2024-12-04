@@ -278,6 +278,10 @@ nav.show div.bi-x {
 }
 
 @media screen and (min-width: 1200px) {
+    .container {
+        margin-left: 2.5rem;
+        margin-right: 2.5rem;
+    }
     #header {
         border-bottom: none;
     }
