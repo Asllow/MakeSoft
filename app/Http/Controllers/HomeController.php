@@ -43,21 +43,15 @@ class HomeController extends Controller
         $options->version = 7;
         $options->outputInterface = QRMarkupSVG::class;
         $options->outputBase64 = false;
-// if set to false, the light modules won't be rendered
         $options->drawLightModules = false;
         $options->svgUseFillAttributes = false;
-// draw the modules as circles isntead of squares
         $options->drawCircularModules = false;
-// connect paths
         $options->connectPaths = true;
-// keep modules of these types as square
         $options->keepAsSquare = [
             QRMatrix::M_FINDER_DARK,
             QRMatrix::M_FINDER_DOT,
             QRMatrix::M_ALIGNMENT_DARK,
         ];
-// https://developer.mozilla.org/en-US/docs/Web/SVG/Element/linearGradient
-
 
         try {
             $out = (new QRCode($options))->render($pix);
@@ -65,7 +59,6 @@ class HomeController extends Controller
             // handle the exception in whatever way you need
             exit($e->getMessage());
         }
-
 
         if (PHP_SAPI !== 'cli') {
             header('Content-type: image/svg+xml');
@@ -77,7 +70,7 @@ class HomeController extends Controller
             }
         }
 
-        echo $out;
+        return view('makesoft.pix', compact('product', 'out', 'pix'));
     }
 
     private function montaPix($px): string
