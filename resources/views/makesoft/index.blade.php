@@ -103,12 +103,11 @@
                         Inicial</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="index.php?a=quemsomos.php"><i class="fa-solid fa-user"></i> Quem Somos</a>
+                    <a class="nav-link" href="{{ route('quemsomos') }}"><i class="fa-solid fa-user"></i> Quem Somos</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="?a=pix.php"><i class="fa-solid fa-qrcode"></i> Chave Pix</a>
                 </li>
-
             </ul>
             <!-- <form class="d-flex" role="search">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
