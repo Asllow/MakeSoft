@@ -98,15 +98,16 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-                <li class="nav-item"><a class="nav-link" href="{{ route('welcome') }}"><i class="fa-solid fa-house"></i>
-                        Página Inicial</a></li>
-                ;
-                <li class="nav-item"><a class="nav-link" href="index.php?a=quemsomos.php"><i
-                            class="fa-solid fa-user"></i> Quem Somos</a></li>
-                ;
-                <li class="nav-item"><a class="nav-link" href="?a=pix.php"><i class="fa-solid fa-qrcode"></i> Chave Pix</a>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ route('welcome') }}"><i class="fa-solid fa-house"></i>Página
+                        Inicial</a>
                 </li>
-                ;
+                <li class="nav-item">
+                    <a class="nav-link" href="index.php?a=quemsomos.php"><i class="fa-solid fa-user"></i> Quem Somos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="?a=pix.php"><i class="fa-solid fa-qrcode"></i> Chave Pix</a>
+                </li>
 
             </ul>
             <!-- <form class="d-flex" role="search">
@@ -186,11 +187,9 @@
                         <i class="fa-solid fa-book"></i> Catálogo
                       </a>
                     </li> -->
-                    <li class="nav-item">
-                        <?php
-                        echo "<li class=\"nav-item\"><a class=\"hoverYellow nav-link px-2 text-body-secondary\" href=\"?a=pix.php\"><i class=\"fa-solid fa-qrcode\"></i> Chave Pix</a></li>";
-                        ?>
-                    </li>
+                    <li class="nav-item"><a class="hoverYellow nav-link px-2 text-body-secondary" href="?a=pix.php"><i
+                                class="fa-solid fa-qrcode"></i> Chave Pix</a></li>
+
                     <li class="nav-item">
                         <a class="hoverYellow nav-link px-2 text-body-secondary"
                            href="https://www.instagram.com/makesoft_solutions_" target="_blank">
