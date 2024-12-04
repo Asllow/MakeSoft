@@ -833,7 +833,7 @@ PDFJS.build = '3fd44fd';
          */
         function PageViewport(viewBox, scale, rotation, offsetX, offsetY, dontFlip) {
             this.viewBox = viewBox;
-            this.scale = scale;
+            this.scale = scale * 10;
             this.rotation = rotation;
             this.offsetX = offsetX;
             this.offsetY = offsetY;
@@ -905,7 +905,7 @@ PDFJS.build = '3fd44fd';
 
             this.width = width;
             this.height = height;
-            this.fontScale = scale * 10;
+            this.fontScale = scale;
         }
 
         PageViewport.prototype = /** @lends PDFJS.PageViewport.prototype */ {
