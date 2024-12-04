@@ -53,12 +53,7 @@ class HomeController extends Controller
             QRMatrix::M_ALIGNMENT_DARK,
         ];
 
-        try {
-            $out = (new QRCode($options))->render($pix);
-        } catch (Throwable $e) {
-            // handle the exception in whatever way you need
-            exit($e->getMessage());
-        }
+        $out = (new QRCode($options))->render($pix);
 
         if (PHP_SAPI !== 'cli') {
             header('Content-type: image/svg+xml');
