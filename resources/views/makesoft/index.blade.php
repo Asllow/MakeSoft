@@ -137,7 +137,8 @@
                         <li class="nav-item"><a class="nav-link d-flex align-items-center gap-2"
                                                 href="{{ route('welcome') }}"><i class="fa-solid fa-book"></i> Catálogo</a>
                         </li>
-                        <li class="nav-item"><a class="nav-link d-flex align-items-center gap-2" href="?a=pix.php"><i
+                        <li class="nav-item"><a class="nav-link d-flex align-items-center gap-2"
+                                                href="{{ route('makesoft.pix', 'original') }}"><i
                                     class="fa-solid fa-qrcode"></i> Chave Pix</a></li>
                         <hr class="my-3">
                     </ul>
@@ -188,7 +189,8 @@
                         <i class="fa-solid fa-book"></i> Catálogo
                       </a>
                     </li> -->
-                    <li class="nav-item"><a class="hoverYellow nav-link px-2 text-body-secondary" href="?a=pix.php"><i
+                    <li class="nav-item"><a class="hoverYellow nav-link px-2 text-body-secondary"
+                                            href="{{ route('makesoft.pix', 'original') }}"><i
                                 class="fa-solid fa-qrcode"></i> Chave Pix</a></li>
 
                     <li class="nav-item">
