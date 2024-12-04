@@ -831,9 +831,9 @@ PDFJS.build = '3fd44fd';
          * @param offsetY {number} offset Y
          * @param dontFlip {boolean} if true, axis Y will not be flipped.
          */
-        function PageViewport(viewBox, scale, rotation, offsetX, offsetY, dontFlip) {
+        function PageViewport(viewBox, scale = 2, rotation, offsetX, offsetY, dontFlip) {
             this.viewBox = viewBox;
-            this.scale = scale * 10;
+            this.scale = scale;
             this.rotation = rotation;
             this.offsetX = offsetX;
             this.offsetY = offsetY;
