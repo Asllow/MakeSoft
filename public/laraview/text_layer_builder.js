@@ -102,7 +102,7 @@ var TextLayerBuilder = (function TextLayerBuilderClosure() {
                     var transform;
                     if (textDiv.dataset.canvasWidth !== undefined) {
                         // Dataset values come of type string.
-                        var textScale = textDiv.dataset.canvasWidth / width;
+                        var textScale = textDiv.dataset.canvasWidth;
                         transform = 'scaleX(' + textScale + ')';
                     } else {
                         transform = '';
