@@ -203,7 +203,7 @@
                 t[d.pageIndex] === l.BLANK && (t[d.pageIndex] = l.RUNNING, a = c[d.pageIndex], b = B[d.pageIndex], a = a.getElementsByTagName("canvas")[0], d.render({
                     canvasContext: a.getContext("2d"),
                     textLayer: b,
-                    viewport: d.getViewport(2)
+                    viewport: d.getViewport(g)
                 }).promise.then(function () {
                     t[d.pageIndex] === l.RUNNINGOUTDATED ? (t[d.pageIndex] = l.BLANK, s(d)) : t[d.pageIndex] = l.FINISHED
                 }))
@@ -222,7 +222,7 @@
             function q(d) {
                 var a, b, f, m, h, n;
                 a = d.pageIndex + 1;
-                n = d.getViewport(1 / 2);
+                n = d.getViewport(g);
                 h = document.createElement("div");
                 h.id = "pageContainer" + a;
                 h.className = "page";
@@ -253,7 +253,7 @@
             }
 
             var a = this, e = [], c = [], B = [], t = [], l = {BLANK: 0, RUNNING: 1, FINISHED: 2, RUNNINGOUTDATED: 3},
-                z = 200, u = null, v = null, p = !0, g = 1, A = 1, y = 0, w = 0, E = 0;
+                z = 200, u = null, v = null, p = !0, g = 10, A = 1, y = 0, w = 0, E = 0;
             this.initialize = function (a, b) {
                 var c;
                 r(function () {
