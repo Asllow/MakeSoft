@@ -40,7 +40,7 @@ class HomeController extends Controller
 
         $out = (new QRCode())->render($pix);
 
-        return view('makesoft.pix', compact('out', $product, $pix));
+        return view('makesoft.pix', compact('out', $product->preco_produto, $pix));
     }
 
     private function montaPix($px): string
