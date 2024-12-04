@@ -26,6 +26,7 @@
 <body>
 <header id="header">
     <nav class="container">
+        <div></div>
         <div class="menu">
             <ul class="grid">
                 <li><a class='title @if($page=='home') active @endif' id='index' href='{{route('era.index')}}'>Home</a>
