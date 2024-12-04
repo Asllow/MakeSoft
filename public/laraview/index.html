@@ -86,7 +86,7 @@
                                 q = new gui.ShadowCursor(b);
                                 c = new gui.SessionController(e, "localuser", q, {});
                                 v = c.getEventManager();
-                                z = new gui.CaretManager(c, f.getViewport());
+                                z = new gui.CaretManager(c, f.getViewport(5));
                                 l = new gui.SelectionViewManager(gui.SvgSelectionView);
                                 new gui.SessionView({caretAvatarsInitiallyVisible: !1}, "localuser", e, c.getSessionConstraints(), z, l);
                                 l.registerCursor(q);
@@ -222,7 +222,7 @@
             function q(d) {
                 var a, b, f, m, h, n;
                 a = d.pageIndex + 1;
-                n = d.getViewport(1);
+                n = d.getViewport(g);
                 h = document.createElement("div");
                 h.id = "pageContainer" + a;
                 h.className = "page";
