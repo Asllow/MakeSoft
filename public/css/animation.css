@@ -479,9 +479,9 @@
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 720px) {
     .container2 {
         font-size: 20px;
-        margin-right: 10rem;
+        margin-right: calc(100vw - 70rem);
     }
 }
