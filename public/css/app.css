@@ -259,7 +259,7 @@ nav.show div.bi-x {
 
 .page1 .project-presentation {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
@@ -279,6 +279,9 @@ nav.show div.bi-x {
         --subtitle-font-size: 1rem;
     }
 
+    .page1 .project-presentation {
+        flex-direction: row;
+    }
     .project-presentation .text {
         width: 26rem;
     }
