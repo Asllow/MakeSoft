@@ -55,8 +55,16 @@ body {
 
 .title {
     font: 700 var(--title-font-size) var(--title-font);
-    color: var(--title-color);
+    color: var(--base-color);
     -webkit-font-smoothing: subpixel-antialiased;
+}
+
+h1.title {
+    font: 700 2.5rem var(--title-font);
+}
+
+h2.title {
+    font: 600 2rem var(--title-font);
 }
 
 .button {
