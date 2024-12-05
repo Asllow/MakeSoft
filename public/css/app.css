@@ -312,7 +312,7 @@ nav.show div.bi-x {
 
     .description {
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-evenly;
         align-items: center;
     }
 
@@ -365,6 +365,10 @@ nav.show div.bi-x {
         border-bottom: none;
     }
 
+    .description {
+        justify-content: right;
+        margin-right: 50%;
+    }
     .section header {
         max-width: 32rem;
         text-align: center;
