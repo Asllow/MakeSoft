@@ -63,8 +63,9 @@ h1.title {
     font: 700 2.5rem var(--title-font);
 }
 
-h2.title {
+h2.title.subtitle {
     font: 600 2rem var(--title-font);
+    width: 31.25rem;
 }
 
 .button {
