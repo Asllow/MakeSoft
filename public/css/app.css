@@ -334,6 +334,7 @@ nav.show div.bi-x {
 
     nav .menu ul li a.title {
         font: 400 1rem var(--body-font);
+        color: var(--title-color);
         -webkit-font-smoothing: antialiased;
     }
 
