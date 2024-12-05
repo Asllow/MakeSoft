@@ -66,8 +66,9 @@ h1.title {
 
 h2.title.subtitle {
     font: 600 2rem var(--title-font);
-    width: 31.25rem;
+    width: 32rem;
     color: var(--base-color);
+    padding-top: 0.5rem;
 }
 
 .button {
@@ -268,6 +269,11 @@ nav.show div.bi-x {
 .page1 .project-presentation {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+}
+
+.project-presentation .text {
+    width: 25.5rem;
 }
 
 @media screen and (min-width: 720px) {
@@ -365,5 +371,9 @@ nav.show div.bi-x {
         left: 0;
         bottom: -1.7rem; /*-1.5rem*/
         transition: width 0.2s;
+    }
+
+    .container.page1 {
+        margin-top: -6rem;
     }
 }
