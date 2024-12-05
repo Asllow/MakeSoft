@@ -7,7 +7,7 @@
 @section('main')
     <main id="main">
         <section class="section" id="home">
-            <div class="container grid">
+            <div class="container page1">
                 <h1>Rios de Dados</h1>
                 <h2>Monitoramento em tempo real da qualidade da água</h2>
                 <div class="project-presentation">
