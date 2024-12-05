@@ -1,5 +1,4 @@
 .container2 {
-    font-size: 20px;
     position: relative;
     width: 10em;
     height: 21em;
@@ -481,4 +480,8 @@
 }
 
 @media screen and (min-width: 1200px) {
+    .container2 {
+        font-size: 20px;
+        margin-right: 10rem;
+    }
 }
