@@ -286,6 +286,7 @@ nav.show div.bi-x {
 .description {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 .description .image {
@@ -310,13 +311,8 @@ nav.show div.bi-x {
         --subtitle-font-size: 1rem;
     }
 
-    .description {
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
     .description .text {
+        padding-top: 1.5rem;
         width: 50%;
     }
     .page1 .project-presentation {
@@ -363,11 +359,6 @@ nav.show div.bi-x {
     }
     #header {
         border-bottom: none;
-    }
-
-    .description {
-        justify-content: right;
-        margin-right: 50%;
     }
     .section header {
         max-width: 32rem;
