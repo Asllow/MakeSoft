@@ -480,7 +480,7 @@
 }
 
 @media screen and (min-width: 1200px) {
-    html {
+    html .container2 {
         font-size: 32px;
     }
 }
