@@ -99,11 +99,7 @@ h2.title.subtitle {
 
 .divider2 {
     height: 1px;
-    background: linear-gradient(
-        270deg,
-        var(--body-color-trans),
-        var(--base-color),
-    );
+    background: linear-gradient(90deg, var(--base-color), transparent);
 }
 
 /* Layout */
@@ -273,7 +269,9 @@ nav.show div.bi-x {
 }
 
 .project-presentation .text {
+    padding-top: 2.5rem;
     width: 25.5rem;
+    text-align: center;
 }
 
 @media screen and (min-width: 720px) {
