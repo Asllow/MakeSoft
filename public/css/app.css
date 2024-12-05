@@ -66,7 +66,6 @@ h1.title {
 
 h2.title.subtitle {
     font: 600 2rem var(--title-font);
-    width: 32rem;
     color: var(--base-color);
     padding-top: 0.5rem;
 }
@@ -270,7 +269,6 @@ nav.show div.bi-x {
 
 .project-presentation .text {
     padding-top: 2.5rem;
-    width: 25.5rem;
     text-align: center;
 }
 
@@ -278,6 +276,14 @@ nav.show div.bi-x {
     :root {
         --title-font-size: 1.5rem;
         --subtitle-font-size: 1rem;
+    }
+
+    .project-presentation .text {
+        width: 26rem;
+    }
+
+    h2.title.subtitle {
+        width: 32rem;
     }
 }
 
@@ -308,8 +314,8 @@ nav.show div.bi-x {
         right: 0;
     }
     .container {
-        margin-left: 2.5rem;
-        margin-right: 2.5rem;
+        margin-left: 3rem;
+        margin-right: 3rem;
     }
     #header {
         border-bottom: none;
