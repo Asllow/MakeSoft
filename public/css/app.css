@@ -261,10 +261,11 @@ nav.show div.bi-x {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 .project-presentation .text {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
     text-align: center;
 }
 
