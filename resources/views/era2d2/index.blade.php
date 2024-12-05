@@ -12,6 +12,8 @@
                 <h2>Monitoramento em tempo real da qualidade da água</h2>
                 <div class="project-presentation">
                     <div class="text">
+                        <p></p>
+                        <p></p>
                     </div>
                     @yield('animation')
                 </div>
