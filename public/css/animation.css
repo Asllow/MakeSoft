@@ -478,3 +478,10 @@
         transform: rotate3d(1, 1, 1, 30deg);
     }
 }
+
+@media screen and (min-width: 1200px) {
+    :root {
+        --title-font-size: 1.5rem;
+        --subtitle-font-size: 1rem;
+    }
+}
