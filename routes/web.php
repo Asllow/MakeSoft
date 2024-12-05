@@ -14,6 +14,8 @@ Route::controller(HomeController::class)->group(function () {
 
 Route::controller(EraController::class)->group(function () {
     Route::get('/era', 'index')->name('era.index');
+    Route::get('/era/grafico/{selector}', 'grafico')->name('era.grafico');
+
 });
 
 Route::view('/quemsomos', 'makesoft.directory')->name('quemsomos');

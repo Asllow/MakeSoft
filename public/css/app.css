@@ -306,6 +306,24 @@ nav.show div.bi-x {
     border-radius: 50%;
 }
 
+/****************PHS*****************/
+.cards.grid {
+    gap: 1.5rem;
+}
+
+.card {
+    padding: 3.625rem 2rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+    border-bottom: 0.25rem solid var(--base-color);
+    border-radius: 0.25rem 0.25rem 0 0;
+    text-align: center;
+}
+
+.card title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
 @media screen and (min-width: 720px) {
     :root {
         --title-font-size: 1.5rem;
