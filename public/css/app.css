@@ -291,13 +291,17 @@ nav.show div.bi-x {
 .description .image {
     width: 12.5rem;
     height: 12.5rem;
-    border-radius: 50%;
+}
+
+.description .text {
+    text-align: center;
 }
 
 .image img {
-    height: 100%;
-    width: 100%;
+    height: 12.5rem;
+    width: 12.5rem;
     object-fit: cover;
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 720px) {
@@ -308,6 +312,12 @@ nav.show div.bi-x {
 
     .description {
         flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .description .text {
+        width: 50%;
     }
     .page1 .project-presentation {
         flex-direction: row;
