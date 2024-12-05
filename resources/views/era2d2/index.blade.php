@@ -48,5 +48,11 @@
                 </div>
             </div>
         </section>
+        <div class="divider2"></div>
+        <section class="section" id="equipe">
+            <div class="container grid">
+
+            </div>
+        </section>
     </main>
 @endsection

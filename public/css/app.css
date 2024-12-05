@@ -296,6 +296,7 @@ nav.show div.bi-x {
 
 .description .text {
     text-align: center;
+    padding-top: 1.5rem;
 }
 
 .image img {
@@ -312,7 +313,6 @@ nav.show div.bi-x {
     }
 
     .description .text {
-        padding-top: 1.5rem;
         width: 50%;
     }
     .page1 .project-presentation {
@@ -352,6 +352,13 @@ nav.show div.bi-x {
         width: auto;
         position: absolute;
         right: 0;
+    }
+
+    nav.container {
+        padding-left: 1rem;
+        padding-right: 1rem;
+        border-radius: .5rem;
+        border: #0a53be 1px;
     }
     .container {
         margin-left: 3rem;
