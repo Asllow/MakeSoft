@@ -5,6 +5,7 @@
     background: linear-gradient(to bottom, #96C7CC 0%, #C3DDD8 30%, #C3DDD8 100%);
     border-radius: 6.25em;
     overflow: hidden;
+    margin-top: 2rem;
 }
 
 .gradientContainer {
@@ -479,6 +480,11 @@
     }
 }
 
+@media screen and (min-width: 720px) {
+    .container2 {
+        margin-top: 0;
+    }
+}
 @media screen and (min-width: 820px) {
     .container2 {
         font-size: 20px;
