@@ -32,7 +32,7 @@
             <div class="container grid">
                 <h2 class="title">A Equipe</h2>
                 <div class="description">
-                    <img alt="" src="">
+                    <img alt="Logo da Equipe" src="{{ asset('public/img/logoera2d2.jpeg') }}">
                     <div class="text">
                         <p>Somos o ERA2D2, uma equipe de robótica formada por estudantes do ensino médio do CEFET-MG, em
                             Divinópolis, Minas Gerais. Nossa jornada começou no início de 2023, dentro do grupo Estudos

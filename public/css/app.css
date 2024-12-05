@@ -9,6 +9,10 @@ ul {
     list-style: none;
 }
 
+p {
+    font: 500 1rem var(--body-font);
+    color: var(--text-color);
+}
 a {
     text-decoration: none;
     color: var(--base-color);
@@ -61,6 +65,11 @@ body {
 
 h1.title {
     font: 700 2.5rem var(--title-font);
+    color: var(--base-color);
+}
+
+h2.title {
+    font: 700 2.25rem var(--title-font);
     color: var(--base-color);
 }
 
@@ -274,12 +283,25 @@ nav.show div.bi-x {
     padding-top: 1rem;
 }
 
+.description {
+    display: flex;
+    flex-direction: column;
+}
+
+.description img {
+    border-radius: 50%;
+    width: 12.5rem;
+    height: 12.5rem;
+}
 @media screen and (min-width: 720px) {
     :root {
         --title-font-size: 1.5rem;
         --subtitle-font-size: 1rem;
     }
 
+    .description {
+        flex-direction: row;
+    }
     .page1 .project-presentation {
         flex-direction: row;
     }
