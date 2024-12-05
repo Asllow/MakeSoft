@@ -126,7 +126,7 @@ strong {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 100;
+    z-index: 999999999;
     background-color: var(--body-color);
 }
 
@@ -137,6 +137,7 @@ nav {
     align-items: center;
     justify-content: flex-end;
     width: 100%;
+    background-color: var(--body-color);
 }
 
 nav ul li {
