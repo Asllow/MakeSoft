@@ -51,24 +51,22 @@
         <div class="divider2"></div>
         <section class="section" id="equipe">
             <div class="container grid">
-                <div class="card grid">
-                    <div class="card">
-                        <h3 class="title">Condutividade</h3>
-                        <div class="text">
-                            <p>A condutividade elétrica da água representa a sua capacidade de conduzir correntes
-                                elétricas, sendo uma indicadora da presença de íons na solução, como sais e ácidos. A
-                                concentração de íons e os seus tipos interferem na condução da água, onde íons com maior
-                                carga elétrica e menos raio hidratado aumentam a condutividade.</p>
-                            <p>Ela é medida utilizando um condutímetro e por meio dessa medição é possível detectar
-                                fontes de poluição, o nível da qualidade da água e mudanças na composição química da
-                                água subterrânea. Além de auxiliar na gestão de recursos hídricos e em estudos
-                                hidrogeológicos, o monitoramento da condutividade elétrica da água é uma prática
-                                essencial para a preservação e proteção de aquíferos e ecossistemas aquáticos.</p>
-                        </div>
-                        <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
-                                Condutividade</a>
-                        </div>
+                <div class="card">
+                    <h3 class="title">Condutividade</h3>
+                    <div class="text">
+                        <p>A condutividade elétrica da água representa a sua capacidade de conduzir correntes
+                            elétricas, sendo uma indicadora da presença de íons na solução, como sais e ácidos. A
+                            concentração de íons e os seus tipos interferem na condução da água, onde íons com maior
+                            carga elétrica e menos raio hidratado aumentam a condutividade.</p>
+                        <p>Ela é medida utilizando um condutímetro e por meio dessa medição é possível detectar
+                            fontes de poluição, o nível da qualidade da água e mudanças na composição química da
+                            água subterrânea. Além de auxiliar na gestão de recursos hídricos e em estudos
+                            hidrogeológicos, o monitoramento da condutividade elétrica da água é uma prática
+                            essencial para a preservação e proteção de aquíferos e ecossistemas aquáticos.</p>
+                    </div>
+                    <div class="hold-button">
+                        <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
+                            Condutividade</a>
                     </div>
                 </div>
             </div>
