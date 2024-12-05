@@ -1,7 +1,7 @@
 @extends('era2d2.index')
 
 @section('animation')
-    <div class="container">
+    <div class="container2">
         <!-- Whale Container -->
         <div class="whaleContainer">
             <div class="whalePos size1">
