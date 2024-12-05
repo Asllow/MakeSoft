@@ -109,6 +109,13 @@ body {
 
 .section {
     padding: calc(3rem + var(--header-height)) 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.section .project-presentation {
+    display: flex;
+    flex-direction: row;
 }
 
 strong {

@@ -1,6 +1,6 @@
 @extends('era2d2.header')
 
-@section('title', 'ERA2D2')
+@section('title', 'ERA2-D2')
 
 @section('description', 'Esse é o site da equipe de robótica ERA2D2, destinada ao Torneio Brasil de Robótica - TBR, categoria HIGH')
 
