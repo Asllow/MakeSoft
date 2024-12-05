@@ -6,8 +6,8 @@
 
 @section('main')
     <main id="main">
-        <nav class="section">
-            <div class="section1">
+        <section class="section" id="home">
+            <div class="container grid">
                 <h1>Rios de Dados</h1>
                 <h2>Monitoramento em tempo real da qualidade da água</h2>
                 <div class="project-presentation">
@@ -16,6 +16,6 @@
                     @yield('animation')
                 </div>
             </div>
-        </nav>
+        </section>
     </main>
 @endsection
