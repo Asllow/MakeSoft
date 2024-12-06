@@ -21,7 +21,7 @@
                 type: 'line'
             },
             series: [{
-                name: 'sales',
+                name: {{ $selector }},
                 data: @json($datas)
             }],
             xaxis: {
