@@ -34,6 +34,7 @@ use Livewire\Component;
                 $datas_a = [];
                 foreach ($datas as $data) {
                     $datas_a[$i] = $data->valor;
+                    $i++;
                 }
                 break;
             case 'temperatura':
@@ -45,7 +46,7 @@ use Livewire\Component;
         }
         return view('livewire.grafico', [
             'selector' => ucfirst($this->selector),
-            'data' => $datas,
+            'data' => $datas_a,
         ]);
     }
 }
