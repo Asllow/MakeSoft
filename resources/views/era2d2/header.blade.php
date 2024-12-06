@@ -15,6 +15,7 @@
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.8.2/dist/alpine.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    @yield('js', "")
     {{-- Favicon --}}
     <link rel="apple-touch-icon" sizes="180x180" href="{{asset("public/favicon/apple-touch-icon.png")}}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{asset("public/favicon/favicon-32x32.png")}}">

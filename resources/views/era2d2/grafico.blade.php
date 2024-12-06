@@ -4,6 +4,11 @@
 
 @section('description', 'Essa página mostra os últimos resultados de uma das nossas pesquisas associadas à medição')
 
+@section('js')
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    @livewire('grafico')
+@endsection
+
 @section('main')
     <main id="main">
         <section class="section" id="head">
@@ -13,8 +18,7 @@
                     <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
                 </div>
                 <div class="grafico">
-                    @livewire('grafico')
-                    <div id="grafico" style="width: 900px; height: 500px"></div>
+                    <div id="curve_chart" style="width: 900px; height: 500px"></div>
                 </div>
             </div>
         </section>
