@@ -6,10 +6,10 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: [{{ $label4 }}, {{ $label3 }}, {{ $label2 }}, {{ $label1 }}, {{ $label }}],
+                labels: @json($labels),
                 datasets: [{
                     label: '{{ $selector }}',
-                    data: [{{ $data4 }}, {{ $data3 }}, {{ $data2 }}, {{ $data1 }}, {{ $data }}],
+                    data: @json($datas),
                     borderWidth: 1
                 }]
             },
