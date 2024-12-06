@@ -21,7 +21,11 @@ use Livewire\Component;
     public function mount(string $selector): void
     {
         $this->selector = $selector;
+        $this->query();
+    }
 
+    public function query(): void
+    {
         $results = 30;
         switch ($this->selector) {
             case 'condutividade':

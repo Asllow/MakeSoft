@@ -21,7 +21,7 @@
                 type: 'line'
             },
             series: [{
-                name: '{{ $selector }}',
+                name: '{{ ucfirst($selector) }}',
                 data: @json($datas)
             }],
             xaxis: {
