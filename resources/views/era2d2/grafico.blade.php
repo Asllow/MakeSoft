@@ -4,6 +4,10 @@
 
 @section('description', 'Essa página mostra os últimos resultados de uma das nossas pesquisas associadas à medição')
 
+@section('stylesheet')
+    <livewire:styles/>
+@endsection()
+
 @section('main')
     <main id="main">
         <section class="section" id="head">
@@ -14,11 +18,13 @@
                 </div>
                 <div class="cont-grad">
                     <div class="grafico">
-                        <canvas id="chart"></canvas>
+                        {{ $slot }}
                     </div>
                 </div>
             </div>
         </section>
     </main>
-    @livewire('grafico', ['selector' => $selector])
+    <livewire:scripts/>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    @stack('js')
 @endsection

@@ -1,5 +1,4 @@
-<div>
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+@push('js')
     <script>
         var options = {
             series: [{
@@ -37,4 +36,4 @@
         var chart = new ApexCharts(document.querySelector("#chart"), options);
         chart.render();
     </script>
-</div>
+@endpush
