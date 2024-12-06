@@ -1,4 +1,5 @@
 <div wire:poll.1s.keep-alive>
+    @json($labels)
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const ctx = document.getElementById('myChart');
