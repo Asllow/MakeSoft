@@ -15,87 +15,49 @@ use Livewire\Component;
 #[AllowDynamicProperties] class Grafico extends Component
 {
     public string $selector;
-
-    private function aaa()
-    {
-        switch ($this->selector) {
-            case 'condutividade':
-                $labels = Condutividade::select('id')->latest()->take(60)->get();
-                $i = 0;
-                $label_a = [];
-                foreach ($labels as $label) {
-                    $label_a[$i] = $label->id;
-                    $i++;
-                }
-                $datas = Condutividade::select('valor')->latest()->take(60)->get();
-                $i = 0;
-                $datas_a = [];
-                foreach ($datas as $data) {
-                    $datas_a[$i] = $data->valor;
-                    $i++;
-                }
-                break;
-            case 'temperatura':
-                $labels = Temperatura::select('id')->latest()->take(60)->get();
-                $i = 0;
-                $label_a = [];
-                foreach ($labels as $label) {
-                    $label_a[$i] = $label->id;
-                    $i++;
-                }
-                $datas = Temperatura::select('valor')->latest()->take(60)->get();
-                $i = 0;
-                $datas_a = [];
-                foreach ($datas as $data) {
-                    $datas_a[$i] = $data->valor;
-                    $i++;
-                }
-                break;
-            case 'turbidez':
-                $labels = Turbidez::select('id')->latest()->take(60)->get();
-                $i = 0;
-                $label_a = [];
-                foreach ($labels as $label) {
-                    $label_a[$i] = $label->id;
-                    $i++;
-                }
-                $datas = Turbidez::select('valor')->latest()->take(60)->get();
-                $i = 0;
-                $datas_a = [];
-                foreach ($datas as $data) {
-                    $datas_a[$i] = $data->valor;
-                    $i++;
-                }
-                break;
-            case 'ph':
-                $labels = PH::select('id')->latest()->take(60)->get();
-                $i = 0;
-                $label_a = [];
-                foreach ($labels as $label) {
-                    $label_a[$i] = $label->id;
-                    $i++;
-                }
-                $datas = PH::select('valor')->latest()->take(60)->get();
-                $i = 0;
-                $datas_a = [];
-                foreach ($datas as $data) {
-                    $datas_a[$i] = $data->valor;
-                    $i++;
-                }
-                break;
-        }
-    }
+    public array $datas;
+    public array $labels;
 
     public function mount(string $selector): void
     {
         $this->selector = $selector;
 
+        switch ($this->selector) {
+            case 'condutividade':
+                $query1 = Condutividade::select('id')->latest()->take(60)->get();
+                $query2 = Condutividade::select('valor')->latest()->take(60)->get();
+                break;
+            case 'temperatura':
+                $query1 = Temperatura::select('id')->latest()->take(60)->get();
+                $query2 = Temperatura::select('valor')->latest()->take(60)->get();
+                break;
+            case 'turbidez':
+                $query1 = Turbidez::select('id')->latest()->take(60)->get();
+                $query2 = Turbidez::select('valor')->latest()->take(60)->get();
+                break;
+            case 'ph':
+                $query1 = PH::select('id')->latest()->take(60)->get();
+                $query2 = PH::select('valor')->latest()->take(60)->get();
+                break;
+            default:
+                $query1 = 0;
+                $query2 = 0;
+        }
+        $i = 0;
+        $j = 0;
+        foreach ($query1 as $q1) {
+            $this->labels[$i] = $q1->id;
+            $i++;
+        }
+        foreach ($query2 as $q2) {
+            $this->datas[$j] = $q2->valor;
+            $j++;
+        }
     }
 
 
     public function render(): View|Factory|Application
     {
-
         return view('livewire.grafico')->layout('era2d2.grafico', [
             'selector' => $this->selector,
             'page' => 'home'
