@@ -1,5 +1,4 @@
-<div wire:poll.1s.keep-alive>
-    @json($labels)
+<div>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     <script>
         var options = {
