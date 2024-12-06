@@ -1,12 +1,3 @@
-@extends('era2d2.header')
-
-{{$title = "Gráfico de " . ucfirst($id)}}
-@section('title', $title)
-
-@section('description', 'Aqui está um dos gráficos associado à pesquisa da nossa equipe')
-
-@section('main')
-    <main>
-
-    </main>
-@endsection
+<div>
+    <h2>lala</h2>
+</div>
