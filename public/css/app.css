@@ -377,6 +377,10 @@ nav.show div.bi-x {
         right: 0;
     }
 
+    .cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
     nav.container {
         padding-left: 1rem;
         padding-right: 1rem;
