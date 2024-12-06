@@ -46,8 +46,8 @@ use Livewire\Component;
         }
         return view('livewire.grafico', [
             'selector' => ucfirst($this->selector),
-            'data' => $datas_a,
-            'labels' => $label_a,
+            'data' => array_reverse($datas_a),
+            'labels' => array_reverse($label_a),
         ]);
     }
 }

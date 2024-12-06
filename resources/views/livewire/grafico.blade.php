@@ -16,7 +16,7 @@
             options: {
                 scales: {
                     y: {
-                        beginAtZero: true
+                        beginAtZero: false
                     }
                 }
             }
