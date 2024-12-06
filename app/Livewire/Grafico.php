@@ -11,9 +11,6 @@ class Grafico extends Component
 {
     public function render(): View|Factory|Application
     {
-        return view('livewire.grafico', [
-            'id' => 0,
-            'page' => 'home'
-        ]);
+        return view('livewire.grafico');
     }
 }
