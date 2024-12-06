@@ -370,6 +370,17 @@ nav.show div.bi-x {
     font-size: 3rem;
 }
 
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.head .bi.bi-arrow-left-circle {
+    font-size: 2rem;
+    color: var(--base-color);
+}
+
 @media screen and (min-width: 720px) {
     :root {
         --title-font-size: 1.5rem;
