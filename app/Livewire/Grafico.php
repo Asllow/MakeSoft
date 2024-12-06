@@ -9,10 +9,10 @@ use Livewire\Component;
 
 class Grafico extends Component
 {
-    public function render(string $selector): View|Factory|Application
+    public function render(): View|Factory|Application
     {
         return view('livewire.grafico', [
-            'id' => $selector,
+            'id' => 0,
         ]);
     }
 }
