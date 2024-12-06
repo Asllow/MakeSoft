@@ -15,6 +15,12 @@ class EraController extends Controller
         return view('era2d2.animation', compact('page'));
     }
 
+    public function store(float $ph, float $turbidez, float $temperatura, float $condutividade): string
+    {
+
+        return $ph . $turbidez . $temperatura . $condutividade;
+    }
+
     public function merito(): View|Factory|Application
     {
         $page = 'merito';

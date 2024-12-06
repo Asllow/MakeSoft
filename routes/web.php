@@ -18,6 +18,7 @@ Route::controller(EraController::class)->group(function () {
     Route::get('/era/organizacao-e-metodo', 'organi')->name('era.organi');
     Route::get('/era/merito-cientifico', 'merito')->name('era.merito');
     Route::get('/era/tecnologia-e-engenharia', 'tecno')->name('era.tecno');
+    Route::get('/era/store/{ph}/{turbidez}/{temperatura}/{condutividade}', 'store')->name('era.store');
 
 });
 
