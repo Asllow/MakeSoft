@@ -48,7 +48,7 @@ use Livewire\Component;
             'selector' => ucfirst($this->selector),
             'data' => array_reverse($datas_a),
             'labels' => array_reverse($label_a),
-            'value' => $label_a[0],
+            'value2' => $label_a[0],
         ]);
     }
 }
