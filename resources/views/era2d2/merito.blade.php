@@ -33,7 +33,7 @@
             </div>
         </section>
         <div class="divider1"></div>
-        <section class="section">
+        <section class="section3">
             <div class="container grid">
                 <div class="section-pdf">
                     <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita para o Mérito Científico para o TBR
