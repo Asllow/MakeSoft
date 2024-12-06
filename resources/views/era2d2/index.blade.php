@@ -57,16 +57,16 @@
                         <div class="text">
                             <p>A condutividade elétrica da água é um parâmetro que reflete sua capacidade de conduzir
                                 correntes elétricas, servindo como um indicador da presença e concentração de íons na
-                                solução, como sais, ácidos e bases. A condutividade é diretamente influenciada pelos
-                                tipos e concentrações de íons presentes: íons com maior carga elétrica e menor raio
-                                hidratado tendem a aumentar a capacidade de condução da água.</p>
-                            <p>A medição da condutividade é realizada com o auxílio de um condutímetro, instrumento que
-                                permite identificar alterações na qualidade da água, detectar fontes de poluição e
-                                monitorar mudanças na composição química, especialmente em águas subterrâneas. Esse dado
-                                é essencial para a gestão eficiente dos recursos hídricos e para estudos
-                                hidrogeológicos. Além disso, o monitoramento contínuo da condutividade elétrica
-                                desempenha um papel crucial na preservação e proteção de aquíferos, garantindo a
-                                sustentabilidade dos ecossistemas aquáticos e a saúde ambiental em geral.</p>
+                                solução, como sais, ácidos e bases. A condutividade é influenciada pelos tipos e
+                                concentrações de íons presentes: íons com maior carga elétrica e menor raio hidratado
+                                tendem a aumentar a capacidade de condução da água.</p>
+                            <p>Medições realizadas com um condutímetro permitem identificar alterações na qualidade da
+                                água, detectar fontes de poluição e monitorar mudanças na composição química,
+                                especialmente em águas subterrâneas. Esses dados são essenciais para a gestão eficiente
+                                dos recursos hídricos e estudos hidrogeológicos. O monitoramento contínuo da
+                                condutividade elétrica desempenha um papel crucial na preservação e proteção de
+                                aquíferos, garantindo a sustentabilidade dos ecossistemas aquáticos e a saúde
+                                ambiental.</p>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
