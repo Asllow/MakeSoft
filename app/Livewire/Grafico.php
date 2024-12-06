@@ -98,7 +98,10 @@ use Livewire\Component;
 
         return view('livewire.grafico', [
             'selector' => $this->selector,
+
+        ])->layout('era2d2.grafico', [
+            'selector' => $this->selector,
             'page' => 'home'
-        ])->layout('era2d2.grafico');
+        ]);
     }
 }
