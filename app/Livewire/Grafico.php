@@ -60,6 +60,12 @@ use Livewire\Component;
         }
     }
 
+    public function fetchData()
+    {
+        $this->query();
+        $this->emit('refreshChart', ['seriesData' => $this->datas, 'seriesLabel' => $this->labels]);
+    }
+
 
     public function render(): View|Factory|Application
     {
