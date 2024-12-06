@@ -8,7 +8,13 @@
     <main id="main">
         <section class="section" id="home">
             <div class="container">
-                <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
+                <div class="head">
+                    <i class="bi bi-arrow-left-circle"></i>
+                    <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
+                </div>
+            </div>
+            <div class="container">
+                @livewire('grafico')
             </div>
         </section>
     </main>
