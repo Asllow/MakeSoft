@@ -131,6 +131,10 @@ h2.subtitle {
     padding: var(--header-height) 0;
 }
 
+.section4 {
+    padding: calc(2rem + var(--header-height)) 0;
+}
+
 strong {
     color: var(--base-color);
 }

@@ -6,7 +6,7 @@
 
 @section('main')
     <main id="main">
-        <section class="section">
+        <section class="section4">
             <div class="container grid">
                 <div class="page-header">
                     <h1 class="title">Mérito Científico</h1>
