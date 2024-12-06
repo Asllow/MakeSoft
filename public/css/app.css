@@ -387,6 +387,10 @@ nav.show div.bi-x {
     padding-top: .5rem;
 }
 
+.container.grafico-container {
+    margin-top: -6rem;
+}
+
 @media screen and (min-width: 720px) {
     :root {
         --title-font-size: 1.5rem;
