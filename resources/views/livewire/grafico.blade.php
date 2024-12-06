@@ -9,7 +9,7 @@
                 labels: [{{ $label4 }}, {{ $label3 }}, {{ $label2 }}, {{ $label1 }}, {{ $label }}],
                 datasets: [{
                     label: '{{ $selector }}',
-                    data: [{{ $value4 }}, {{ $value3 }}, {{ $value2 }}, {{ $value1 }}, {{ $value }}],
+                    data: [{{ $data4 }}, {{ $data3 }}, {{ $data2 }}, {{ $data1 }}, {{ $data }}],
                     borderWidth: 1
                 }]
             },
