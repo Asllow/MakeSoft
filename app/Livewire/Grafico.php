@@ -2,17 +2,25 @@
 
 namespace App\Livewire;
 
+use AllowDynamicProperties;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
 use Livewire\Component;
 
-class Grafico extends Component
+#[AllowDynamicProperties] class Grafico extends Component
 {
-    public function render(string $selector): View|Factory|Application
+    public string $selector;
+
+    public function mount(string $selector): void
+    {
+        $this->selector = $selector;
+    }
+
+    public function render(): View|Factory|Application
     {
         return view('livewire.grafico', [
-            'selector' => $selector,
+            'selector' => $this->selector,
         ]);
     }
 }
