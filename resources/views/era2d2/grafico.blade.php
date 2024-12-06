@@ -18,5 +18,5 @@
             </div>
         </section>
     </main>
-    @livewire('grafico', ['selector' => $selector])
+    @livewire('grafico', $selector)
 @endsection
