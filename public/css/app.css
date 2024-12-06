@@ -387,10 +387,6 @@ nav.show div.bi-x {
     padding-top: .5rem;
 }
 
-.container.grafico-container {
-    margin-top: -7rem;
-}
-
 .grafico {
     width: 70%;
 
@@ -528,5 +524,9 @@ nav.show div.bi-x {
 
     .container.page1 {
         margin-top: -6rem;
+    }
+
+    .container.grafico-container {
+        margin-top: -7rem;
     }
 }
