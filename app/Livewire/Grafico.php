@@ -13,6 +13,7 @@ class Grafico extends Component
     {
         return view('livewire.grafico', [
             'id' => 0,
+            'page' => 'home'
         ]);
     }
 }
