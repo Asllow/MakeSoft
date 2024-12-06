@@ -14,7 +14,7 @@
                 </div>
                 <div class="cont-grad">
                     <div class="grafico">
-                        <canvas id="myChart"></canvas>
+                        <canvas id="chart"></canvas>
                     </div>
                 </div>
             </div>
