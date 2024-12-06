@@ -308,7 +308,7 @@ nav.show div.bi-x {
 
 /****************Cards*****************/
 .cards.grid {
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 .card {
@@ -403,6 +403,16 @@ nav.show div.bi-x {
 
     .button {
         height: 3.125rem;
+    }
+
+    .hold-button .button.button1 {
+        position: relative;
+        top: 2.5rem;
+    }
+
+    .hold-button .button.button2 {
+        position: relative;
+        top: 3rem;
     }
 
     nav .menu {

@@ -66,7 +66,7 @@
                                 essencial para a preservação e proteção de aquíferos e ecossistemas aquáticos.</p>
                         </div>
                         <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
+                            <a class="button button1" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
                                 Condutividade</a>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                                 saúde dos ecossistemas presentes na água e a sustentabilidade ambiental.</p>
                         </div>
                         <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
+                            <a class="button button2" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
                                 Temperatura</a>
                         </div>
                     </div>
