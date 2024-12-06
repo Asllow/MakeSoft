@@ -1,6 +1,6 @@
 <div>
     <p>
-        {{gettype($labels[0])}}
+        {{$labels[0]}}
     </p>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
