@@ -101,18 +101,19 @@
                     <div class="card">
                         <h3 class="title">Temperatura</h3>
                         <div class="text">
-                            <p>A temperatura da água é um dos fatores que mais interfere na preservação e conservação de
-                                ecossistemas aquáticos. Ela mantém o equilíbrio das espécies que dependem de faixas de
-                                temperatura específicas, contém a proliferação de algas e influencia migrações e
-                                reprodução
-                                de espécies. Também influencia os níveis de oxigênio dissolvido, que são cruciais para a
-                                vida na água.</p>
-                            <p>Além disso, a medição da temperatura aquática ajuda na interpretação do impacto do
-                                aquecimento global e da poluição térmica nos corpos d'água e na gestão de recursos
-                                hídricos.
-                                Os esforços para monitorar e controlar os níveis da temperatura da água são vitais para
-                                a
-                                saúde dos ecossistemas presentes na água e a sustentabilidade ambiental.</p>
+                            <p>A temperatura da água é um dos fatores mais determinantes para a preservação e
+                                conservação de ecossistemas aquáticos. Ela regula o equilíbrio das espécies que dependem
+                                de faixas de temperatura específicas para sobreviver, controlando tanto a proliferação
+                                de algas quanto o comportamento de migração e reprodução de diversas espécies. Além
+                                disso, a temperatura influencia diretamente os níveis de oxigênio dissolvido, elemento
+                                essencial para a manutenção da vida nos corpos d'água.</p>
+                            <p>A medição e o monitoramento contínuo da temperatura são fundamentais para interpretar os
+                                impactos do aquecimento global e da poluição térmica nos ecossistemas aquáticos. Esses
+                                dados auxiliam na gestão eficiente dos recursos hídricos, permitindo ações de
+                                conservação mais assertivas. Esforços para controlar alterações na temperatura da água
+                                são cruciais não apenas para a saúde dos ecossistemas aquáticos, mas também para
+                                garantir a sustentabilidade ambiental em um cenário de mudanças climáticas e crescente
+                                pressão humana sobre os recursos naturais.</p>
                         </div>
                         <div class="hold-button">
                             <a class="button button2" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
