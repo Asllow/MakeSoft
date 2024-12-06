@@ -30,7 +30,11 @@
                             promovendo a conservação dos recursos hídricos para as futuras gerações.</p>
                     </div>
                 </div>
-                <div class="divider1"></div>
+            </div>
+        </section>
+        <div class="divider1"></div>
+        <section class="section">
+            <div class="container grid">
                 <div class="section-pdf">
                     <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita para o Mérito Científico para o TBR
                         2024</h2>
