@@ -12,7 +12,7 @@
                 labels: [],
                 datasets: [{
                     label: '{{ $selector }}',
-                    data: [],
+                    data: {{ $data }},
                     borderWidth: 1
                 }]
             },
