@@ -2,6 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Condutividade;
+use App\Models\PH;
+use App\Models\Temperatura;
+use App\Models\Turbidez;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -17,7 +21,11 @@ class EraController extends Controller
 
     public function store(float $ph, float $turbidez, float $temperatura, float $condutividade): string
     {
-        return $ph . $turbidez . $temperatura . $condutividade;
+        PH::create($ph);
+        Turbidez::create($turbidez);
+        Temperatura::create($temperatura);
+        Condutividade::create($condutividade);
+        return 'Registrado';
     }
 
     public function merito(): View|Factory|Application
