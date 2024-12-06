@@ -7,7 +7,6 @@
             </div>
             <div class="cont-grad">
                 <div class="grafico">
-                    {{ $slot }}
                     <div id="chart"></div>
                 </div>
             </div>
