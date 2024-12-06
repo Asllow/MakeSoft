@@ -388,7 +388,11 @@ nav.show div.bi-x {
 }
 
 .container.grafico-container {
-    margin-top: -6rem;
+    margin-top: -7rem;
+}
+
+.grafico {
+    width: 80%;
 }
 
 @media screen and (min-width: 720px) {
