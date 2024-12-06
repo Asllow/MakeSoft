@@ -356,7 +356,10 @@ nav.show div.bi-x {
 }
 
 .section3 .container .bi-arrow-down-circle {
-    width: 2rem;
+    padding: 1rem 0;
+    width: 3rem;
+    height: 3rem;
+    font-size: 3rem;
 }
 
 @media screen and (min-width: 720px) {
