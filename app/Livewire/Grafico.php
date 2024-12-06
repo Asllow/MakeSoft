@@ -36,6 +36,7 @@ use Livewire\Component;
             'selector' => ucfirst($this->selector),
             'data' => $data,
             'labels' => get_object_vars($labels),
+            'num' => $labels->count(),
         ]);
     }
 }
