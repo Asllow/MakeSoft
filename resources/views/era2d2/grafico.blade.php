@@ -8,7 +8,7 @@
     <main id="main">
         <section class="section" id="home">
             <div class="container">
-                <h1 class="title">Gráfico de {{ ucfirst($selector) }}</h1>
+                <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
             </div>
         </section>
     </main>
