@@ -63,7 +63,7 @@ use Livewire\Component;
     public function fetchData()
     {
         $this->query();
-        $this->emit('refreshChart', ['seriesData' => $this->datas, 'seriesLabel' => $this->labels]);
+        $this->dispatch('refreshChart', ['seriesData' => $this->datas, 'seriesLabel' => $this->labels]);
     }
 
 
