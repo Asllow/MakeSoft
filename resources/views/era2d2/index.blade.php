@@ -147,5 +147,6 @@
                 </div>
             </div>
         </section>
+        <div class="divider1"></div>
     </main>
 @endsection

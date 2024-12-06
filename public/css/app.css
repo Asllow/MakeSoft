@@ -383,9 +383,9 @@ nav.show div.bi-x {
 
     nav.container {
         padding-left: 1rem;
-        padding-right: 1rem;
-        border-radius: .5rem;
-        border: #0a53be 1px;
+        padding-right: 3rem;
+        border-radius: 0 0 0 1rem;
+        margin: 0;
     }
     .container {
         margin-left: 3rem;
@@ -403,16 +403,6 @@ nav.show div.bi-x {
 
     .button {
         height: 3.125rem;
-    }
-
-    .hold-button .button.button1 {
-        position: relative;
-        top: 4.4rem;
-    }
-
-    .hold-button .button.button2 {
-        position: relative;
-        top: 7rem;
     }
 
     nav .menu {
@@ -447,6 +437,10 @@ nav.show div.bi-x {
     nav ul li a:hover,
     nav ul li a.active {
         color: var(--base-color);
+    }
+
+    nav ul li a.active {
+        font-weight: bold;
     }
 
     nav ul li a::after {
