@@ -12,7 +12,7 @@ return new class extends Migration {
     {
         Schema::connection('makesoft')->create('ph', function (Blueprint $table) {
             $table->id();
-            $table->float('valor', 3);
+            $table->float('valor')->default(0);
             $table->timestamp('created_at')->nullable();
         });
     }
