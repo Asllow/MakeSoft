@@ -52,7 +52,7 @@
         <section class="section" id="equipe">
             <div class="container grid">
                 <div class="cards grid">
-                    <div class="card">
+                    <div id="condutividade" class="card">
                         <h3 class="title">Condutividade</h3>
                         <div class="text">
                             <p>A condutividade elétrica da água é um parâmetro que reflete sua capacidade de conduzir
@@ -73,7 +73,7 @@
                                 Condutividade</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div id="ph" class="card">
                         <h3 class="title">PH</h3>
                         <div class="text">
                             <p>O potencial hidrogênico(pH) de uma solução aquosa é medido por meio da concentração de
@@ -101,7 +101,7 @@
                             <a class="button" href="{{ route('era.grafico', 'ph') }}">Gráfico de PH</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div id="temperatura" class="card">
                         <h3 class="title">Temperatura</h3>
                         <div class="text">
                             <p>A temperatura da água é um dos fatores mais determinantes para a preservação e
@@ -123,7 +123,7 @@
                                 Temperatura</a>
                         </div>
                     </div>
-                    <div class="card">
+                    <div id="turbidez" class="card">
                         <h3 class="title">Turbidez</h3>
                         <div class="text">
                             <p>Turbidez da água é a medida da transparência da água e indica a quantidade de partículas

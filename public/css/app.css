@@ -211,7 +211,7 @@ nav.show .menu ul {
 }
 
 nav.show ul.grid {
-    gap: 1rem;
+    gap: 2rem;
 }
 
 /*toggle menu*/
@@ -439,7 +439,7 @@ nav.show div.bi-x {
         color: var(--base-color);
     }
 
-    nav ul li a.active {
+    nav .menu ul li a.title.active {
         font-weight: bold;
     }
 
