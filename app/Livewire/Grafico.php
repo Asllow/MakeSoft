@@ -23,7 +23,18 @@ use Livewire\Component;
         switch ($this->selector) {
             case 'condutividade':
                 $labels = Condutividade::select('id')->latest()->take(60)->get();
-                $data = Condutividade::select('valor')->latest()->take(60)->get();
+                $i = 0;
+                $label_a = [];
+                foreach ($labels as $label) {
+                    $label_a[$i] = $label->id;
+                    $i++;
+                }
+                $datas = Condutividade::select('valor')->latest()->take(60)->get();
+                $i = 0;
+                $datas_a = [];
+                foreach ($datas as $data) {
+                    $datas_a[$i] = $data->valor;
+                }
                 break;
             case 'temperatura':
                 break;
@@ -34,8 +45,7 @@ use Livewire\Component;
         }
         return view('livewire.grafico', [
             'selector' => ucfirst($this->selector),
-            'data' => $data,
-            'value' => $labels[0]->valor,
+            'datas' => $datas_a,
         ]);
     }
 }
