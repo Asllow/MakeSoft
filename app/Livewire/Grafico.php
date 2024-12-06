@@ -35,7 +35,7 @@ use Livewire\Component;
         return view('livewire.grafico', [
             'selector' => ucfirst($this->selector),
             'data' => $data,
-            'value' => $labels,
+            'value' => $labels[0],
         ]);
     }
 }
