@@ -16,12 +16,7 @@ use Livewire\Component;
 {
     public string $selector;
 
-    public function mount(string $selector): void
-    {
-        $this->selector = $selector;
-    }
-
-    public function render(): View|Factory|Application
+    private function aaa()
     {
         switch ($this->selector) {
             case 'condutividade':
@@ -89,12 +84,18 @@ use Livewire\Component;
                 }
                 break;
         }
-        return view('livewire.grafico', [
-            'selector' => ucfirst($this->selector),
-            'datas' => array_reverse($datas_a),
-            'labels' => array_reverse($label_a),
-            'label' => $label_a[0],
-            'data' => $datas_a[0],
-        ]);
+    }
+
+    public function mount(string $selector): void
+    {
+        $this->selector = $selector;
+
+    }
+
+
+    public function render(): View|Factory|Application
+    {
+
+        return view('livewire.grafico')->layout('era2d2.grafico');
     }
 }

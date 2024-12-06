@@ -1,39 +1,18 @@
-@push('js')
-    <script>
-        var options = {
-            series: [{
-                name: "Desktops",
-                data: [10, 41, 35, 51, 49, 62, 69, 91, 148]
-            }],
-            chart: {
-                height: 350,
-                type: 'line',
-                zoom: {
-                    enabled: false
-                }
-            },
-            dataLabels: {
-                enabled: false
-            },
-            stroke: {
-                curve: 'straight'
-            },
-            title: {
-                text: 'Product Trends by Month',
-                align: 'left'
-            },
-            grid: {
-                row: {
-                    colors: ['#f3f3f3', 'transparent'], // takes an array which will be repeated on columns
-                    opacity: 0.5
-                },
-            },
-            xaxis: {
-                categories: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep'],
-            }
-        };
-
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-        chart.render();
-    </script>
-@endpush
+<main id="main">
+    <section class="section" id="head">
+        <div class="container grafico-container">
+            <div class="head">
+                <a href="{{ route('era.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
+                <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
+            </div>
+            <div class="cont-grad">
+                <div class="grafico">
+                    {{ $slot }}
+                    <div id="chart"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<livewire:scripts/>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
