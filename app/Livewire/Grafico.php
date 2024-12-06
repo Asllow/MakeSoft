@@ -3,6 +3,7 @@
 namespace App\Livewire;
 
 use AllowDynamicProperties;
+use App\Models\Condutividade;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -19,8 +20,22 @@ use Livewire\Component;
 
     public function render(): View|Factory|Application
     {
+        switch ($this->selector) {
+            case 'condutividade':
+                $latest = Condutividade::select('id')->latest()->take(60)->get();
+                $data = Condutividade::select('valor')->latest()->take(60)->get();
+                break;
+            case 'temperatura':
+                break;
+            case 'turbidez':
+                break;
+            case 'ph':
+                break;
+        }
         return view('livewire.grafico', [
-            'selector' => $this->selector,
+            'selector' => ucfirst($this->selector),
+            'data' => $data,
+            'latest' => $latest,
         ]);
     }
 }
