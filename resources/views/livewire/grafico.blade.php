@@ -1,5 +1,5 @@
 <div>
-    <div wire:poll.1s.keep-alive>
+    <div>
         <p>{{ $value2 }}</p>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
