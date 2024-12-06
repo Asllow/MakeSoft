@@ -13,6 +13,9 @@ class Condutividade extends Model
     protected $connection = 'makesoft';
     protected $table = 'condutividade';
 
+    public $timestamps = ['created_at'];
+    const UPDATED_AT = null;
+
     protected $fillable = [
         'value'
     ];

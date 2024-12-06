@@ -13,6 +13,9 @@ class Turbidez extends Model
     protected $connection = 'makesoft';
     protected $table = 'turbidez';
 
+    public $timestamps = ['created_at'];
+    const UPDATED_AT = null;
+
     protected $fillable = [
         'value'
     ];

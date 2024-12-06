@@ -13,6 +13,9 @@ class Temperatura extends Model
     protected $connection = 'makesoft';
     protected $table = 'temperatura';
 
+    public $timestamps = ['created_at'];
+    const UPDATED_AT = null;
+
     protected $fillable = [
         'value'
     ];

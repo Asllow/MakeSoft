@@ -13,6 +13,9 @@ class PH extends Model
     protected $connection = 'makesoft';
     protected $table = 'ph';
 
+    public $timestamps = ['created_at'];
+    const UPDATED_AT = null;
+
     protected $fillable = [
         'value'
     ];
