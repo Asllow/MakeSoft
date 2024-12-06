@@ -13,12 +13,12 @@ Route::controller(HomeController::class)->group(function () {
 });
 
 Route::controller(EraController::class)->group(function () {
-    Route::get('/era', 'index')->name('era.index');
-    Route::get('/era/grafico/{selector}', 'grafico')->name('era.grafico');
-    Route::get('/era/organizacao-e-metodo', 'organi')->name('era.organi');
-    Route::get('/era/merito-cientifico', 'merito')->name('era.merito');
-    Route::get('/era/tecnologia-e-engenharia', 'tecno')->name('era.tecno');
-    Route::get('/era/store/{ph}/{turbidez}/{temperatura}/{condutividade}', 'store')->name('era.store');
+    Route::get('/era2d2', 'index')->name('era.index');
+    Route::get('/era2d2/grafico/{selector}', 'grafico')->name('era.grafico');
+    Route::get('/era2d2/organizacao-e-metodo', 'organi')->name('era.organi');
+    Route::get('/era2d2/merito-cientifico', 'merito')->name('era.merito');
+    Route::get('/era2d2/tecnologia-e-engenharia', 'tecno')->name('era.tecno');
+    Route::get('/era2d2/store/{ph}/{turbidez}/{temperatura}/{condutividade}', 'store')->name('era.store');
 
 });
 

@@ -17,7 +17,6 @@ class EraController extends Controller
 
     public function store(float $ph, float $turbidez, float $temperatura, float $condutividade): string
     {
-
         return $ph . $turbidez . $temperatura . $condutividade;
     }
 
