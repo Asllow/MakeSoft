@@ -9,7 +9,7 @@
         <section class="section" id="head">
             <div class="container">
                 <div class="head">
-                    <i class="bi bi-arrow-left-circle"></i>
+                    <a href="{{ route('era2d2.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
                     <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
                 </div>
                 <div class="grafico">
