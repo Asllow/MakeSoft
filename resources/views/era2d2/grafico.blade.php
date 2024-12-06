@@ -4,7 +4,20 @@
 
 @section('description', 'Essa página mostra os últimos resultados de uma das nossas pesquisas associadas à medição')
 
-@section('js')
+@section('main')
+    <main id="main">
+        <section class="section" id="head">
+            <div class="container">
+                <div class="head">
+                    <a href="{{ route('era.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
+                    <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
+                </div>
+                <div>
+                    <canvas id="myChart"></canvas>
+                </div>
+            </div>
+        </section>
+    </main>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const ctx = document.getElementById('myChart');
@@ -28,20 +41,4 @@
             }
         });
     </script>
-@endsection
-
-@section('main')
-    <main id="main">
-        <section class="section" id="head">
-            <div class="container">
-                <div class="head">
-                    <a href="{{ route('era.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
-                    <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
-                </div>
-                <div class="grafico">
-                    <canvas id="myChart"></canvas>
-                </div>
-            </div>
-        </section>
-    </main>
 @endsection
