@@ -380,6 +380,9 @@ nav.show div.bi-x {
 .head .bi.bi-arrow-left-circle {
     font-size: 2rem;
     color: var(--base-color);
+}
+
+.head a {
     padding-top: .6rem;
 }
 
