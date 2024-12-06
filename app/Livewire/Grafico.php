@@ -22,7 +22,7 @@ use Livewire\Component;
     {
         switch ($this->selector) {
             case 'condutividade':
-                $latest = Condutividade::select('id')->latest()->take(60)->get();
+                $labels = Condutividade::select('id')->latest()->take(60)->get();
                 $data = Condutividade::select('valor')->latest()->take(60)->get();
                 break;
             case 'temperatura':
@@ -35,7 +35,7 @@ use Livewire\Component;
         return view('livewire.grafico', [
             'selector' => ucfirst($this->selector),
             'data' => $data,
-            'latest' => $latest,
+            'labels' => $labels,
         ]);
     }
 }
