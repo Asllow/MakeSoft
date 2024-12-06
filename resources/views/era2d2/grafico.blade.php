@@ -14,7 +14,7 @@
                 </div>
             </div>
         </section>
-        <section class="section" id="grafico">
+        <section class="section3" id="grafico">
             <div class="container">
                 @livewire('grafico')
             </div>

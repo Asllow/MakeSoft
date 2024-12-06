@@ -374,11 +374,13 @@ nav.show div.bi-x {
     display: flex;
     flex-direction: row;
     align-items: center;
+    gap: 1rem;
 }
 
 .head .bi.bi-arrow-left-circle {
     font-size: 2rem;
     color: var(--base-color);
+    padding-top: .7rem;
 }
 
 @media screen and (min-width: 720px) {
