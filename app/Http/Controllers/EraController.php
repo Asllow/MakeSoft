@@ -21,10 +21,10 @@ class EraController extends Controller
 
     public function store(float $ph, float $turbidez, float $temperatura, float $condutividade): string
     {
-        PH::create($this->add_array($ph));
-        Turbidez::create($this->add_array($turbidez));
-        Temperatura::create($this->add_array($temperatura));
-        Condutividade::create($this->add_array($condutividade));
+        PH::create(['valor' => $ph]);
+        Turbidez::create(['valor' => $turbidez]);
+        Temperatura::create(['valor' => $temperatura]);
+        Condutividade::create(['valor' => $condutividade]);
         return 'Registrado';
     }
 
@@ -44,11 +44,5 @@ class EraController extends Controller
     {
         $page = 'tecno';
         return view('era2d2.tecno', compact('page'));
-    }
-
-    private function add_array($i)
-    {
-        $response = [];
-        return $response['valor'] = $i;
     }
 }
