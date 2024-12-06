@@ -79,6 +79,11 @@ h2.title.subtitle {
     padding-top: 0.5rem;
 }
 
+h2.subtitle {
+    font: 600 1.2rem var(--body-font);
+    color: var(--base-color);
+}
+
 .button {
     background-color: var(--base-color);
     color: var(--title-color);
@@ -177,6 +182,12 @@ nav ul li a::after {
 nav ul li a:hover::after,
 nav ul li a.active::after {
     width: 100%;
+}
+
+.i-color {
+    width: 2rem;
+    height: 2rem;
+    color: var(--base-color);
 }
 
 nav .menu {
@@ -327,6 +338,10 @@ nav.show div.bi-x {
 .hold-button .button {
     position: relative;
     top: 1.5rem;
+}
+
+.section-pdf .pdf {
+    width: 100%;
 }
 
 @media screen and (min-width: 720px) {
