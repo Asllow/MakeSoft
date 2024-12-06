@@ -306,13 +306,13 @@ nav.show div.bi-x {
     border-radius: 50%;
 }
 
-/****************PHS*****************/
+/****************Cards*****************/
 .cards.grid {
     gap: 1.5rem;
 }
 
 .card {
-    padding: 3.625rem 2rem;
+    padding: 3rem 1rem 0 1rem;
     box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
     border-bottom: 0.25rem solid var(--base-color);
     border-radius: 0.25rem 0.25rem 0 0;
@@ -322,6 +322,11 @@ nav.show div.bi-x {
 .card title {
     font-size: 1.5rem;
     margin-bottom: 0.75rem;
+}
+
+.hold-button .button {
+    position: relative;
+    top: 1.5rem;
 }
 
 @media screen and (min-width: 720px) {
