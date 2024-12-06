@@ -32,7 +32,7 @@ img {
     --title-color: hsl(238, 58%, 13%, 100%);
     --text-color: hsl(0, 0%, 46%);
     --text-color-light: hsl(220, 13%, 91%);
-    --body-color: hsl(48, 14%, 93%, 100%);
+    --body-color: hsl(0, 25%, 98%);
     --body-color-trans: hsl(48, 14%, 93%, 34%);
     --title-font-size: 1.5rem;
     --subtitle-font-size: 1rem;
@@ -346,7 +346,7 @@ nav.show div.bi-x {
 
 .section-pdf .pdf {
     width: 100%;
-    height: 100%;
+    height: 50rem;
 }
 
 @media screen and (min-width: 720px) {
