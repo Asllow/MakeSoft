@@ -36,7 +36,7 @@
         <section class="section3">
             <div class="container grid">
                 <div class="section-pdf">
-                    <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita para o Mérito Científico para o TBR
+                    <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita do Mérito Científico para o TBR
                         2024</h2>
                     <i class="bi bi-arrow-down-circle i-color"></i>
                     <div class="pdf">

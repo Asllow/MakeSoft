@@ -20,4 +20,16 @@ class EraController extends Controller
         $page = 'merito';
         return view('era2d2.merito', compact('page'));
     }
+
+    public function organi(): View|Factory|Application
+    {
+        $page = 'organi';
+        return view('era2d2.organi', compact('page'));
+    }
+
+    public function tecno(): View|Factory|Application
+    {
+        $page = 'tecno';
+        return view('era2d2.tecno', compact('page'));
+    }
 }
