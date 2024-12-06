@@ -1,6 +1,6 @@
 <div>
     <p>
-        {{ $datas_a }}
+        {{ $data }}
     </p>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
