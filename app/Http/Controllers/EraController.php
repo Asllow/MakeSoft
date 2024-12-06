@@ -28,6 +28,12 @@ class EraController extends Controller
         return 'Registrado';
     }
 
+    public function grafico(string $selector)
+    {
+        $page = 'home';
+        return view('era2d2.grafico', compact('page', 'selector'));
+    }
+
     public function merito(): View|Factory|Application
     {
         $page = 'merito';
