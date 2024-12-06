@@ -116,7 +116,7 @@
                                 pressão humana sobre os recursos naturais.</p>
                         </div>
                         <div class="hold-button">
-                            <a class="button button2" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
+                            <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
                                 Temperatura</a>
                         </div>
                     </div>
@@ -124,24 +124,18 @@
                         <h3 class="title">Turbidez</h3>
                         <div class="text">
                             <p>Turbidez da água é a medida da transparência da água e indica a quantidade de partículas
-                                em
-                                suspensão que estão presentes. Ela é um fator de monitoramento importante para a
-                                avaliação
-                                da qualidade da água, tanto para o consumo e uso em processos industriais, quanto para a
-                                vida presente em ecossistemas aquáticos. Sedimentos, como partículas de solo que entram
-                                na
-                                água devido à erosão ou atividades humanas, matéria orgânica (folhas, galhos e outros
-                                detritos), microorganismos e poluentes industriais são fatores que interferem na
-                                claridade
-                                da água. A ausência de acompanhamento preventivo gera maiores gastos com processos de
-                                tratamento de água. A medição é feita por meio de um turbidímetro, que avalia a
-                                quantidade
-                                de luz refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
+                                em suspensão que estão presentes. Ela é um fator de monitoramento importante para a
+                                avaliação da qualidade da água, tanto para o consumo e uso em processos industriais,
+                                quanto para a vida presente em ecossistemas aquáticos. Sedimentos, como partículas de
+                                solo que entram na água devido à erosão ou atividades humanas, matéria orgânica (folhas,
+                                galhos e outros detritos), microorganismos e poluentes industriais são fatores que
+                                interferem na claridade da água.</p>
+                            <p>A ausência de acompanhamento preventivo gera maiores gastos com processos de tratamento
+                                de água. A medição é feita por meio de um turbidímetro, que avalia a quantidade de luz
+                                refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
                                 Nefelométricas de Turbidez). Para o consumo humano, a OMS indica que a turbidez da água
-                                não
-                                exceda 5 NTU e, idealmente, seja inferior a 1 NTU. E para corpos d'água naturais, varia
-                                de
-                                acordo com a legislação local e os usos específicos da água.</p>
+                                não exceda 5 NTU e, idealmente, seja inferior a 1 NTU. E para corpos d'água naturais,
+                                varia de acordo com a legislação local e os usos específicos da água.</p>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'turbidez') }}">Gráfico de Turbidez</a>
