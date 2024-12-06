@@ -14,6 +14,7 @@
                 </div>
                 <div class="grafico">
                     @livewire('grafico')
+                    <div id="grafico" style="width: 900px; height: 500px"></div>
                 </div>
             </div>
         </section>
