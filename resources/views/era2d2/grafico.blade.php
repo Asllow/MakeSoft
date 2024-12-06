@@ -10,4 +10,8 @@
 
 @section('main')
 
+    {{ $slot }}
+    <livewire:scripts/>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    @stack('js')
 @endsection

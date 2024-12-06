@@ -96,10 +96,7 @@ use Livewire\Component;
     public function render(): View|Factory|Application
     {
 
-        return view('livewire.grafico', [
-            'selector' => $this->selector,
-
-        ])->layout('era2d2.grafico', [
+        return view('livewire.grafico')->layout('era2d2.grafico', [
             'selector' => $this->selector,
             'page' => 'home'
         ]);
