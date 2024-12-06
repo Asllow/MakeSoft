@@ -392,7 +392,13 @@ nav.show div.bi-x {
 }
 
 .grafico {
-    width: 80%;
+    width: 70%;
+
+}
+
+.cont-grad {
+    display: grid;
+    justify-items: center
 }
 
 @media screen and (min-width: 720px) {

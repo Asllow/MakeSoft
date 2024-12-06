@@ -12,8 +12,10 @@
                     <a href="{{ route('era.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
                     <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
                 </div>
-                <div class="grafico">
-                    <canvas id="myChart"></canvas>
+                <div class="cont-grad">
+                    <div class="grafico">
+                        <canvas id="myChart"></canvas>
+                    </div>
                 </div>
             </div>
         </section>
