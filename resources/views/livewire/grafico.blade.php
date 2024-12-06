@@ -1,3 +1,8 @@
-<div>
-    <h2>lala</h2>
-</div>
+<head>
+    @livewireStyles
+</head>
+<body>
+{{ $slot }}
+
+@livewireScripts
+</body>
