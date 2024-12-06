@@ -49,15 +49,7 @@ use Livewire\Component;
             'datas' => array_reverse($datas_a),
             'labels' => array_reverse($label_a),
             'label' => $label_a[0],
-            'label1' => $label_a[1],
-            'label2' => $label_a[2],
-            'label3' => $label_a[3],
-            'label4' => $label_a[4],
             'data' => $datas_a[0],
-            'data1' => $datas_a[1],
-            'data2' => $datas_a[2],
-            'data3' => $datas_a[3],
-            'data4' => $datas_a[4],
         ]);
     }
 }

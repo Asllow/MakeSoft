@@ -1,6 +1,6 @@
-<div>
+<div wire:poll.1s.keep-alive>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script wire:poll.1s.keep-alive>
+    <script>
         const ctx = document.getElementById('myChart');
 
         new Chart(ctx, {
