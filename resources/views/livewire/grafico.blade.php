@@ -1,4 +1,4 @@
-<div wire:poll>
+<div wire:poll.1s.keep-alive>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const ctx = document.getElementById('myChart');
