@@ -11,6 +11,7 @@ class Turbidez extends Model
 
     protected $primaryKey = 'id';
     protected $connection = 'makesoft';
+    protected $table = 'turbidez';
 
     protected $fillable = [
         'value'

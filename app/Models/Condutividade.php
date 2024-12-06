@@ -11,6 +11,7 @@ class Condutividade extends Model
 
     protected $primaryKey = 'id';
     protected $connection = 'makesoft';
+    protected $table = 'condutividade';
 
     protected $fillable = [
         'value'

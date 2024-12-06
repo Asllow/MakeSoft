@@ -11,6 +11,7 @@ class PH extends Model
 
     protected $primaryKey = 'id';
     protected $connection = 'makesoft';
+    protected $table = 'ph';
 
     protected $fillable = [
         'value'
