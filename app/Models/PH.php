@@ -17,6 +17,6 @@ class PH extends Model
     const UPDATED_AT = null;
 
     protected $fillable = [
-        'value'
+        'valor'
     ];
 }

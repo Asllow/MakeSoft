@@ -17,6 +17,6 @@ class Temperatura extends Model
     const UPDATED_AT = null;
 
     protected $fillable = [
-        'value'
+        'valor'
     ];
 }
