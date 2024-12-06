@@ -12,11 +12,9 @@
                     <i class="bi bi-arrow-left-circle"></i>
                     <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
                 </div>
-            </div>
-        </section>
-        <section class="section3" id="grafico">
-            <div class="container">
-                @livewire('grafico')
+                <div class="grafico">
+                    @livewire('grafico')
+                </div>
             </div>
         </section>
     </main>

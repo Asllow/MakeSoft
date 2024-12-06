@@ -380,7 +380,7 @@ nav.show div.bi-x {
 .head .bi.bi-arrow-left-circle {
     font-size: 2rem;
     color: var(--base-color);
-    padding-top: .7rem;
+    padding-top: .6rem;
 }
 
 @media screen and (min-width: 720px) {
