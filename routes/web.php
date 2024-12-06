@@ -22,7 +22,7 @@ Route::controller(EraController::class)->group(function () {
 
 });
 
-Route::get('/era2d2/grafico/{selector}', Grafico::class)->name('era.grafico');
+Route::view('/era2d2/grafico', 'era2d2.grafico')->name('era.grafico');
 
 Route::view('/quemsomos', 'makesoft.directory')->name('quemsomos');
 Route::view('/cartaocnpj', 'makesoft.cnpj')->name('cartaocnpj');
