@@ -344,9 +344,19 @@ nav.show div.bi-x {
     top: 1.5rem;
 }
 
+.section-pdf {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .section-pdf .pdf {
     width: 100%;
     height: 50rem;
+}
+
+.section3 .container .bi-arrow-down-circle {
+    width: 2rem;
 }
 
 @media screen and (min-width: 720px) {
