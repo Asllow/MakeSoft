@@ -1,4 +1,7 @@
 <div>
+    <p>
+        {{$labels}}
+    </p>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script>
         const ctx = document.getElementById('myChart');
@@ -6,10 +9,10 @@
         new Chart(ctx, {
             type: 'line',
             data: {
-                labels: {{ $labels }},
+                labels: [],
                 datasets: [{
                     label: '{{ $selector }}',
-                    data: {{ $data }},
+                    data: [],
                     borderWidth: 1
                 }]
             },
