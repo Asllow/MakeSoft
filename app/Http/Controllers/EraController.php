@@ -14,4 +14,10 @@ class EraController extends Controller
         $page = 'home';
         return view('era2d2.animation', compact('page'));
     }
+
+    public function merito(): View|Factory|Application
+    {
+        $page = 'merito';
+        return view('era2d2.merito', compact('page'));
+    }
 }
