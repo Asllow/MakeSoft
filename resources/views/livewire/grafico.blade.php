@@ -14,6 +14,7 @@
     </section>
 </main>
 
+
 @push('js')
     <script>
         var options = {
@@ -32,13 +33,5 @@
         var chart = new ApexCharts(document.querySelector("#chart"), options);
 
         chart.render();
-
-        document.addEventListener('livewire:load', () => {
-        @this.on('refreshChart', (chartData) => {
-            chart.updateSeries([{
-                data: chartData.seriesData
-            }])
-        })
-        })
     </script>
 @endpush
