@@ -6,7 +6,7 @@
                 <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
             </div>
             <div class="cont-grad">
-                <div class="grafico">
+                <div class="grafico" wire:poll="fetchData">
                     <div id="chart"></div>
                 </div>
             </div>
@@ -15,7 +15,7 @@
 </main>
 
 @push('js')
-    <script wire:poll="fetchData">
+    <script>
         document.addEventListener('livewire:load', () => {
             $wire.on('post-created', (chartData) => {
                 chart.updateOptions({
