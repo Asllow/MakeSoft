@@ -37,7 +37,7 @@
         chart.render();
 
         document.addEventListener('livewire:load', () => {
-            $wire.on('post-created', (chartData) => {
+        @this.on('post-created', (chartData) => {
                 chart.updateSeries([{
                     data: chartData.valor
                 }])
