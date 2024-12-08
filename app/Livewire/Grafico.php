@@ -15,10 +15,8 @@ use Livewire\Component;
 #[AllowDynamicProperties] class Grafico extends Component
 {
     public string $selector;
-    public array $datas;
-    public array $labels;
-    public array $query1;
-    public false|string $query2;
+    public false|string $chart_data;
+    public false|string $chart_label;
 
     public function mount(string $selector): void
     {
@@ -43,25 +41,11 @@ use Livewire\Component;
                 $query2 = Turbidez::select('valor')->latest()->take($results)->get();
                 break;
             case 'ph':
-                $query1 = PH::select('id')->latest()->take($results)->get();
-                $this->query1 = PH::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray();
-                $query2 = PH::select('valor')->latest()->take($results)->get();
+                $model = PH::class;
                 break;
-            default:
-                $query1 = 0;
-                $query2 = 0;
         }
-        $this->query2 = json_encode($this->query1);
-        $i = 0;
-        $j = 0;
-        foreach ($query1 as $q1) {
-            $this->labels[$i] = $q1->id;
-            $i++;
-        }
-        foreach ($query2 as $q2) {
-            $this->datas[$j] = $q2->valor;
-            $j++;
-        }
+        $this->chart_label = json_encode($model::select('id')->latest()->take($results)->get()->pluck('id')->toArray());
+        $this->chart_data = json_encode($model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray());
     }
 
     public function fetchData(): void
@@ -76,8 +60,8 @@ use Livewire\Component;
         return view('livewire.grafico')->layout('era2d2.grafico', [
             'selector' => $this->selector,
             'page' => 'home',
-            'datas' => $this->datas,
-            'labels' => $this->labels,
+            'datas' => $this->chart_data,
+            'labels' => $this->chart_label,
         ]);
     }
 }
