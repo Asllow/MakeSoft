@@ -37,17 +37,16 @@
         chart.render();
 
         document.addEventListener('livewire:load', () => {
-        @this.on('refreshChartData', (chartData) => {
-            chart.updateOptions({
-                xaxis: {
-                    categories: chartData.categories
-                }
-            });
+            $wire.on('refreshChartData', (chartData) => {
+                chart.updateOptions({
+                    xaxis: {
+                        categories: chartData.categories
+                    }
+                });
                 chart.updateSeries([{
                     data: chartData.seriesData,
                 }]);
-        })
-            ;
+            })
         });
     </script>
 @endpush
