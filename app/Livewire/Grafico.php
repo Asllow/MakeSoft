@@ -18,6 +18,7 @@ use Livewire\Attributes\On;
     public string $selector;
     public array $datas;
     public array $labels;
+    public array $query1;
 
     public function mount(string $selector): void
     {
@@ -30,24 +31,35 @@ use Livewire\Attributes\On;
         $results = 30;
         switch ($this->selector) {
             case 'condutividade':
-                $query1 = Condutividade::select('id')->latest()->take($results)->get()->toArray();
-                $query2 = Condutividade::select('valor')->latest()->take($results)->get()->toArray();
+                $query1 = Condutividade::select('id')->latest()->take($results)->get();
+                $query2 = Condutividade::select('valor')->latest()->take($results)->get();
                 break;
             case 'temperatura':
-                $query1 = Temperatura::select('id')->latest()->take($results)->get()->toArray();
-                $query2 = Temperatura::select('valor')->latest()->take($results)->get()->toArray();
+                $query1 = Temperatura::select('id')->latest()->take($results)->get();
+                $query2 = Temperatura::select('valor')->latest()->take($results)->get();
                 break;
             case 'turbidez':
-                $query1 = Turbidez::select('id')->latest()->take($results)->get()->toArray();
-                $query2 = Turbidez::select('valor')->latest()->take($results)->get()->toArray();
+                $query1 = Turbidez::select('id')->latest()->take($results)->get();
+                $query2 = Turbidez::select('valor')->latest()->take($results)->get();
                 break;
             case 'ph':
-                $this->datas = PH::select('id')->latest()->take($results)->get()->toArray();
-                $this->labels = PH::select('valor')->latest()->take($results)->get()->toArray();
+                $query1 = PH::select('id')->latest()->take($results)->get();
+                $this->query1 = PH::select('id')->latest()->take($results)->get()->toArray();
+                $query2 = PH::select('valor')->latest()->take($results)->get();
                 break;
             default:
                 $query1 = 0;
                 $query2 = 0;
+        }
+        $i = 0;
+        $j = 0;
+        foreach ($query1 as $q1) {
+            $this->labels[$i] = $q1->id;
+            $i++;
+        }
+        foreach ($query2 as $q2) {
+            $this->datas[$j] = $q2->valor;
+            $j++;
         }
     }
 

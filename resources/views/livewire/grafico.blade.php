@@ -7,6 +7,8 @@
             </div>
             <div class="cont-grad">
                 <div class="grafico">
+                    {{ $datas }}
+                    {{ $query1 }}
                     <div id="chart"></div>
                 </div>
             </div>
