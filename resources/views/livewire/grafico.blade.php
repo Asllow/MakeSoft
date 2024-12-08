@@ -36,7 +36,14 @@
 
         document.addEventListener('livewire:load', () => {
             Livewire.on('post-created', (event) => {
-                console.log(event.data)
+                chart.updateOptions({
+                    xaxis: {
+                        categories: event.labels
+                    },
+                    series: [{
+                        data: event.data
+                    }],
+                })
             });
         });
     </script>
