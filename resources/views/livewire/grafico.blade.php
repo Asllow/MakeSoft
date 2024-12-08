@@ -1,4 +1,4 @@
-<main id="main" wire:poll="fetchData">
+<main id="main">
     <section class="section5" id="head">
         <div class="container grafico-container">
             <div class="head">
@@ -35,18 +35,5 @@
         const chart = new ApexCharts(document.querySelector("#chart"), options);
 
         chart.render();
-
-        document.addEventListener('livewire:load', () => {
-            $wire.on('refreshChartData', (chartData) => {
-                chart.updateOptions({
-                    xaxis: {
-                        categories: chartData.categories
-                    }
-                });
-                chart.updateSeries([{
-                    data: chartData.seriesData,
-                }]);
-            })
-        });
     </script>
 @endpush
