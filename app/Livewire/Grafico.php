@@ -24,25 +24,24 @@ use Livewire\Component;
         $this->query();
     }
 
-    public function query(): void
+    public function query()
     {
         $results = 30;
         switch ($this->selector) {
             case 'condutividade':
-                $query1 = Condutividade::select('id')->latest()->take($results)->get();
-                $query2 = Condutividade::select('valor')->latest()->take($results)->get();
+                $model = Condutividade::class;
                 break;
             case 'temperatura':
-                $query1 = Temperatura::select('id')->latest()->take($results)->get();
-                $query2 = Temperatura::select('valor')->latest()->take($results)->get();
+                $model = Temperatura::class;
                 break;
             case 'turbidez':
-                $query1 = Turbidez::select('id')->latest()->take($results)->get();
-                $query2 = Turbidez::select('valor')->latest()->take($results)->get();
+                $model = Turbidez::class;
                 break;
             case 'ph':
                 $model = PH::class;
                 break;
+            default:
+                return abort(404);
         }
         $this->chart_label = json_encode($model::select('id')->latest()->take($results)->get()->pluck('id')->toArray());
         $this->chart_data = json_encode($model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray());
