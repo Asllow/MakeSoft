@@ -15,7 +15,10 @@
     <script>
         const options = {
             chart: {
-                type: 'line'
+                type: 'line',
+                zoom: {
+                    enabled: false
+                }
             },
             series: [{
                 name: '{{ ucfirst($selector) }}',
