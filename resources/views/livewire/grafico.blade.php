@@ -25,10 +25,10 @@
             },
             series: [{
                 name: '{{ ucfirst($selector) }}',
-                data: {{ $chartdata }}
+                data: {{ $chart_data }}
             }],
             xaxis: {
-                categories: {{ $chartlabel }}
+                categories: {{ $chart_label }}
             }
         };
 
