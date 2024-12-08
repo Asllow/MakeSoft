@@ -44,7 +44,7 @@ use Livewire\Attributes\On;
                 break;
             case 'ph':
                 $query1 = PH::select('id')->latest()->take($results)->get();
-                $this->query1 = PH::select('id')->latest()->take($results)->get()->toArray();
+                $this->query1 = PH::select('valor')->latest()->take($results)->get()->toArray();
                 $query2 = PH::select('valor')->latest()->take($results)->get();
                 break;
             default:
