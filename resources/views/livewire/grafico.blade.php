@@ -13,8 +13,3 @@
         </div>
     </section>
 </main>
-
-
-@script
-
-@endscript
