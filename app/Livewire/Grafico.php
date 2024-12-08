@@ -18,7 +18,7 @@ use Livewire\Component;
     public array $datas;
     public array $labels;
     public array $query1;
-    public array $query2;
+    public false|string $query2;
 
     public function mount(string $selector): void
     {
@@ -51,7 +51,7 @@ use Livewire\Component;
                 $query1 = 0;
                 $query2 = 0;
         }
-        json_encode($this->query1);
+        $this->query2 = json_encode($this->query1);
         $i = 0;
         $j = 0;
         foreach ($query1 as $q1) {

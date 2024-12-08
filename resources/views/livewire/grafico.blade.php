@@ -11,6 +11,7 @@
                     @json($datas)
                     <div id="chart"></div>
                     {{ print_r($query1) }}
+                    {{ $query2 }}
                 </div>
             </div>
         </div>
