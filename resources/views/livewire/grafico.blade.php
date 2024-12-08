@@ -1,4 +1,4 @@
-<main id="main">
+<main id="main" wire:poll="fetchData">
     <section class="section5" id="head">
         <div class="container grafico-container">
             <div class="head">
