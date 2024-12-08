@@ -15,7 +15,7 @@
 </main>
 
 
-@script
+@push('js')
     <script>
         var options = {
             chart: {
@@ -33,5 +33,11 @@
         var chart = new ApexCharts(document.querySelector("#chart"), options);
 
         chart.render();
+
+        document.addEventListener('livewire:load', () => {
+            Livewire.on('post-created', (event) => {
+                console.log(event.data)
+            });
+        });
     </script>
-@endscript
+@endpush
