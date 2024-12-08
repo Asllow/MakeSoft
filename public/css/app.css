@@ -139,6 +139,10 @@ h2.subtitle {
     text-align: center;
 }
 
+.section5 {
+    padding: calc(3rem + var(--header-height)) 0 0;
+}
+
 strong {
     color: var(--base-color);
 }

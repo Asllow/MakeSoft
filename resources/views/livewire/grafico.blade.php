@@ -1,5 +1,5 @@
 <main id="main">
-    <section class="section" id="head">
+    <section class="section5" id="head">
         <div class="container grafico-container">
             <div class="head">
                 <a href="{{ route('era.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
