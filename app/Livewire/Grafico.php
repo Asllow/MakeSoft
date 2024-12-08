@@ -42,8 +42,8 @@ use Livewire\Attributes\On;
                 $query2 = Turbidez::select('valor')->latest()->take($results)->get()->toArray();
                 break;
             case 'ph':
-                $query1 = PH::select('id')->latest()->take($results)->get()->toArray();
-                $query2 = PH::select('valor')->latest()->take($results)->get()->toArray();
+                $this->datas = PH::select('id')->latest()->take($results)->get()->toArray();
+                $this->labels = PH::select('valor')->latest()->take($results)->get()->toArray();
                 break;
             default:
                 $query1 = 0;
