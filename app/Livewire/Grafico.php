@@ -72,7 +72,9 @@ use Livewire\Attributes\On;
     {
         return view('livewire.grafico')->layout('era2d2.grafico', [
             'selector' => $this->selector,
-            'page' => 'home'
+            'page' => 'home',
+            'datas' => $this->datas,
+            'labels' => $this->labels,
         ]);
     }
 }
