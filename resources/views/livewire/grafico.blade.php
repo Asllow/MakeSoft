@@ -13,19 +13,3 @@
         </div>
     </section>
 </main>
-
-
-@script
-    <script>
-        $wire.on('post-created', (getData) => {
-            chart.updateOptions({
-                xaxis: {
-                    categories: getData.labels
-                },
-                series: [{
-                    data: getData.data
-                }],
-            })
-        });
-    </script>
-@endscript
