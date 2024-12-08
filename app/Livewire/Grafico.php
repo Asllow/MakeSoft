@@ -64,7 +64,7 @@ use Livewire\Attributes\On;
     public function fetchData(): void
     {
         $this->query();
-        $this->dispatch('post-created', valor: $this->datas);
+        $this->dispatch('refreshChartData', seriesData: $this->datas, categories: $this->labels);
     }
 
 
