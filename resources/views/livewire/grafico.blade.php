@@ -1,4 +1,4 @@
-<main id="main">
+<main id="main" wire:poll="fetchData">
     <section class="section" id="head">
         <div class="container grafico-container">
             <div class="head">
@@ -15,7 +15,7 @@
 </main>
 
 
-@push('js')
+@script
     <script>
         var options = {
             chart: {
@@ -34,4 +34,4 @@
 
         chart.render();
     </script>
-@endpush
+@endscript
