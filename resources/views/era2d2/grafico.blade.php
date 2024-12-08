@@ -33,4 +33,5 @@
 
         chart.render();
     </script>
+    @stack('js')
 @endsection

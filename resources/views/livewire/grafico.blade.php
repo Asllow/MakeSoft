@@ -14,16 +14,16 @@
     </section>
 </main>
 
-@script
-<script wire:poll="fetchData">
-    document.addEventListener('livewire:load', () => {
-        $wire.on('post-created', (chartData) => {
-            chart.updateOptions({
-                xaxis: {
-                    categories: chartData.base
-                },
+@push('js')
+    <script wire:poll="fetchData">
+        document.addEventListener('livewire:load', () => {
+            $wire.on('post-created', (chartData) => {
+                chart.updateOptions({
+                    xaxis: {
+                        categories: chartData.base
+                    },
+                })
             })
         })
-    })
-</script>
-@endscript
+    </script>
+@endpush
