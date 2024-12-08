@@ -50,7 +50,7 @@ use Livewire\Component;
     public function fetchData(): void
     {
         $this->query();
-        dd($this->chart_data);
+        $this->dispatch('refreshChartData', seriesData: $this->chart_data, categories: $this->chart_label);
     }
 
 
