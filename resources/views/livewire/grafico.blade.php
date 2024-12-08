@@ -22,6 +22,9 @@
                 xaxis: {
                     categories: getData.labels
                 },
+                series: [{
+                    data: getData.data
+                }],
             })
         });
     </script>
