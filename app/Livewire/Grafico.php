@@ -18,6 +18,7 @@ use Livewire\Component;
     public array $datas;
     public array $labels;
     public array $query1;
+    public array $query2;
 
     public function mount(string $selector): void
     {
@@ -44,6 +45,7 @@ use Livewire\Component;
             case 'ph':
                 $query1 = PH::select('id')->latest()->take($results)->get();
                 $this->query1 = PH::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray();
+                $this->query2 = PH::select('valor')->latest()->take($results)->get()->pluck('valor')->toJson();
                 $query2 = PH::select('valor')->latest()->take($results)->get();
                 break;
             default:
