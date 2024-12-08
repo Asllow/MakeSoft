@@ -12,28 +12,50 @@
             </div>
         </div>
     </section>
+    <script>
+        document.addEventListener('livewire:init', function () {
+            let chart;
+
+            // Inicializa o gráfico
+            function initializeChart(chartData, xAxisData) {
+                chart = new ApexCharts(document.querySelector("#chart"), {
+                    chart: {
+                        type: 'line',
+                        animations: {enabled: true},
+                    },
+                    series: [{
+                        name: '{{ ucfirst($selector) }}',
+                        data: chartData
+                    }],
+                    xaxis: {
+                        categories: xAxisData
+                    },
+                });
+
+                chart.render();
+            }
+
+            // Ouve o evento 'chart-updated' e atualiza o gráfico
+            Livewire.on('chart-updated', ({chartData, xAxisData}) => {
+                if (!chart) {
+                    initializeChart(chartData, xAxisData);
+                } else {
+                    chart.updateSeries([{
+                        data: chartData
+                    }]);
+                    chart.updateOptions({
+                        xaxis: {
+                            categories: xAxisData
+                        }
+                    })
+                }
+            });
+
+            // Atualiza os dados periodicamente
+            setInterval(() => {
+                Livewire.find('{{$id}}').call('refreshChart'); // Chama o método no backend
+            }, 1000);
+        });
+    </script>
 </main>
 
-@push('js')
-    <script>
-        const options = {
-            chart: {
-                type: 'line',
-                zoom: {
-                    enabled: false
-                }
-            },
-            series: [{
-                name: '{{ ucfirst($selector) }}',
-                data: {{ $chart_data }}
-            }],
-            xaxis: {
-                categories: {{ $chart_label }}
-            }
-        };
-
-        const chart = new ApexCharts(document.querySelector("#chart"), options);
-
-        chart.render();
-    </script>
-@endpush

@@ -9,8 +9,7 @@
 @endsection()
 
 @section('main')
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
     {{ $slot }}
     @livewireScripts
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    @stack('js')
 @endsection
