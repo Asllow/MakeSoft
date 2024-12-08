@@ -7,9 +7,9 @@
             </div>
             <div class="cont-grad">
                 <div class="grafico">
-                    @json($datas)
+                    {{ print_r($datas) }}
                     <div id="chart"></div>
-                    {{ $query1 }}
+                    {{ print_r($query1) }}
                 </div>
             </div>
         </div>
