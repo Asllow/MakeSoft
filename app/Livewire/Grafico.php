@@ -64,7 +64,7 @@ use Livewire\Attributes\On;
     public function fetchData(): void
     {
         $this->query();
-        $this->dispatch('post-created', base: $this->labels);
+        $this->dispatch('post-created', valor: $this->datas);
     }
 
 

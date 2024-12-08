@@ -1,4 +1,4 @@
-<main id="main">
+<main id="main" wire:poll="fetchData">
     <section class="section5" id="head">
         <div class="container grafico-container">
             <div class="head">
@@ -8,21 +8,40 @@
             <div class="cont-grad">
                 <div class="grafico">
                     <div id="chart"></div>
-                    <div wire:poll="fetchData">
-                        <script>
-                            document.addEventListener('livewire:load', () => {
-                                $wire.on('post-created', (chartData) => {
-                                    chart.updateOptions({
-                                        xaxis: {
-                                            categories: chartData.base
-                                        },
-                                    })
-                                })
-                            })
-                        </script>
-                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
+
+@push('js')
+    <script>
+        const options = {
+            chart: {
+                type: 'line',
+                zoom: {
+                    enabled: false
+                }
+            },
+            series: [{
+                name: '{{ ucfirst($selector) }}',
+                data: @json($datas)
+            }],
+            xaxis: {
+                categories: @json($labels)
+            }
+        };
+
+        const chart = new ApexCharts(document.querySelector("#chart"), options);
+
+        chart.render();
+
+        document.addEventListener('livewire:load', () => {
+            $wire.on('post-created', (chartData) => {
+                chart.updateSeries([{
+                    data: chartData.valor
+                }])
+            })
+        })
+    </script>
+@endpush
