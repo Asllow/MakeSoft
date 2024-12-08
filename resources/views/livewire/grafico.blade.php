@@ -14,14 +14,18 @@
     </section>
     <script>
         document.addEventListener('livewire:init', function () {
-            let chart;
+
 
             // Inicializa o gráfico
             function initializeChart(chartData, xAxisData) {
+                let chart;
                 chart = new ApexCharts(document.querySelector("#chart"), {
                     chart: {
                         type: 'line',
                         animations: {enabled: true},
+                        zoom: {
+                            enabled: false
+                        }
                     },
                     series: [{
                         name: '{{ ucfirst($selector) }}',
@@ -53,7 +57,8 @@
 
             // Atualiza os dados periodicamente
             setInterval(() => {
-                Livewire.find(id).call('refreshChart'); // Chama o método no backend
+            @this.refreshChart()
+                ;
             }, 1000);
         });
     </script>
