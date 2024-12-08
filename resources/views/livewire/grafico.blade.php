@@ -8,8 +8,8 @@
             <div class="cont-grad">
                 <div class="grafico">
                     {{ print_r($datas) }}
-                    {{ print_r($query1) }}
                     <div id="chart"></div>
+                    {{ print_r($query1) }}
                 </div>
             </div>
         </div>
