@@ -13,3 +13,17 @@
         </div>
     </section>
 </main>
+
+@script
+<script>
+    document.addEventListener('livewire:load', () => {
+        $wire.on('post-created', (chartData) => {
+            chart.updateOptions({
+                xaxis: {
+                    categories: chartData.base
+                },
+            })
+        })
+    })
+</script>
+@endscript
