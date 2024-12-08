@@ -45,7 +45,6 @@ use Livewire\Component;
             case 'ph':
                 $query1 = PH::select('id')->latest()->take($results)->get();
                 $this->query1 = PH::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray();
-                $this->query2 = json_encode($this->query1);
                 $query2 = PH::select('valor')->latest()->take($results)->get();
                 break;
             default:
