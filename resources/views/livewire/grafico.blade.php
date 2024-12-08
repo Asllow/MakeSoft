@@ -6,24 +6,23 @@
                 <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
             </div>
             <div class="cont-grad">
-                <div class="grafico" wire:poll="fetchData">
+                <div class="grafico">
                     <div id="chart"></div>
+                    <div wire:poll="fetchData">
+                        <script>
+                            document.addEventListener('livewire:load', () => {
+                                $wire.on('post-created', (chartData) => {
+                                    chart.updateOptions({
+                                        xaxis: {
+                                            categories: chartData.base
+                                        },
+                                    })
+                                })
+                            })
+                        </script>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 </main>
-
-@push('js')
-    <script>
-        document.addEventListener('livewire:load', () => {
-            $wire.on('post-created', (chartData) => {
-                chart.updateOptions({
-                    xaxis: {
-                        categories: chartData.base
-                    },
-                })
-            })
-        })
-    </script>
-@endpush
