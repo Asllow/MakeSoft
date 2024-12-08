@@ -51,6 +51,7 @@ use Livewire\Component;
                 $query1 = 0;
                 $query2 = 0;
         }
+        json_encode($this->query1);
         $i = 0;
         $j = 0;
         foreach ($query1 as $q1) {
