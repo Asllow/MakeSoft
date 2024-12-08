@@ -53,7 +53,7 @@
 
             // Atualiza os dados periodicamente
             setInterval(() => {
-                Livewire.find('{{$id}}').call('refreshChart'); // Chama o método no backend
+                Livewire.find(id).call('refreshChart'); // Chama o método no backend
             }, 1000);
         });
     </script>
