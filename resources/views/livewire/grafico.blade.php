@@ -15,7 +15,7 @@
 </main>
 
 @script
-<script>
+<script wire:poll="fetchData">
     document.addEventListener('livewire:load', () => {
         $wire.on('post-created', (chartData) => {
             chart.updateOptions({
