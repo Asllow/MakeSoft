@@ -12,6 +12,9 @@
             </div>
         </div>
     </section>
+</main>
+
+@push('js')
     <script>
         document.addEventListener('livewire:init', function () {
 
@@ -62,5 +65,4 @@
             }, 1000);
         });
     </script>
-</main>
-
+@endpush
