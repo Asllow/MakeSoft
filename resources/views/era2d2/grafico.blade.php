@@ -9,9 +9,25 @@
 @endsection()
 
 @section('main')
-
     {{ $slot }}
     <livewire:scripts/>
     <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-    @stack('js')
+    <script>
+        const options = {
+            chart: {
+                type: 'line'
+            },
+            series: [{
+                name: '{{ ucfirst($selector) }}',
+                data: @json($datas)
+            }],
+            xaxis: {
+                categories: @json($labels)
+            }
+        };
+
+        const chart = new ApexCharts(document.querySelector("#chart"), options);
+
+        chart.render();
+    </script>
 @endsection

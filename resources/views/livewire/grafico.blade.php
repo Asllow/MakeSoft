@@ -15,36 +15,14 @@
 </main>
 
 
-@push('js')
+@script
     <script>
-        var options = {
-            chart: {
-                type: 'line'
-            },
-            series: [{
-                name: '{{ ucfirst($selector) }}',
-                data: @json($datas)
-            }],
-            xaxis: {
-                categories: @json($labels)
-            }
-        }
-
-        var chart = new ApexCharts(document.querySelector("#chart"), options);
-
-        chart.render();
-
-        document.addEventListener('livewire:load', () => {
-            Livewire.on('post-created', (event) => {
-                chart.updateOptions({
-                    xaxis: {
-                        categories: event.labels
-                    },
-                    series: [{
-                        data: event.data
-                    }],
-                })
-            });
+        $wire.on('post-created', (getData) => {
+            chart.updateOptions({
+                xaxis: {
+                    categories: getData.labels
+                },
+            })
         });
     </script>
-@endpush
+@endscript
