@@ -391,10 +391,6 @@ nav.show div.bi-x {
     padding-top: .5rem;
 }
 
-.grafico {
-    width: 60%;
-}
-
 .cont-grad {
     display: grid;
     justify-items: center
@@ -472,6 +468,9 @@ nav.show div.bi-x {
         margin-right: auto;
     }
 
+    .grafico {
+        width: 60%;
+    }
     .button {
         height: 3.125rem;
     }
