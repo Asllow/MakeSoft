@@ -45,18 +45,11 @@ use Livewire\Component;
         }
         $this->chart_label = json_encode($model::select('id')->latest()->take($results)->get()->pluck('id')->toArray());
         $this->chart_data = json_encode($model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray());
-        $this->dispatch('updateChart', [
+        $this->dispatch('chart-updated', [
             'chartData' => $this->chart_data,
             'xAxisData' => $this->chart_label
         ]);
     }
-
-    public function refreshChart(): void
-    {
-        $this->updateChartData();
-
-    }
-
 
     public function render(): View|Factory|Application
     {

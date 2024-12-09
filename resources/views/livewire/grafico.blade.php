@@ -8,6 +8,7 @@
             <div class="cont-grad">
                 <div class="grafico">
                     <div id="chart"></div>
+                    <div wire:poll.1000ms="updateChartData"></div>
                 </div>
             </div>
         </div>
@@ -17,11 +18,9 @@
 @push('js')
     <script>
         document.addEventListener('livewire:init', function () {
+            let chart;
 
-
-            // Inicializa o gráfico
             function initializeChart(chartData, xAxisData) {
-                let chart;
                 chart = new ApexCharts(document.querySelector("#chart"), {
                     chart: {
                         type: 'line',
@@ -31,18 +30,17 @@
                         }
                     },
                     series: [{
-                        name: '{{ ucfirst($selector) }}',
+                        name: '{{ $selector }}',
                         data: chartData
                     }],
                     xaxis: {
-                        categories: xAxisData
+                        content: xAxisData
                     },
                 });
 
                 chart.render();
             }
 
-            // Ouve o evento 'chart-updated' e atualiza o gráfico
             Livewire.on('chart-updated', ({chartData, xAxisData}) => {
                 if (!chart) {
                     initializeChart(chartData, xAxisData);
@@ -52,17 +50,11 @@
                     }]);
                     chart.updateOptions({
                         xaxis: {
-                            categories: xAxisData
+                            content: xAxisData
                         }
                     })
                 }
             });
-
-            // Atualiza os dados periodicamente
-            setInterval(() => {
-            @this.refreshChart()
-                ;
-            }, 1000);
         });
     </script>
 @endpush
