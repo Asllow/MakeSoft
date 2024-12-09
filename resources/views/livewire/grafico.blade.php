@@ -29,7 +29,7 @@
                         zoom: {
                             enabled: false
                         },
-                        width: "100%",
+                        width: 400,
                         height: 500
                     },
                     series: [{
