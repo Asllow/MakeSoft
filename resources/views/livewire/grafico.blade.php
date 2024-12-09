@@ -42,13 +42,13 @@
                 chart.render();
             }
 
-            Livewire.on('chart-updated', () => {
+            Livewire.on('chart-updated', (teste) => {
                 if (!chart) {
                     initializeChart();
                 } else {
                     ApexCharts.exec('mychart', 'updateOptions', {
                         series: [{
-                            data: @json($chart_data)
+                            data: teste
                         }],
                     }, false, true);
 
