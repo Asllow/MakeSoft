@@ -46,13 +46,7 @@
                     initializeChart();
                 } else {
                     chart.updateSeries([{
-                        data: [{
-                            x: "02-02-2002",
-                            y: 44
-                        }, {
-                            x: "12-02-2002",
-                            y: 51
-                        }]
+                        data: [0, 1, 2]
                     }])
                     chart.render()
                 }
