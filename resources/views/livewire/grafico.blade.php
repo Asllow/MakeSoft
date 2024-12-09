@@ -5,11 +5,11 @@
                 <a href="{{ route('era.index'). '#' . $selector }}"><i class="bi bi-arrow-left-circle"></i></a>
                 <h2 class="title subtitle">Gráfico de {{ ucfirst($selector) }}</h2>
             </div>
-            <div class="cont-grad">
-                <div class="grafico">
-                    <div id="chart" wire:ignore></div>
-                    <div wire:poll.1000ms="updateChartData"></div>
-                </div>
+        </div>
+        <div class="cont-grad">
+            <div class="grafico">
+                <div id="chart" wire:ignore></div>
+                <div wire:poll.1000ms="updateChartData"></div>
             </div>
         </div>
     </section>

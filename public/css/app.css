@@ -393,7 +393,8 @@ nav.show div.bi-x {
 
 .cont-grad {
     display: grid;
-    justify-items: center
+    justify-items: center;
+    height: 100%;
 }
 
 @media screen and (min-width: 720px) {
@@ -414,6 +415,11 @@ nav.show div.bi-x {
 
     h2.title.subtitle {
         width: 32rem;
+    }
+
+    .cont-grad {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
     }
 }
 
