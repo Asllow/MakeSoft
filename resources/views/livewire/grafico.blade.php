@@ -16,7 +16,7 @@
 </main>
 
 @push('js')
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts">
+    <script>
         document.addEventListener('livewire:init', function () {
             let chart;
 
@@ -31,10 +31,10 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: @json($chart_data)
+                        data: []
                     }],
                     xaxis: {
-                        categories: @json($chart_label)
+                        categories: []
                     },
                 });
 
@@ -46,7 +46,13 @@
                     initializeChart();
                 } else {
                     chart.updateSeries([{
-                        data: @json($chart_data)
+                        data: [{
+                            x: "02-02-2002",
+                            y: 44
+                        }, {
+                            x: "12-02-2002",
+                            y: 51
+                        }]
                     }])
                 }
             });
