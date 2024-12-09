@@ -34,7 +34,7 @@
                         data: @json($chart_data)
                     }],
                     xaxis: {
-                        content: @json($chart_label)
+                        categories: @json($chart_label)
                     },
                 });
 
