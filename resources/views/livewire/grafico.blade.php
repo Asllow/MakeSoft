@@ -46,6 +46,7 @@
                 if (!chart) {
                     initializeChart();
                 } else {
+                    console.log(teste)
                     ApexCharts.exec('mychart', 'updateOptions', {
                         series: [{
                             data: teste
