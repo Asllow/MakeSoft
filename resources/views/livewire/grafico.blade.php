@@ -49,7 +49,7 @@
                     console.log(teste[0])
                     ApexCharts.exec('mychart', 'updateOptions', {
                         series: [{
-                            data: teste
+                            data: teste[0]
                         }],
                     }, false, true);
 
