@@ -7,7 +7,6 @@
             </div>
             <div class="cont-grad">
                 <div class="grafico">
-                    @json($chart_data)
                     <div id="chart"></div>
                     <div wire:poll.3000ms="updateChartData"></div>
                 </div>
@@ -33,7 +32,7 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: @json('$chart_data')
+                        data: @json($chart_data)
                     }],
                     xaxis: {
                         categories: []
