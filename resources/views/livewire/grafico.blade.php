@@ -35,7 +35,7 @@
                         data: @json($chart_data)
                     }],
                     xaxis: {
-                        categories: []
+                        @json($chart_label)
                     },
                 });
 
@@ -46,11 +46,13 @@
                 if (!chart) {
                     initializeChart();
                 } else {
-                    console.log(teste)
                     ApexCharts.exec('mychart', 'updateOptions', {
                         series: [{
-                            data: [1]
+                            data: teste[0]
                         }],
+                        xaxis: {
+                            categories: teste[1]
+                        }
                     }, false, true);
 
                     chart.render()
