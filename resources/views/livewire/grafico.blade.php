@@ -31,10 +31,10 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: {{ $chart_data }}
+                        data: {{ json_encode($chart_data) }}
                     }],
                     xaxis: {
-                        categories: {{ $chart_label }}
+                        categories: {{ json_encode($chart_label) }}
                     },
                 });
 
