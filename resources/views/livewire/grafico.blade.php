@@ -7,7 +7,7 @@
             </div>
             <div class="cont-grad">
                 <div class="grafico">
-                    <div id="chart"></div>
+                    <div id="chart" wire:ignore></div>
                     <div wire:poll.1000ms="updateChartData"></div>
                 </div>
             </div>
