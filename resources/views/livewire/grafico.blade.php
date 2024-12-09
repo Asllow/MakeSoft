@@ -46,10 +46,10 @@
                 if (!chart) {
                     initializeChart();
                 } else {
-                    console.log(teste[0])
+                    console.log(teste)
                     ApexCharts.exec('mychart', 'updateOptions', {
                         series: [{
-                            data: teste[0]
+                            data: [1]
                         }],
                     }, false, true);
 
