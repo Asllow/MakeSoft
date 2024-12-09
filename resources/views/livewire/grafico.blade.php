@@ -56,7 +56,6 @@
                         },
                     }, false, true);
 
-                    chart.render()
                 }
             });
         });
