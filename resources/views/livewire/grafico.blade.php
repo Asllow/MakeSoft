@@ -41,16 +41,16 @@
                 chart.render();
             }
 
-            Livewire.on('chart-updated', (received) => {
+            Livewire.on('chart-updated', ({chartData, xAxisData}) => {
                 if (!chart) {
-                    initializeChart(received.chartData, received.xAxisData);
+                    initializeChart(chartData, xAxisData);
                 } else {
                     chart.updateSeries([{
-                        data: received.chartData
+                        data: chartData
                     }]);
                     chart.updateOptions({
                         xaxis: {
-                            content: received.xAxisData
+                            content: xAxisData
                         }
                     })
                 }
