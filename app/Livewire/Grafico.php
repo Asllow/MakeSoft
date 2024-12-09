@@ -43,8 +43,8 @@ use Livewire\Component;
             default:
                 return abort(404);
         }
-        $this->chart_label = $model::select('id')->latest()->take($results)->get()->pluck('id')->toArray();
-        $this->chart_data = $model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray();
+        $this->chart_label = array_reverse($model::select('id')->latest()->take($results)->get()->pluck('id')->toArray());
+        $this->chart_data = array_reverse($model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray());
         $this->dispatch('chart-updated', $this->chart_data, $this->chart_label);
     }
 
