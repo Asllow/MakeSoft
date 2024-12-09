@@ -20,7 +20,7 @@
         document.addEventListener('livewire:init', function () {
             let chart;
 
-            function initializeChart() {
+            function initializeChart(teste) {
                 chart = new ApexCharts(document.querySelector("#chart"), {
                     chart: {
                         type: 'line',
@@ -32,7 +32,7 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: @json($chart_data)
+                        data: teste[0]
                     }],
                     xaxis: {
                         categories: []
@@ -44,7 +44,7 @@
 
             Livewire.on('chart-updated', (teste) => {
                 if (!chart) {
-                    initializeChart();
+                    initializeChart(teste);
                 } else {
                     console.log(teste)
                     ApexCharts.exec('mychart', 'updateOptions', {
