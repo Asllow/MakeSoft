@@ -51,6 +51,9 @@
                         series: [{
                             data: teste[0]
                         }],
+                        xaxis: {
+                            categories: teste[1]
+                        },
                     }, false, true);
 
                     chart.render()
