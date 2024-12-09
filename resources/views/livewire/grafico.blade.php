@@ -46,7 +46,7 @@
                     initializeChart();
                 } else {
                     chart.updateSeries([{
-                        data: {{ $chart_data }}
+                        data: {{ json_encode($chart_data) }}
                     }])
                 }
             });
