@@ -30,6 +30,7 @@
                             enabled: false
                         },
                         width: "100%",
+                        height: 500
                     },
                     series: [{
                         name: '{{ $selector }}',
