@@ -39,7 +39,7 @@
                         <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
                              data-url="https://makesoft.net.br/public/pdf/tecno.pdf">
                             <div id="loading" class="spinner-border" role="status">
-                                <span class="sr-only">Loading...</span>
+                                <span class="sr-only">Carregando...</span>
                             </div>
                         </div>
                     </div>
