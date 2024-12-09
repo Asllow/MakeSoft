@@ -29,8 +29,8 @@
                         zoom: {
                             enabled: false
                         },
-                        width: 400,
-                        height: 500
+                        height: "100%",
+                        width: "100%",
                     },
                     series: [{
                         name: '{{ $selector }}',
