@@ -35,7 +35,7 @@
                         data: teste[0]
                     }],
                     xaxis: {
-                        categories: []
+                        categories: teste[1]
                     },
                 });
 
