@@ -31,10 +31,10 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: chartData
+                        data: @json($chart_data)
                     }],
                     xaxis: {
-                        content: xAxisData
+                        content: @json($chart_label)
                     },
                 });
 
@@ -46,11 +46,11 @@
                     initializeChart(chartData, xAxisData);
                 } else {
                     chart.updateSeries([{
-                        data: chartData
+                        data: @json($chart_data)
                     }]);
                     chart.updateOptions({
                         xaxis: {
-                            content: xAxisData
+                            content: @json($chart_label)
                         }
                     })
                 }
