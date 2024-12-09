@@ -31,7 +31,7 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: []
+                        data: [0, 1, 2]
                     }],
                     xaxis: {
                         categories: []
