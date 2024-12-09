@@ -32,7 +32,7 @@
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: []
+                        data: @json('$chart_data')
                     }],
                     xaxis: {
                         categories: []
