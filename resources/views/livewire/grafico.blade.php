@@ -7,7 +7,7 @@
             </div>
             <div class="cont-grad">
                 <div class="grafico">
-                    {{ $chart_data }}
+                    @json($chart_data)
                     <div id="chart"></div>
                     <div wire:poll.3000ms="updateChartData"></div>
                 </div>
