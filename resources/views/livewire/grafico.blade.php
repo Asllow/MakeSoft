@@ -48,7 +48,7 @@
                 } else {
                     ApexCharts.exec('mychart', 'updateOptions', {
                         series: [{
-                            data: [1, 2, 3, 4]
+                            data: @json($chart_data)
                         }],
                     }, false, true);
 
