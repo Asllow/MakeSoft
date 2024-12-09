@@ -28,7 +28,9 @@
                         animations: {enabled: false},
                         zoom: {
                             enabled: false
-                        }
+                        },
+                        width: "100%",
+                        height: "100%",
                     },
                     series: [{
                         name: '{{ $selector }}',
