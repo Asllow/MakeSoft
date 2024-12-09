@@ -15,8 +15,8 @@ use Livewire\Component;
 #[AllowDynamicProperties] class Grafico extends Component
 {
     public string $selector;
-    public array $chart_data;
-    public array $chart_label;
+    public false|string $chart_data;
+    public false|string $chart_label;
 
     public function mount(string $selector): void
     {
@@ -43,8 +43,8 @@ use Livewire\Component;
             default:
                 return abort(404);
         }
-        $this->chart_label = $model::select('id')->latest()->take($results)->get()->pluck('id')->toArray();
-        $this->chart_data = $model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray();
+        $this->chart_label = json_encode($model::select('id')->latest()->take($results)->get()->pluck('id')->toArray());
+        $this->chart_data = json_encode($model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray());
         $this->dispatch('chart-updated');
     }
 
