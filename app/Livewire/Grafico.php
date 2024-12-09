@@ -45,10 +45,7 @@ use Livewire\Component;
         }
         $this->chart_label = $model::select('id')->latest()->take($results)->get()->pluck('id')->toArray();
         $this->chart_data = $model::select('valor')->latest()->take($results)->get()->pluck('valor')->toArray();
-        $this->dispatch('chart-updated', [
-            'chartData' => $this->chart_data,
-            'xAxisData' => $this->chart_label
-        ]);
+        $this->dispatch('chart-updated');
     }
 
     public function render(): View|Factory|Application
