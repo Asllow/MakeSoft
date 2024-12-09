@@ -24,14 +24,15 @@
                 chart = new ApexCharts(document.querySelector("#chart"), {
                     chart: {
                         type: 'line',
-                        animations: {enabled: true},
+                        id: 'mychart',
+                        animations: {enabled: false},
                         zoom: {
                             enabled: false
                         }
                     },
                     series: [{
                         name: '{{ $selector }}',
-                        data: [0, 1, 2]
+                        data: []
                     }],
                     xaxis: {
                         categories: []
@@ -45,9 +46,12 @@
                 if (!chart) {
                     initializeChart();
                 } else {
-                    chart.updateSeries([{
-                        data: [0, 1, 2]
-                    }])
+                    ApexCharts.exec('mychart', 'updateOptions', {
+                        series: [{
+                            data: [1, 2, 3, 4]
+                        }],
+                    }, false, true);
+
                     chart.render()
                 }
             });
