@@ -15,8 +15,8 @@ use Livewire\Component;
 #[AllowDynamicProperties] class Grafico extends Component
 {
     public string $selector;
-    public false|string $chart_data;
-    public false|string $chart_label;
+    public array $chart_data;
+    public array $chart_label;
 
     public function mount(string $selector): void
     {
