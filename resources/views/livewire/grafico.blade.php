@@ -48,11 +48,6 @@
                     chart.updateSeries([{
                         data: @json($chart_data)
                     }]);
-                    chart.updateOptions({
-                        xaxis: {
-                            content: @json($chart_label)
-                        }
-                    })
                 }
             });
         });
