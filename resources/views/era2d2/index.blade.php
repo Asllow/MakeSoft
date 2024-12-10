@@ -131,7 +131,8 @@
                                 avaliação da qualidade da água, tanto para o consumo e uso em processos industriais,
                                 quanto para a vida presente em ecossistemas aquáticos. Sedimentos, como partículas de
                                 solo que entram na água devido à erosão ou atividades humanas, matéria orgânica (folhas,
-                                galhos e outros detritos), microorganismos e poluentes industriais são fatores que
+                                galhos e outros detritos), microorganismos, dejetos de minérios e poluentes industriais
+                                são fatores que
                                 interferem na claridade da água.</p>
                             <p>A ausência de acompanhamento preventivo gera maiores gastos com processos de tratamento
                                 de água. A medição é feita por meio de um turbidímetro, que avalia a quantidade de luz
