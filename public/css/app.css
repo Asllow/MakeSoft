@@ -542,3 +542,9 @@ nav.show div.bi-x {
         margin-top: -7rem;
     }
 }
+
+@media screen and (min-width: 1400px) {
+    .button-ph {
+        padding-top: 2rem;
+    }
+}

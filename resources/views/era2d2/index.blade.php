@@ -96,7 +96,7 @@
                                 proteção e restauração da vida aquática.
                             </p>
                         </div>
-                        <div class="hold-button">
+                        <div class="hold-button button-ph">
                             <a class="button" href="{{ route('era.grafico', 'ph') }}">Gráfico de PH</a>
                         </div>
                     </div>
@@ -117,7 +117,7 @@
                                 garantir a sustentabilidade ambiental em um cenário de mudanças climáticas e crescente
                                 pressão humana sobre os recursos naturais.</p>
                         </div>
-                        <div class="hold-button">
+                        <div class="hold-button button-temperatura">
                             <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
                                 Temperatura</a>
                         </div>
