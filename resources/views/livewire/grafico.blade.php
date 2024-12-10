@@ -35,7 +35,10 @@
                         data: teste[0]
                     }],
                     xaxis: {
-                        categories: teste[1]
+                        categories: teste[1],
+                        labels: {
+                            rotateAlways: true
+                        }
                     },
                 });
 
