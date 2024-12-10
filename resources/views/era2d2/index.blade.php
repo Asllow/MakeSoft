@@ -68,7 +68,7 @@
                                 condutividade elétrica desempenha um papel crucial na preservação e proteção de
                                 aquíferos, garantindo a sustentabilidade dos ecossistemas aquáticos e a saúde
                                 ambiental.</p>
-                            <br>
+                            <br><br>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
