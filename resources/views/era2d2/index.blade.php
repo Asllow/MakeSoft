@@ -56,14 +56,12 @@
                     <div id="condutividade" class="card">
                         <h3 class="title">Condutividade</h3>
                         <div class="text">
-                            <p>&emsp;A condutividade elétrica da água é um parâmetro que reflete sua capacidade de
-                                conduzir
+                            <p>A condutividade elétrica da água é um parâmetro que reflete sua capacidade de conduzir
                                 correntes elétricas, servindo como um indicador da presença e concentração de íons na
                                 solução, como sais, ácidos e bases. A condutividade é influenciada pelos tipos e
                                 concentrações de íons presentes: íons com maior carga elétrica e menor raio hidratado
                                 tendem a aumentar a capacidade de condução da água.</p>
-                            <p>&emsp;Medições realizadas com um condutímetro permitem identificar alterações na
-                                qualidade da
+                            <p>Medições realizadas com um condutímetro permitem identificar alterações na qualidade da
                                 água, detectar fontes de poluição e monitorar mudanças na composição química,
                                 especialmente em águas subterrâneas. Esses dados são essenciais para a gestão eficiente
                                 dos recursos hídricos e estudos hidrogeológicos. O monitoramento contínuo da
@@ -79,8 +77,7 @@
                     <div id="ph" class="card">
                         <h3 class="title">PH</h3>
                         <div class="text">
-                            <p>&emsp;O potencial hidrogeniônico(pH) de uma solução aquosa é medido por meio da
-                                concentração de
+                            <p>O potencial hidrogeniônico(pH) de uma solução aquosa é medido por meio da concentração de
                                 íons
                                 de hidrogênio nessa solução, é representado por uma faixa que vai de 0 a 14, sendo
                                 consideradas soluções acidas números menores que 7, neutras iguais a 7 e básicas,
@@ -108,14 +105,13 @@
                     <div id="temperatura" class="card">
                         <h3 class="title">Temperatura</h3>
                         <div class="text">
-                            <p>&emsp;A temperatura da água é um dos fatores mais determinantes para a preservação e
+                            <p>A temperatura da água é um dos fatores mais determinantes para a preservação e
                                 conservação de ecossistemas aquáticos. Ela regula o equilíbrio das espécies que dependem
                                 de faixas de temperatura específicas para sobreviver, controlando tanto a proliferação
                                 de algas quanto o comportamento de migração e reprodução de diversas espécies. Além
                                 disso, a temperatura influencia diretamente os níveis de oxigênio dissolvido, elemento
                                 essencial para a manutenção da vida nos corpos d'água.</p>
-                            <p>&emsp;A medição e o monitoramento contínuo da temperatura são fundamentais para
-                                interpretar os
+                            <p>A medição e o monitoramento contínuo da temperatura são fundamentais para interpretar os
                                 impactos do aquecimento global e da poluição térmica nos ecossistemas aquáticos. Esses
                                 dados auxiliam na gestão eficiente dos recursos hídricos, permitindo ações de
                                 conservação mais assertivas. Esforços para controlar alterações na temperatura da água
@@ -131,16 +127,14 @@
                     <div id="turbidez" class="card">
                         <h3 class="title">Turbidez</h3>
                         <div class="text">
-                            <p>&emsp;Turbidez da água é a medida da transparência da água e indica a quantidade de
-                                partículas
+                            <p>Turbidez da água é a medida da transparência da água e indica a quantidade de partículas
                                 em suspensão que estão presentes. Ela é um fator de monitoramento importante para a
                                 avaliação da qualidade da água, tanto para o consumo e uso em processos industriais,
                                 quanto para a vida presente em ecossistemas aquáticos. Sedimentos, como partículas de
                                 solo que entram na água devido à erosão ou atividades humanas, matéria orgânica (folhas,
                                 galhos e outros detritos), microorganismos e poluentes industriais são fatores que
                                 interferem na claridade da água.</p>
-                            <p>&emsp;A ausência de acompanhamento preventivo gera maiores gastos com processos de
-                                tratamento
+                            <p>A ausência de acompanhamento preventivo gera maiores gastos com processos de tratamento
                                 de água. A medição é feita por meio de um turbidímetro, que avalia a quantidade de luz
                                 refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
                                 Nefelométricas de Turbidez). Para o consumo humano, a OMS indica que a turbidez da água

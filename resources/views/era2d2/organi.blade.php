@@ -11,16 +11,18 @@
                 <div class="page-header">
                     <h1 class="title">Organização e Método</h1>
                     <div class="text">
-                        <p>A equipe de Organização e Método é um subgrupo do ERA2-D2 para o Torneio Brasil de Robótica
+                        <p>&emsp;A equipe de Organização e Método é um subgrupo do ERA2-D2 para o Torneio Brasil de
+                            Robótica
                             (TBR), com o objetivo principal de garantir a eficiência e a eficácia das operações e
                             atividades do grupo, gerenciando a equipe de forma eficaz.</p>
-                        <p>Para a categoria High (de 15 a 19 anos), o TBR desafiou a equipe a ter uma boa gestão da
+                        <p>&emsp;Para a categoria High (de 15 a 19 anos), o TBR desafiou a equipe a ter uma boa gestão
+                            da
                             temporada. A subequipe de Organização e Método decidiu desenvolver um Plano de Ação Para a
                             Temporada, distribuindo as tarefas em um cronograma detalhado que inclui as ações a serem
                             realizadas, os prazos de realização, os responsáveis pelas atividades, os insumos
                             necessários e os resultados esperados. A equipe também mantém uma comunicação eficaz e um
                             acompanhamento contínuo do progresso das atividades.</p>
-                        <p>Além disso, a equipe de Organização e Método destaca a importância de um planejamento
+                        <p>&emsp;Além disso, a equipe de Organização e Método destaca a importância de um planejamento
                             estratégico bem definido e da adoção de métodos ágeis para lidar com imprevistos e mudanças
                             de escopo. A implementação dessas práticas contribui para a melhoria contínua dos processos,
                             assegurando que a equipe esteja sempre alinhada com os objetivos do TBR e preparada para

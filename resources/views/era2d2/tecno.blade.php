@@ -11,17 +11,18 @@
                 <div class="page-header">
                     <h1 class="title">Tecnologia e Engenharia</h1>
                     <div class="text">
-                        <p>A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 para o Torneio Brasil de
+                        <p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 para o Torneio Brasil de
                             Robótica, focado na construção de um robô capaz de cumprir as missões propostas no desafio
                             prático do Torneio Brasil de Robótica (TBR). Para a categoria High (de 15 a 19 anos), o TBR
                             desafiou a equipe a criar um robô autônomo que atenda a todos os critérios exigidos.</p>
-                        <p>A subequipe de Tecnologia e Engenharia decidiu desenvolver um robô autônomo baseado em
+                        <p>&emsp;A subequipe de Tecnologia e Engenharia decidiu desenvolver um robô autônomo baseado em
                             Arduino, integrando sensores e motores para resolver os problemas propostos. Além disso, a
                             equipe enfatiza a importância de uma abordagem colaborativa, onde os membros trabalham em
                             cooperação para integrar suas áreas e garantir que cada projeto seja eficiente e inovador. A
                             adoção de práticas colaborativas e inovadoras é essencial para o sucesso da equipe no TBR
                             2024.</p>
-                        <p>A implementação dessas estratégias contribui para a formação de uma equipe técnica altamente
+                        <p>&emsp;A implementação dessas estratégias contribui para a formação de uma equipe técnica
+                            altamente
                             qualificada, preparada para enfrentar os desafios tecnológicos do futuro e aplicar seus
                             conhecimentos de forma prática e eficaz.</p>
                     </div>
