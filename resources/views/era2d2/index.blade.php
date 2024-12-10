@@ -68,7 +68,6 @@
                                 condutividade elétrica desempenha um papel crucial na preservação e proteção de
                                 aquíferos, garantindo a sustentabilidade dos ecossistemas aquáticos e a saúde
                                 ambiental.</p>
-                            <br><br>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
@@ -85,8 +84,6 @@
                                 maiores que 7. Para a vida na água se manter, o pH deve estar entre 6 e 9, níveis
                                 diferentes desses levam a morte dos organismos marinhos. Os mesmos níveis se aplicam a
                                 água própria para o consumo.
-                            </p>
-                            <p>
                                 Nos últimos anos os oceanos e aquíferos estão apresentando um pH acido, que ocorre
                                 principalmente a partir da absorção de CO₂ vindo da atmosfera e produzido pelo ser
                                 humano. Esse fenômeno impacta tanto na vida marinha, prejudicando o desenvolvimento e a
