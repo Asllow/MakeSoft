@@ -126,7 +126,8 @@
                         <h3 class="title">Turbidez</h3>
                         <div class="text">
                             <p>Turbidez da água é a medida da transparência da água e indica a quantidade de partículas
-                                em suspensão que estão presentes. Ela é um fator de monitoramento importante para a
+                                em suspensão que estão presentes no meio. Ela é um fator de monitoramento importante
+                                para a
                                 avaliação da qualidade da água, tanto para o consumo e uso em processos industriais,
                                 quanto para a vida presente em ecossistemas aquáticos. Sedimentos, como partículas de
                                 solo que entram na água devido à erosão ou atividades humanas, matéria orgânica (folhas,
