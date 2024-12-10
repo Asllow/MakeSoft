@@ -115,6 +115,7 @@
                                 são cruciais não apenas para a saúde dos ecossistemas aquáticos, mas também para
                                 garantir a sustentabilidade ambiental em um cenário de mudanças climáticas e crescente
                                 pressão humana sobre os recursos naturais.</p>
+                            <br>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
