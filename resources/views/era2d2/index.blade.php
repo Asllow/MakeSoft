@@ -77,26 +77,23 @@
                     <div id="ph" class="card">
                         <h3 class="title">PH</h3>
                         <div class="text">
-                            <p>O potencial hidrogeniônico(pH) de uma solução aquosa é medido por meio da concentração de
-                                íons
-                                de hidrogênio nessa solução, é representado por uma faixa que vai de 0 a 14, sendo
-                                consideradas soluções acidas números menores que 7, neutras iguais a 7 e básicas,
-                                maiores
-                                que 7. Para a vida na água se manter, o pH deve estar entre 6 e 9, níveis diferentes
-                                desses
-                                levam a morte dos organismos marinhos. Os mesmos níveis se aplicam a água própria para o
-                                consumo. Nos últimos anos os oceanos e aquíferos estão apresentando um pH acido, que
-                                ocorre
+                            <p>
+                                O potencial hidrogeniônico(pH) de uma solução aquosa é medido por meio da concentração
+                                de íons de hidrogênio nessa solução, é representado por uma faixa que vai de 0 a 14,
+                                sendo consideradas soluções acidas números menores que 7, neutras iguais a 7 e básicas,
+                                maiores que 7. Para a vida na água se manter, o pH deve estar entre 6 e 9, níveis
+                                diferentes desses levam a morte dos organismos marinhos. Os mesmos níveis se aplicam a
+                                água própria para o consumo.
+                            </p>
+                            <p>
+                                Nos últimos anos os oceanos e aquíferos estão apresentando um pH acido, que ocorre
                                 principalmente a partir da absorção de CO₂ vindo da atmosfera e produzido pelo ser
-                                humano.
-                                Esse fenômeno impacta tanto na vida marinha, prejudicando o desenvolvimento e a
-                                reprodução
-                                dos seres, quanto na humana, com a redução de peixes e outras fontes de alimentos,
-                                atrapalhando a alimentação e emprego de milhões de pessoas. O monitoramento do pH das
-                                águas
-                                mostra a sua importância com base nas informações acima, visando proteção e restauração
-                                da
-                                vida aquática.</p>
+                                humano. Esse fenômeno impacta tanto na vida marinha, prejudicando o desenvolvimento e a
+                                reprodução dos seres, quanto na humana, com a redução de peixes e outras fontes de
+                                alimentos, atrapalhando a alimentação e emprego de milhões de pessoas. O monitoramento
+                                do pH das águas mostra a sua importância com base nas informações acima, visando
+                                proteção e restauração da vida aquática.
+                            </p>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'ph') }}">Gráfico de PH</a>
