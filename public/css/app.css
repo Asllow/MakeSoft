@@ -397,6 +397,9 @@ nav.show div.bi-x {
     height: 100%;
 }
 
+.project-presentation .text {
+    text-align: justify;
+}
 
 @media screen and (min-width: 720px) {
     :root {
