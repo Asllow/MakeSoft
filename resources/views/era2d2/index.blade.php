@@ -135,11 +135,11 @@
                                 são fatores que
                                 interferem na claridade da água.</p>
                             <p>A ausência de acompanhamento preventivo gera maiores gastos com processos de tratamento
-                                de água. A medição é feita por meio de um turbidímetro, que avalia a quantidade de luz
-                                refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
+                                de água. A medição precisa é feita por meio de um turbidímetro, que avalia a quantidade
+                                de luz refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
                                 Nefelométricas de Turbidez). Para o consumo humano, a OMS indica que a turbidez da água
-                                não exceda 5 NTU e, idealmente, seja inferior a 1 NTU. E para corpos d'água naturais,
-                                varia de acordo com a legislação local e os usos específicos da água.</p>
+                                não exceda 5 NTU e, idealmente, seja inferior a 1 NTU. E para corpos d'água naturais, a
+                                turbidez varia de acordo com a legislação local e os usos específicos da água.</p>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'turbidez') }}">Gráfico de Turbidez</a>
