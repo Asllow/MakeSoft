@@ -37,8 +37,10 @@
                     xaxis: {
                         categories: teste[1],
                         labels: {
-                            rotateAlways: true
-                        }
+                            rotate: -45,
+                            show: true,
+                            trim: false,
+                            rotateAlways: true,
                     },
                 });
 
