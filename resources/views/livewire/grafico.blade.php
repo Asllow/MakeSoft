@@ -37,11 +37,11 @@
                     xaxis: {
                         categories: teste[1],
                         labels: {
-                            rotate: -45,
                             show: true,
-                            trim: false,
-                            rotateAlways: true,
-                    },
+                            rotate: -45,
+                            rotateAlways: false,
+                        },
+                    }
                 });
 
                 chart.render();
