@@ -105,7 +105,8 @@
                             <p>A temperatura da água é um dos fatores mais determinantes para a preservação e
                                 conservação de ecossistemas aquáticos. Ela regula o equilíbrio das espécies que dependem
                                 de faixas de temperatura específicas para sobreviver, controlando tanto a proliferação
-                                de algas quanto o comportamento de migração e reprodução de diversas espécies. Além
+                                de algas quanto o comportamento de migração e reprodução de diversas espécies,
+                                controlando suas condições de vida ideais. Além
                                 disso, a temperatura influencia diretamente os níveis de oxigênio dissolvido, elemento
                                 essencial para a manutenção da vida nos corpos d'água.</p>
                             <p>A medição e o monitoramento contínuo da temperatura são fundamentais para interpretar os
