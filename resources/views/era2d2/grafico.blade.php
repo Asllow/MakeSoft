@@ -11,7 +11,7 @@
 
 @section('main')
     {{ $slot }}
-    @livewireScripts
     <script src="https://cdn.jsdelivr.net/npm/apexcharts@4.1.0/dist/apexcharts.min.js"></script>
+    @livewireScripts
     @stack('js')
 @endsection
