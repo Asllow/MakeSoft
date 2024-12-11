@@ -6,11 +6,12 @@
 
 @section('stylesheet')
     @livewireStyles
+    <link href="https://cdn.jsdelivr.net/npm/apexcharts@4.1.0/dist/apexcharts.min.css" rel="stylesheet">
 @endsection()
 
 @section('main')
     {{ $slot }}
     @livewireScripts
-    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts@4.1.0/dist/apexcharts.min.js"></script>
     @stack('js')
 @endsection

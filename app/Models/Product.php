@@ -19,5 +19,4 @@ class Product extends Model
         'img_produto',
         'preco_produto'
     ];
-
 }
