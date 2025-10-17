@@ -8,7 +8,7 @@
         <!-- Header / Hero -->
         <section class="text-center mb-16">
             <h1 class="text-4xl font-extrabold text-[#0d214f] mb-4">
-                Transformamos suas ideias em objetos reais lalala
+                Transformamos suas ideias em objetos reais
             </h1>
             <p class="text-lg text-[#0d214f] mb-8">
                 Impressão 3D e corte a laser com alta precisão e personalização
