@@ -10,7 +10,6 @@ class Temperatura extends Model
     use HasFactory;
 
     protected $primaryKey = 'id';
-    protected $connection = 'makesoft';
     protected $table = 'temperatura';
 
     public $timestamps = ['created_at'];

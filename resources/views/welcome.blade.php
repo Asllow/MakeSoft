@@ -26,7 +26,7 @@
                         <i class='fa-solid fa-droplet colorPurple'></i>
                         <i class='fa-solid fa-droplet colorPink'></i>
                         <hr>
-                        <a style='width:100%;' href='{{ route('makesoft.pix', $rs->id_produto) }}'
+                        <a style='width:100%;' href='{{ route('makesoftsolutions.pix', $rs->id_produto) }}'
                            class='btn btn-outline-dark'>
                             <i class='fa-solid fa-qrcode'></i> QR code
                         </a>

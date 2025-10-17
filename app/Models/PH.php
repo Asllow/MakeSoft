@@ -10,7 +10,6 @@ class PH extends Model
     use HasFactory;
 
     protected $primaryKey = 'id';
-    protected $connection = 'makesoft';
     protected $table = 'ph';
 
     public $timestamps = ['created_at'];

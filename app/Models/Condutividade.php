@@ -10,7 +10,6 @@ class Condutividade extends Model
     use HasFactory;
 
     protected $primaryKey = 'id';
-    protected $connection = 'makesoft';
     protected $table = 'condutividade';
 
     public $timestamps = ['created_at'];
