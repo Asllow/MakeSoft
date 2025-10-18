@@ -4,68 +4,6 @@
 
 @section('description', 'Esse é o site da equipe de robótica ERA2D2, destinada ao Torneio Brasil de Robótica - TBR, categoria HIGH')
 
-<style>
-body {
-    background-color: #ffffff;
-    color: #2c2c2c;
-    font-family: 'Poppins', sans-serif;
-}
-
-.title,
-h1, h2, h3 {
-    color: #1b7d4b;
-    font-weight: 600;
-}
-
-.subtitle {
-    color: #6b4e2e;
-    font-weight: 500;
-}
-
-.button {
-    background-color: #1b7d4b;
-    color: #ffffff;
-    border: none;
-    border-radius: 8px;
-    padding: 10px 20px;
-    font-weight: 500;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background-color: #6b4e2e;
-    transform: scale(1.05);
-}
-
-.divider1,
-.divider2 {
-    background-color: #1b7d4b;
-    height: 3px;
-    width: 80%;
-    margin: 30px auto;
-    border-radius: 2px;
-}
-
-a {
-    color: #1b7d4b;
-    text-decoration: none;
-    transition: 0.3s;
-}
-
-a:hover {
-    color: #6b4e2e;
-}
-
-.card .title {
-    color: #1b7d4b;
-}
-
-.card .text p {
-    color: #3d3d3d;
-    line-height: 1.6;
-}
-</style>
-
 @section('main')
 <main id="main">
     <section class="section" id="home">
