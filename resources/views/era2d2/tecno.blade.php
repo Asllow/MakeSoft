@@ -11,13 +11,12 @@
                 <div class="page-header">
                     <h1 class="title">Tecnologia e Engenharia</h1>
                     <div class="text">
-                        <<p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 no Torneio Brasil de Robótica, responsável por desenvolver soluções tecnológicas que unam inovação e sustentabilidade. Na temporada 2025, o desafio “Vida Terrestre” propõe criar mecanismos que contribuam para a preservação dos ecossistemas e da biodiversidade.</p>
+                       <p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 no Torneio Brasil de Robótica (TBR), responsável por desenvolver soluções inovadoras que integrem tecnologia e sustentabilidade. Em 2025, com o tema “Vida Terrestre”, o desafio incentiva a criação de projetos que contribuam para a proteção da biodiversidade e a restauração dos ecossistemas naturais.</p>
 
-<p>&emsp;A subequipe optou por construir um robô autônomo utilizando o kit EV3, programado para cumprir as missões práticas do torneio com precisão e eficiência. O grupo também foca em aprimorar habilidades técnicas, como eletrônica e programação, aplicando-as em um contexto que reforça a importância da robótica como aliada da conservação ambiental.</p>
+<p>&emsp;A subequipe desenvolveu um robô autônomo baseado no kit EV3, programado para executar as missões práticas do torneio de forma precisa e eficiente. Além da construção do robô, o grupo também busca aprimorar competências técnicas em eletrônica, programação e design de sistemas, aplicando a robótica como ferramenta de apoio à preservação ambiental.</p>
 
-<p>&emsp;Com espírito colaborativo, os membros trabalham juntos para transformar conhecimento em prática, buscando sempre soluções criativas, sustentáveis e eficazes para os desafios propostos pelo TBR 2025.</p>
+<p>&emsp;Com espírito colaborativo e foco na inovação, os integrantes da equipe unem esforços para transformar conhecimento em ação, desenvolvendo soluções criativas, sustentáveis e alinhadas ao compromisso do ERA2-D2 com a conservação da vida terrestre.</p>
 
-                </div>
             </div>
         </section>
         <div class="divider1"></div>
