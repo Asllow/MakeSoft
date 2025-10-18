@@ -36,7 +36,10 @@
                 <div class="text">
                     <p>Somos o ERA2D2, uma equipe de robótica formada por estudantes do ensino médio do CEFET-MG, em Divinópolis, Minas Gerais. Nossa jornada começou no início de 2023, dentro do grupo Estudos de Robótica e Automação (ERA), com o sonho de competir na categoria High do Torneio Brasil de Robótica (TBR).</p>
                     <p>O nome ERA2D2 nasceu em uma de nossas primeiras reuniões, quando decidimos unir nossa identidade com o ERA à paixão de muitos de nós por Star Wars. Assim, escolhemos homenagear o icônico e carismático R2D2, que agora também inspira nossa criatividade e espírito de equipe.</p>
-                </div>
+             <br 
+              <br
+                  <br
+            </div>
             </div>
         </div>
 
