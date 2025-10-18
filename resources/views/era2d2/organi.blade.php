@@ -11,22 +11,12 @@
                 <div class="page-header">
                     <h1 class="title">Organização e Método</h1>
                     <div class="text">
-                        <p>&emsp;A equipe de Organização e Método é um subgrupo do ERA2-D2 para o Torneio Brasil de
-                            Robótica
-                            (TBR), com o objetivo principal de garantir a eficiência e a eficácia das operações e
-                            atividades do grupo, gerenciando a equipe de forma eficaz.</p>
-                        <p>&emsp;Para a categoria High (de 15 a 19 anos), o TBR desafiou a equipe a ter uma boa gestão
-                            da
-                            temporada. A subequipe de Organização e Método decidiu desenvolver um Plano de Ação Para a
-                            Temporada, distribuindo as tarefas em um cronograma detalhado que inclui as ações a serem
-                            realizadas, os prazos de realização, os responsáveis pelas atividades, os insumos
-                            necessários e os resultados esperados. A equipe também mantém uma comunicação eficaz e um
-                            acompanhamento contínuo do progresso das atividades.</p>
-                        <p>&emsp;Além disso, a equipe de Organização e Método destaca a importância de um planejamento
-                            estratégico bem definido e da adoção de métodos ágeis para lidar com imprevistos e mudanças
-                            de escopo. A implementação dessas práticas contribui para a melhoria contínua dos processos,
-                            assegurando que a equipe esteja sempre alinhada com os objetivos do TBR e preparada para
-                            enfrentar os desafios da temporada.</p>
+                       <p>&emsp;A equipe de Organização e Método é um subgrupo do ERA2-D2 no Torneio Brasil de Robótica (TBR), responsável por estruturar e gerenciar o planejamento da temporada de forma eficiente. O grupo atua garantindo que todas as atividades sejam executadas com organização, colaboração e foco nos objetivos da equipe.</p>
+
+<p>&emsp;Na temporada 2025, inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe adaptou sua gestão para integrar sustentabilidade em todas as etapas do projeto. O planejamento inclui ações voltadas à preservação ambiental, uso consciente de materiais e promoção de boas práticas ecológicas dentro e fora da competição.</p>
+
+<p>&emsp;A subequipe também elaborou um plano de ação detalhado, com cronogramas, metas e responsabilidades definidas, assegurando uma execução ágil e eficiente. Com comunicação constante e foco em resultados, a equipe busca unir organização e propósito, fortalecendo o compromisso do ERA2-D2 com a inovação e a conservação da vida terrestre.</p>
+
                     </div>
                 </div>
             </div>
