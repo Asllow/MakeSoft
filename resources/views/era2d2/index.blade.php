@@ -15,11 +15,7 @@
                         <p>&emsp;A ERA2-D2 é formada por alunos do CEFET-MG – Campus Divinópolis e foi criada em 2023 pelo grupo Estudos de Robótica e Automação (ERA).
 Em 2024, conquistou 1º lugar em Mérito Científico e, em 2025, chega com uma formação totalmente nova, composta por nove integrantes e orientada pelo técnico João Luiz Vieira e pelo mentor Diêgo Fernandes da Cruz.
 O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências em programação, eletrônica e trabalho em equipe.</p>
-                        <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 tem como missão contribuir para a proteção e recuperação dos ecossistemas brasileiros.
-
-Nesta temporada, o projeto busca desenvolver soluções tecnológicas voltadas à preservação dos habitats naturais, à redução da degradação do solo e ao combate à desertificação. Através do uso da robótica, sensores e automação, o grupo trabalha em protótipos e mecanismos capazes de monitorar e auxiliar na conservação da biodiversidade terrestre.
-
-O propósito da equipe é unir inovação tecnológica e consciência ambiental, mostrando que a robótica pode ser uma poderosa aliada na proteção do meio ambiente e na promoção de um futuro sustentável para todos.</p>
+                        <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 desenvolve soluções tecnológicas voltadas à preservação dos ecossistemas. O projeto utiliza a robótica para monitorar e proteger habitats naturais, reforçando o compromisso com a sustentabilidade e a vida no planeta.</p>
                     </div>
                     @yield('animation')
                 </div>
