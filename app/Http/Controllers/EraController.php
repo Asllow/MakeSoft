@@ -5,7 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Condutividade;
 use App\Models\PH;
 use App\Models\Temperatura;
+use App\Models\Temperatura1;
 use App\Models\Turbidez;
+use App\Models\Umidade;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -28,7 +30,8 @@ class EraController extends Controller
                 Condutividade::create(['valor' => $valor_3]);
                 break;
             case 2025:
-
+                Temperatura1::create(['valor' => $valor_0]);
+                Umidade::create(['valor' => $valor_1]);
                 break;
         }
         return 'Registrado';
