@@ -1,172 +1,250 @@
 @extends('era2d2.index')
 
 @section('animation')
-<div class="container2">
-    <!-- Sol e raios -->
-    <div class="sun">
-        @for ($i = 0; $i < 20; $i++)
-            <span class="ray ray{{ $i }}"></span>
-        @endfor
+    <div class="container2">
+        <!-- Whale Container -->
+        <div class="whaleContainer">
+            <div class="whalePos size1">
+                <div class="whaleRotate size1">
+                    <div class="whale"></div>
+                    <div class="fin"></div>
+                </div>
+            </div>
+            <div class="whalePos size2">
+                <div class="whaleRotate size2">
+                    <div class="whale"></div>
+                    <div class="fin"></div>
+                </div>
+            </div>
+            <div class="whalePos size3">
+                <div class="whaleRotate size3">
+                    <div class="whale"></div>
+                    <div class="fin"></div>
+                </div>
+            </div>
+            <div class="whalePos size4">
+                <div class="whaleRotate size4">
+                    <div class="whale"></div>
+                    <div class="fin"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Circle Container -->
+        <div class="cPos">
+            <div class="cc">
+                <div class="circle one"></div>
+                <div class="circle two"></div>
+                <div class="circle three"></div>
+                <div class="circle four"></div>
+            </div>
+        </div>
+
+        <!-- Triangle Container -->
+        <div class="triangleContainer">
+            <div class="triangleBar">
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+                <span class="triangle"></span>
+            </div>
+        </div>
+
+        <!-- Gradient Container -->
+        <div class="gradientContainer">
+            <div class="overlay one"></div>
+            <div class="gradient">
+                <span class="ray ray1"></span>
+                <span class="ray ray2"></span>
+                <span class="ray ray3"></span>
+                <span class="ray ray4"></span>
+                <span class="ray ray5"></span>
+                <span class="ray ray6"></span>
+                <span class="ray ray7"></span>
+                <span class="ray ray8"></span>
+                <span class="ray ray9"></span>
+                <span class="ray ray10"></span>
+                <span class="ray ray11"></span>
+                <span class="ray ray12"></span>
+                <span class="ray ray13"></span>
+                <span class="ray ray14"></span>
+                <span class="ray ray15"></span>
+                <span class="ray ray16"></span>
+                <span class="ray ray17"></span>
+                <span class="ray ray18"></span>
+                <span class="ray ray19"></span>
+                <span class="ray ray20"></span>
+                <span class="ray ray21"></span>
+                <span class="ray ray22"></span>
+                <span class="ray ray23"></span>
+                <span class="ray ray24"></span>
+                <span class="ray ray25"></span>
+                <span class="ray ray26"></span>
+                <span class="ray ray27"></span>
+                <span class="ray ray28"></span>
+                <span class="ray ray29"></span>
+                <span class="ray ray30"></span>
+                <span class="ray ray31"></span>
+                <span class="ray ray32"></span>
+                <span class="ray ray33"></span>
+                <span class="ray ray34"></span>
+                <span class="ray ray35"></span>
+                <span class="ray ray36"></span>
+                <span class="ray ray37"></span>
+                <span class="ray ray38"></span>
+                <span class="ray ray39"></span>
+                <span class="ray ray1"></span>
+                <span class="ray ray2"></span>
+                <span class="ray ray3"></span>
+                <span class="ray ray4"></span>
+                <span class="ray ray5"></span>
+                <span class="ray ray6"></span>
+                <span class="ray ray7"></span>
+                <span class="ray ray8"></span>
+                <span class="ray ray9"></span>
+                <span class="ray ray10"></span>
+                <span class="ray ray11"></span>
+                <span class="ray ray12"></span>
+                <span class="ray ray13"></span>
+                <span class="ray ray14"></span>
+                <span class="ray ray15"></span>
+                <span class="ray ray16"></span>
+                <span class="ray ray17"></span>
+                <span class="ray ray18"></span>
+                <span class="ray ray19"></span>
+                <span class="ray ray20"></span>
+                <span class="ray ray21"></span>
+                <span class="ray ray22"></span>
+                <span class="ray ray23"></span>
+                <span class="ray ray24"></span>
+                <span class="ray ray25"></span>
+                <span class="ray ray26"></span>
+                <span class="ray ray27"></span>
+                <span class="ray ray28"></span>
+                <span class="ray ray29"></span>
+                <span class="ray ray30"></span>
+                <span class="ray ray31"></span>
+                <span class="ray ray32"></span>
+                <span class="ray ray33"></span>
+                <span class="ray ray34"></span>
+                <span class="ray ray35"></span>
+                <span class="ray ray36"></span>
+                <span class="ray ray37"></span>
+                <span class="ray ray38"></span>
+                <span class="ray ray39"></span>
+            </div>
+        </div>
+
+        <!-- Rocks Container -->
+        <div class="rocks">
+            <div class="rock one"></div>
+            <div class="rock two"></div>
+            <div class="rock three"></div>
+            <div class="rock four"></div>
+        </div>
+
+        <!-- Bubble Container -->
+        <div class="bubbleContainer">
+            <span class="bubbleY bubbleY1">
+                <span class="bubbleX bubbleX1"></span>
+            </span>
+            <span class="bubbleY bubbleY2">
+                <span class="bubbleX bubbleX2"></span>
+            </span>
+            <span class="bubbleY bubbleY3">
+                <span class="bubbleX bubbleX3"></span>
+            </span>
+            <span class="bubbleY bubbleY4">
+                <span class="bubbleX bubbleX4"></span>
+            </span>
+            <span class="bubbleY bubbleY5">
+                <span class="bubbleX bubbleX5"></span>
+            </span>
+            <span class="bubbleY bubbleY6">
+                <span class="bubbleX bubbleX6"></span>
+            </span>
+            <span class="bubbleY bubbleY7">
+                <span class="bubbleX bubbleX7"></span>
+            </span>
+            <span class="bubbleY bubbleY8">
+                <span class="bubbleX bubbleX8"></span>
+            </span>
+            <span class="bubbleY bubbleY9">
+                <span class="bubbleX bubbleX9"></span>
+            </span>
+            <span class="bubbleY bubbleY10">
+                <span class="bubbleX bubbleX10"></span>
+            </span>
+        </div>
     </div>
+    <script>
+        const bubbleContainer = document.querySelector('.bubbleContainer');
 
-    <!-- Montanhas -->
-    <div class="mountains">
-        <div class="mountain one"></div>
-        <div class="mountain two"></div>
-        <div class="mountain three"></div>
-    </div>
+        // Função para criar um elemento <style> no DOM
+        function addKeyframes(rule) {
+            const styleElement = document.getElementById('dynamic-styles') || (() => {
+                const style = document.createElement('style');
+                style.id = 'dynamic-styles';
+                document.head.appendChild(style);
+                return style;
+            })();
+            styleElement.sheet.insertRule(rule, styleElement.sheet.cssRules.length);
+        }
 
-    <!-- Árvores abstratas -->
-    <div class="trees">
-        <div class="tree t1"></div>
-        <div class="tree t2"></div>
-        <div class="tree t3"></div>
-        <div class="tree t4"></div>
-    </div>
+        // Função para criar bolhas
+        function createBubbles(count) {
+            for (let i = 1; i <= count; i++) {
+                // Tamanho aleatório entre 2px e 5px
+                const size = Math.random() * 4 + 1;
 
-    <!-- Folhas flutuantes -->
-    <div class="leafContainer"></div>
+                // Bolha X
+                const bubbleX = document.createElement('span');
+                bubbleX.classList.add('bubbleX');
+                bubbleX.style.width = `${size}px`;
+                bubbleX.style.height = `${size}px`;
+                bubbleX.style.animationName = `bubbleX${i}`;
+                bubbleX.style.animationDuration = '10s';
 
-    <!-- Partículas de luz -->
-    <div class="particles">
-        @for ($i = 0; $i < 15; $i++)
-            <span class="particle"></span>
-        @endfor
-    </div>
-</div>
+                // Bolha Y
+                const bubbleY = document.createElement('span');
+                bubbleY.classList.add('bubbleY');
+                bubbleY.style.top = `${Math.random() * 100}px`;
+                bubbleY.style.left = `${Math.random() * 156}px`;
+                bubbleY.style.animationDelay = `${Math.random() * 3}s`;
+                bubbleY.appendChild(bubbleX);
 
-<script>
-    // Cria folhas flutuantes
-    const leafContainer = document.querySelector('.leafContainer');
-    for (let i = 0; i < 20; i++) {
-        const leaf = document.createElement('span');
-        leaf.classList.add('leaf');
-        leaf.style.left = `${Math.random() * 100}%`;
-        leaf.style.animationDelay = `${Math.random() * 5}s`;
-        leafContainer.appendChild(leaf);
-    }
-</script>
+                // Adiciona bolha no contêiner
+                bubbleContainer.appendChild(bubbleY);
 
-<style>
-.container2 {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-    height: 500px;
-    background: linear-gradient(to top, #3e7c4b, #9cd395);
-}
+                // Adiciona animação dinâmica para bubbleX
+                const keyframes = `
+                    @keyframes bubbleX${i} {
+                    0% { transform: translateX(0); }
+                    20% { transform: translateX(-${Math.random() * 15}px); }
+                    40% { transform: translateX(${Math.random() * 15}px); }
+                    60% { transform: translateX(-${Math.random() * 15}px); }
+                    80% { transform: translateX(${Math.random() * 15}px); }
+                    100% { transform: translateX(-${Math.random() * 15}px); }
+                  }
+                `;
+                addKeyframes(keyframes);
+            }
+        }
 
-/* 🌞 Sol */
-.sun {
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 120px;
-    height: 120px;
-    background: radial-gradient(circle, #ffd96b, #f2a922);
-    border-radius: 50%;
-    animation: rotateSun 20s linear infinite;
-}
-@keyframes rotateSun {
-    to { transform: translateX(-50%) rotate(360deg); }
-}
-.sun .ray {
-    position: absolute;
-    width: 3px;
-    height: 40px;
-    background: rgba(255, 220, 120, 0.6);
-    top: -10px;
-    left: 50%;
-    transform-origin: center 70px;
-}
-@for $i from 0 through 19 {
-  .sun .ray#{$i} { transform: rotate(calc(18deg * #{$i})); }
-}
-
-/* ⛰️ Montanhas */
-.mountains {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 180px;
-}
-.mountain {
-    position: absolute;
-    bottom: 0;
-    width: 50%;
-    height: 100%;
-    clip-path: polygon(50% 0%, 100% 100%, 0 100%);
-    animation: mountainShift 8s ease-in-out infinite alternate;
-}
-@keyframes mountainShift {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(5px); }
-}
-.mountain.one { left: -10%; background: #4a7739; z-index: 1; }
-.mountain.two { left: 25%; background: #5b8b43; z-index: 2; }
-.mountain.three { left: 60%; background: #6fa84e; z-index: 3; }
-
-/* 🌳 Árvores */
-.trees .tree {
-    position: absolute;
-    bottom: 0;
-    width: 10px;
-    height: 60px;
-    background: #5b3f2e;
-    animation: sway 4s ease-in-out infinite alternate;
-}
-@keyframes sway {
-    0% { transform: rotate(-1deg); }
-    100% { transform: rotate(1deg); }
-}
-.tree::after {
-    content: '';
-    position: absolute;
-    top: -40px;
-    left: -15px;
-    width: 40px;
-    height: 40px;
-    background: radial-gradient(circle, #49a05d, #2f693c);
-    border-radius: 50%;
-}
-.tree.t1 { left: 15%; }
-.tree.t2 { left: 40%; }
-.tree.t3 { left: 65%; }
-.tree.t4 { left: 80%; }
-
-/* 🍃 Folhas flutuantes */
-.leafContainer .leaf {
-    position: absolute;
-    width: 15px;
-    height: 8px;
-    background: linear-gradient(90deg, #65c96d, #3a913e);
-    border-radius: 50%;
-    top: 0;
-    animation: floatLeaf 8s linear infinite;
-    opacity: 0.8;
-}
-@keyframes floatLeaf {
-    0% { transform: translateY(0) rotate(0deg); opacity: 0; }
-    10% { opacity: 1; }
-    50% { transform: translateY(200px) rotate(180deg); }
-    100% { transform: translateY(400px) rotate(360deg); opacity: 0; }
-}
-
-/* ✨ Partículas de luz */
-.particle {
-    position: absolute;
-    width: 3px;
-    height: 3px;
-    background: rgba(255, 255, 200, 0.8);
-    border-radius: 50%;
-    top: calc(20% + (80% * var(--randY, 0.5)));
-    left: calc(5% + (90% * var(--randX, 0.5)));
-    animation: sparkle 3s ease-in-out infinite alternate;
-}
-@keyframes sparkle {
-    0% { opacity: 0.4; transform: scale(1); }
-    100% { opacity: 1; transform: scale(1.6); }
-}
-</style>
+        // Gera 10 bolhas
+        createBubbles(10);
+    </script>
 @endsection
