@@ -17,14 +17,13 @@
 Em 2024, conquistou 1º lugar em Mérito Científico e, em 2025, chega com uma formação totalmente nova, composta por nove integrantes e orientada pelo técnico João Luiz Vieira e pelo mentor Diêgo Fernandes da Cruz.
 O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências em programação, eletrônica e trabalho em equipe.</p>
                         <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 desenvolve soluções tecnológicas voltadas à preservação dos ecossistemas. O projeto utiliza a robótica para monitorar e proteger habitats naturais, reforçando o compromisso com a sustentabilidade e a vida no planeta.</p>
-                    </div>
-               class="image-animation">
-    <img src="{{ asset('public/img/sustentabilidade') }}" alt="ERA2-D2 Vida Terrestre">
+                   
+                    <div class="image-animation">
+    <img src="{{ asset('public/img/sustentabilidade.jpg') }}" alt="ERA2-D2 Vida Terrestre">
+</div>
 
 
-
-
-                </div>
+   </div>
             </div>
         </section>
         <div class="divider1"></div>
