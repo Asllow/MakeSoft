@@ -20,18 +20,18 @@ class EraController extends Controller
         return view('era2d2.animation', compact('page'));
     }
 
-    public function store(int $ano, float $valor_0, float $valor_1, float $valor_2, float $valor_3): string
+    public function store(int $ano, ?float $valor_0 = null, ?float $valor_1 = null, ?float $valor_2 = null, ?float $valor_3 = null): string
     {
         switch ($ano) {
             case 2024:
-                PH::create(['valor' => $valor_0]);
-                Turbidez::create(['valor' => $valor_1]);
-                Temperatura::create(['valor' => $valor_2]);
-                Condutividade::create(['valor' => $valor_3]);
+                PH::create(['valor' => $valor_0 ?? 0]);
+                Turbidez::create(['valor' => $valor_1 ?? 0]);
+                Temperatura::create(['valor' => $valor_2 ?? 0]);
+                Condutividade::create(['valor' => $valor_3 ?? 0]);
                 break;
             case 2025:
-                Temperatura1::create(['valor' => $valor_0]);
-                Umidade::create(['valor' => $valor_1]);
+                Temperatura1::create(['valor' => $valor_0 ?? 0]);
+                Umidade::create(['valor' => $valor_1 ?? 0]);
                 break;
         }
         return 'Registrado';
