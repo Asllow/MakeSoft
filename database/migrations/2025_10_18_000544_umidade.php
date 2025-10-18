@@ -10,7 +10,7 @@ return new class extends Migration {
      */
     public function up(): void
     {
-        Schema::connection('makesoft')->create('umidade', function (Blueprint $table) {
+        Schema::connection('labmaker')->create('umidade', function (Blueprint $table) {
             $table->id();
             $table->float('valor')->default(0);
             $table->timestamp('created_at')->nullable();
@@ -22,6 +22,6 @@ return new class extends Migration {
      */
     public function down(): void
     {
-        Schema::connection('makesoft')->dropIfExists('umidade');
+        Schema::connection('labmaker')->dropIfExists('umidade');
     }
 };
