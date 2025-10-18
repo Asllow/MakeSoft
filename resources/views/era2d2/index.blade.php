@@ -12,7 +12,7 @@
                 <h2 class="title subtitle">Monitoramento em tempo real da qualidade da água</h2>
                 <div class="project-presentation">
                     <div class="text">
-                        <p>&emsp;Essa é uma apresentação do nosso projeto para o Torneio TBR 2024. A equipe ERA2-D2
+                        <p>&emsp;cu é uma apresentação do nosso projeto para o Torneio TBR 2024. A equipe ERA2-D2
                             desenvolveu uma plataforma de monitoramento aquático com um propósito claro: contribuir para
                             a preservação dos recursos hídricos e promover um futuro sustentável. Assim, essa plataforma
                             é capaz de registrar parâmetros como pH, turbidez, níveis de oxigênio dissolvido,
