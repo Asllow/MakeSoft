@@ -21,7 +21,7 @@
     </div>
 
     <div class="image-animation" style="flex: 1; min-width: 300px; text-align: center;">
-        <img src="{{ asset('public/img/sustentabilidade.png') }}" 
+        <img src="{{ asset('public/img/sustentabilidade.jpg') }}" 
              alt="ERA2-D2 Vida Terrestre" 
              style="width: 100%; max-width: 400px; border-radius: 15px;">
     </div>
