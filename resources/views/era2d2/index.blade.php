@@ -4,24 +4,76 @@
 
 @section('description', 'Esse é o site da equipe de robótica ERA2D2, destinada ao Torneio Brasil de Robótica - TBR, categoria HIGH')
 <style>
-        body {
-            background-color: #fff;
-        }
+    /* Fundo branco e texto escuro */
+    body {
+        background-color: #ffffff;
+        color: #2c2c2c;
+        font-family: 'Poppins', sans-serif;
+    }
 
-        .title {
-            color:red #;
-            text-shadow: 0 0 10px #00e68a, 0 0 20px #00e68a;
-        }
+    /* Títulos em verde suave */
+    .title,
+    h1, h2, h3 {
+        color: #1b7d4b; /* Verde folha */
+        font-weight: 600;
+    }
 
-        button {
-            background-color: #00e68a;
-            color: white;
-            border: none;
-            border-radius: 8px;
-            padding: 10px 20px;
-            cursor: pointer;
-        }
-    </style>
+    /* Subtítulos em marrom terroso */
+    .subtitle {
+        color: #6b4e2e; /* Marrom natural */
+        font-weight: 500;
+    }
+
+    /* Botões */
+    .button {
+        background-color: #1b7d4b; /* Verde principal */
+        color: #ffffff;
+        border: none;
+        border-radius: 8px;
+        padding: 10px 20px;
+        font-weight: 500;
+        transition: 0.3s;
+    }
+
+    /* Efeito hover no botão */
+    .button:hover {
+        background-color: #6b4e2e; /* Muda pra marrom quando passa o mouse */
+        transform: scale(1.05);
+    }
+
+    /* Divisores e detalhes */
+    .divider1,
+    .divider2 {
+        background-color: #1b7d4b;
+        height: 3px;
+        width: 80%;
+        margin: 30px auto;
+        border-radius: 2px;
+    }
+
+    /* Links */
+    a {
+        color: #1b7d4b;
+        text-decoration: none;
+        transition: 0.3s;
+    }
+
+    a:hover {
+        color: #6b4e2e;
+    }
+
+    /* Títulos dos cards */
+    .card .title {
+        color: #1b7d4b;
+    }
+
+    /* Texto dentro dos cards */
+    .card .text p {
+        color: #3d3d3d;
+        line-height: 1.6;
+    }
+</style>
+
 
 @section('main')
     <main id="main">
