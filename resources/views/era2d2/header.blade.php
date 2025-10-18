@@ -50,6 +50,10 @@
     </nav>
 </header>
 @yield('main')
-<script type="text/javascript" src="{{asset("public/js/app.js")}}"></script>
+<script type="text/javascript" src="{{ asset('public/js/app.js') }}"></script>
+<script type="text/javascript" src="{{ asset('public/js/era2d2-animation.js') }}"></script>
+</body>
+</html>
+
 </body>
 </html>
