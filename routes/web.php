@@ -12,7 +12,12 @@ Route::controller(EraController::class)->group(function () {
     Route::get('/era2d2/organizacao-e-metodo', 'organi')->name('era.organi');
     Route::get('/era2d2/merito-cientifico', 'merito')->name('era.merito');
     Route::get('/era2d2/tecnologia-e-engenharia', 'tecno')->name('era.tecno');
-    Route::get('/era2d2/store/{ano}/{valor_0?}/{valor_1?}/{valor_2?}/{valor_3?}', 'store')->name('era.store');
+    Route::get('/era2d2/store/{ano}/{valor_0?}/{valor_1?}/{valor_2?}/{valor_3?}', 'store')
+        ->name('era.store')
+        ->defaults('valor_0', null)
+        ->defaults('valor_1', null)
+        ->defaults('valor_2', null)
+        ->defaults('valor_3', null);
     Route::get('/era2d2/grafico/{selector}', Grafico::class)->name('era.grafico');
 });
 
