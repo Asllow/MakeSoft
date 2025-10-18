@@ -11,21 +11,12 @@
                 <div class="page-header">
                     <h1 class="title">Tecnologia e Engenharia</h1>
                     <div class="text">
-                        <p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 para o Torneio Brasil de
-                            Robótica, focado na construção de um robô capaz de cumprir as missões propostas no desafio
-                            prático do Torneio Brasil de Robótica (TBR). Para a categoria High (de 15 a 19 anos), o TBR
-                            desafiou a equipe a criar um robô autônomo que atenda a todos os critérios exigidos.</p>
-                        <p>&emsp;A subequipe de Tecnologia e Engenharia decidiu desenvolver um robô autônomo baseado em
-                            Arduino, integrando sensores e motores para resolver os problemas propostos. Além disso, a
-                            equipe enfatiza a importância de uma abordagem colaborativa, onde os membros trabalham em
-                            cooperação para integrar suas áreas e garantir que cada projeto seja eficiente e inovador. A
-                            adoção de práticas colaborativas e inovadoras é essencial para o sucesso da equipe no TBR
-                            2024.</p>
-                        <p>&emsp;A implementação dessas estratégias contribui para a formação de uma equipe técnica
-                            altamente
-                            qualificada, preparada para enfrentar os desafios tecnológicos do futuro e aplicar seus
-                            conhecimentos de forma prática e eficaz.</p>
-                    </div>
+                        <<p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 no Torneio Brasil de Robótica, responsável por desenvolver soluções tecnológicas que unam inovação e sustentabilidade. Na temporada 2025, o desafio “Vida Terrestre” propõe criar mecanismos que contribuam para a preservação dos ecossistemas e da biodiversidade.</p>
+
+<p>&emsp;A subequipe optou por construir um robô autônomo utilizando o kit EV3, programado para cumprir as missões práticas do torneio com precisão e eficiência. O grupo também foca em aprimorar habilidades técnicas, como eletrônica e programação, aplicando-as em um contexto que reforça a importância da robótica como aliada da conservação ambiental.</p>
+
+<p>&emsp;Com espírito colaborativo, os membros trabalham juntos para transformar conhecimento em prática, buscando sempre soluções criativas, sustentáveis e eficazes para os desafios propostos pelo TBR 2025.</p>
+
                 </div>
             </div>
         </section>
