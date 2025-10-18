@@ -42,106 +42,59 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
                     </div>
                 </div>
             </div>
-        </section>
-        <div class="divider2"></div>
-        <section class="section" id="equipe">
-            <div class="container grid">
-                <div class="cards grid">
-                    <div id="condutividade" class="card">
-                        <h3 class="title">Condutividade</h3>
-                        <div class="text">
-                            <p>A condutividade elétrica da água é um parâmetro que reflete sua capacidade de conduzir
-                                efetivamente correntes elétricas, servindo como um indicador da presença e concentração
-                                de íons na solução, como sais, ácidos e bases. A condutividade é influenciada pelos
-                                tipos e concentrações de íons presentes: íons com maior carga elétrica, mobilidade, e
-                                menor raio hidratado tendem a aumentar a capacidade de condução da água.</p>
-                            <p>Medições realizadas com um condutímetro permitem identificar alterações significativas na
-                                qualidade da água, detectar fontes de poluição e monitorar mudanças contínuas na
-                                composição química, especialmente em águas subterrâneas. Esses dados são essenciais para
-                                a gestão eficiente dos recursos hídricos e estudos hidrogeológicos aprofundados. O
-                                monitoramento contínuo da condutividade elétrica desempenha um papel crucial na
-                                preservação e proteção de aquíferos, garantindo a sustentabilidade dos ecossistemas
-                                aquáticos e a saúde ambiental duradoura.</p>
-                        </div>
-                        <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
-                                Condutividade</a>
-                        </div>
-                    </div>
-                    <div id="ph" class="card">
-                        <h3 class="title">PH</h3>
-                        <div class="text">
-                            <p>
-                                O potencial hidrogeniônico(pH) de uma solução aquosa é medido por meio da concentração
-                                de íons de hidrogênio nessa solução, é representado por uma faixa que vai de 0 a 14,
-                                sendo consideradas soluções acidas números menores que 7, neutras iguais a 7 e básicas,
-                                maiores que 7. Para a vida na água se manter, o pH deve estar entre 6 e 9, níveis
-                                diferentes desses levam a morte dos organismos marinhos. Os mesmos níveis se aplicam a
-                                água própria para o consumo.
-                            </p>
-                            <p>
-                                Nos últimos anos os oceanos e aquíferos estão apresentando um pH acido, que ocorre
-                                principalmente a partir da absorção de CO₂ vindo da atmosfera e produzido pelo ser
-                                humano. Esse fenômeno impacta tanto na vida marinha, prejudicando o desenvolvimento e a
-                                reprodução dos seres, quanto na humana, com a redução de peixes e outras fontes de
-                                alimentos, atrapalhando a alimentação e emprego de milhões de pessoas. O monitoramento
-                                do pH das águas mostra a sua importância com base nas informações acima, visando
-                                proteção e restauração da vida aquática.
-                            </p>
-                        </div>
-                        <div class="hold-button button-ph">
-                            <a class="button" href="{{ route('era.grafico', 'ph') }}">Gráfico de PH</a>
-                        </div>
-                    </div>
-                    <div id="temperatura" class="card">
-                        <h3 class="title">Temperatura</h3>
-                        <div class="text">
-                            <p>A temperatura da água é um dos fatores mais determinantes para a preservação e
-                                conservação de ecossistemas aquáticos. Ela regula o equilíbrio das espécies que dependem
-                                de faixas de temperatura específicas para sobreviver, controlando tanto a proliferação
-                                de algas quanto o comportamento de migração e reprodução de diversas espécies,
-                                controlando suas condições de vida ideais. Além
-                                disso, a temperatura influencia diretamente os níveis de oxigênio dissolvido, elemento
-                                essencial para a manutenção da vida nos corpos d'água.</p>
-                            <p>A medição e o monitoramento contínuo da temperatura são fundamentais para interpretar os
-                                impactos do aquecimento global e da poluição térmica nos ecossistemas aquáticos. Esses
-                                dados auxiliam na gestão eficiente dos recursos hídricos, permitindo ações de
-                                conservação mais assertivas. Esforços para controlar alterações na temperatura da água
-                                são cruciais não apenas para a saúde dos ecossistemas aquáticos, mas também para
-                                garantir a sustentabilidade ambiental em um cenário de mudanças climáticas e crescente
-                                pressão humana sobre os recursos naturais.</p>
-                        </div>
-                        <div class="hold-button button-temperatura">
-                            <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
-                                Temperatura</a>
-                        </div>
-                    </div>
-                    <div id="turbidez" class="card">
-                        <h3 class="title">Turbidez</h3>
-                        <div class="text">
-                            <p>Turbidez da água é a medida da transparência da água e indica a quantidade de partículas
-                                em suspensão que estão presentes no meio. Ela é um fator de monitoramento importante
-                                para a
-                                avaliação da qualidade da água, tanto para o consumo e uso em processos industriais,
-                                quanto para a vida presente em ecossistemas aquáticos. Sedimentos, como partículas de
-                                solo que entram na água devido à erosão ou atividades humanas, matéria orgânica (folhas,
-                                galhos e outros detritos), microorganismos, dejetos de minérios e poluentes industriais
-                                são fatores que
-                                interferem na claridade da água.</p>
-                            <p>A ausência de acompanhamento preventivo gera maiores gastos com processos de tratamento
-                                de água. A medição precisa é feita por meio de um turbidímetro, que avalia a quantidade
-                                de luz refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
-                                Nefelométricas de Turbidez). Para o consumo humano, a OMS indica que a turbidez da água
-                                não exceda 5 NTU e, idealmente, seja inferior a 1 NTU. E para corpos d'água naturais, a
-                                turbidez varia de acordo com a legislação local e os usos específicos da água.</p>
-                        </div>
-                        <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'turbidez') }}">Gráfico de Turbidez</a>
-                        </div>
-                    </div>
+      <section class="section" id="equipe">
+    <div class="container grid">
+        <div class="cards grid">
+
+            <div id="condutividade" class="card">
+                <h3 class="title">Umidade do Solo</h3>
+                <div class="text">
+                    <p>&emsp;A umidade do solo é um dos fatores mais importantes para o equilíbrio dos ecossistemas terrestres. Ela determina a disponibilidade de água para as plantas, influencia o crescimento da vegetação e regula processos biológicos como a decomposição da matéria orgânica. Manter níveis adequados de umidade é essencial para garantir a fertilidade do solo e a sobrevivência da fauna e flora que dele dependem.</p>
+                    <p>&emsp;O monitoramento da umidade do solo permite compreender melhor as variações climáticas, prevenir períodos de seca e otimizar o uso da irrigação. Essa medição é fundamental para práticas agrícolas sustentáveis e para a conservação ambiental, ajudando a preservar a vida terrestre em todas as suas formas.</p>
+                </div>
+                <div class="hold-button">
+                    <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de Umidade</a>
                 </div>
             </div>
-        </section>
+
+            <div id="ph" class="card">
+                <h3 class="title">Temperatura do Solo</h3>
+                <div class="text">
+                    <p>&emsp;A temperatura do solo exerce papel determinante na germinação das sementes, no crescimento das plantas e na atividade dos microrganismos responsáveis pela decomposição da matéria orgânica. Variações extremas de temperatura podem afetar o desenvolvimento da vegetação e comprometer a estabilidade dos ecossistemas terrestres.</p>
+                    <p>&emsp;O acompanhamento contínuo da temperatura do solo possibilita identificar os impactos das mudanças climáticas, avaliar o equilíbrio térmico do ambiente e orientar estratégias de manejo sustentável. Essa análise auxilia na manutenção da biodiversidade e na proteção da vida terrestre.</p>
+                </div>
+                <div class="hold-button button-ph">
+                    <a class="button" href="{{ route('era.grafico', 'ph') }}">Gráfico de Temperatura</a>
+                </div>
+            </div>
+
+            <div id="temperatura" class="card">
+                <h3 class="title">Índice de Vegetação (NDVI)</h3>
+                <div class="text">
+                    <p>&emsp;O Índice de Vegetação por Diferença Normalizada (NDVI) é uma métrica que avalia a densidade e a vitalidade da cobertura vegetal, sendo amplamente utilizado em estudos de reflorestamento e conservação. Através da análise de imagens e sensores, o NDVI permite identificar áreas degradadas e monitorar o crescimento da vegetação ao longo do tempo.</p>
+                    <p>&emsp;A observação desse indicador contribui para entender o impacto das ações humanas e das mudanças climáticas sobre o meio ambiente, promovendo medidas eficazes de preservação e recuperação da vida terrestre. Ele é essencial para garantir o equilíbrio dos ecossistemas e a sustentabilidade das florestas.</p>
+                </div>
+                <div class="hold-button button-temperatura">
+                    <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de NDVI</a>
+                </div>
+            </div>
+
+            <div id="turbidez" class="card">
+                <h3 class="title">Qualidade do Ar</h3>
+                <div class="text">
+                    <p>&emsp;A qualidade do ar é um elemento essencial para a manutenção da vida terrestre. A presença de poluentes atmosféricos, como dióxido de carbono, ozônio e partículas em suspensão, pode afetar diretamente a saúde dos ecossistemas, interferindo no crescimento das plantas e na sobrevivência de diversas espécies.</p>
+                    <p>&emsp;Monitorar a qualidade do ar é fundamental para identificar fontes de poluição, compreender os impactos da atividade humana e desenvolver estratégias que reduzam a emissão de gases nocivos. A preservação da pureza do ar é vital para garantir o equilíbrio ambiental e o bem-estar de todos os seres vivos do planeta.</p>
+                </div>
+                <div class="hold-button">
+                    <a class="button" href="{{ route('era.grafico', 'turbidez') }}">Gráfico de Qualidade do Ar</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<div class="divider1"></div>
+
         <div class="divider1"></div>
     </main>
 @endsection
