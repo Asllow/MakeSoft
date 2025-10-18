@@ -152,4 +152,3 @@ a:hover {
     <div class="divider1"></div>
 </main>
 @endsection
-
