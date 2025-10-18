@@ -11,20 +11,22 @@
               <h1 class="title">Terra Viva</h1>
 <h2 class="title subtitle">Monitoramento e preservação dos ecossistemas terrestres</h2>
 
-                <div class="project-presentation">
-                    <div class="text">
-                        <p>&emsp;A ERA2-D2 é formada por alunos do CEFET-MG – Campus Divinópolis e foi criada em 2023 pelo grupo Estudos de Robótica e Automação (ERA).
-Em 2024, conquistou 1º lugar em Mérito Científico e, em 2025, chega com uma formação totalmente nova, composta por nove integrantes e orientada pelo técnico João Luiz Vieira e pelo mentor Diêgo Fernandes da Cruz.
-O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências em programação, eletrônica e trabalho em equipe.</p>
-                        <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 desenvolve soluções tecnológicas voltadas à preservação dos ecossistemas. O projeto utiliza a robótica para monitorar e proteger habitats naturais, reforçando o compromisso com a sustentabilidade e a vida no planeta.</p>
-                   
-                    <div class="image-animation">
-    <img src="{{ asset('public/img/sustentabilidade.jpg') }}" alt="ERA2-D2 Vida Terrestre">
+             <div class="project-presentation" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
+    <div class="text" style="flex: 1; min-width: 300px;">
+        <p>&emsp;A ERA2-D2 é formada por alunos do CEFET-MG – Campus Divinópolis e foi criada em 2023 pelo grupo Estudos de Robótica e Automação (ERA).
+        Em 2024, conquistou 1º lugar em Mérito Científico e, em 2025, chega com uma formação totalmente nova, composta por nove integrantes e orientada pelo técnico João Luiz Vieira e pelo mentor Diêgo Fernandes da Cruz.
+        O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências em programação, eletrônica e trabalho em equipe.</p>
+
+        <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 desenvolve soluções tecnológicas voltadas à preservação dos ecossistemas. O projeto utiliza a robótica para monitorar e proteger habitats naturais, reforçando o compromisso com a sustentabilidade e a vida no planeta.</p>
+    </div>
+
+    <div class="image-animation" style="flex: 1; min-width: 300px; text-align: center;">
+        <img src="{{ asset('public/img/sustentabilidade.png') }}" 
+             alt="ERA2-D2 Vida Terrestre" 
+             style="width: 100%; max-width: 400px; border-radius: 15px;">
+    </div>
 </div>
 
-
-   </div>
-            </div>
         </section>
         <div class="divider1"></div>
         <section class="section" id="equipe">
