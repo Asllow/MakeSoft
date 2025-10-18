@@ -1,1 +1,113 @@
+/* ERA2-D2 - animação Vida Terrestre */
+.era2-animation.container2 {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 500px;
+  background: linear-gradient(to top, #dff0d8 0%, #9fd48a 60%);
+}
+
+/* Sol */
+.era2-animation .sun {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 110px;
+  height: 110px;
+  background: radial-gradient(circle,#ffd86b 0%, #f2a922 70%);
+  border-radius: 50%;
+  z-index: 5;
+  animation: era2-rotateSun 22s linear infinite;
+}
+@keyframes era2-rotateSun { to { transform: translateX(-50%) rotate(360deg); } }
+
+/* Montanhas */
+.era2-animation .mountains {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 180px;
+  z-index: 1;
+}
+.era2-animation .mountain {
+  position: absolute;
+  bottom: 0;
+  width: 50%;
+  height: 100%;
+  clip-path: polygon(50% 0%, 100% 100%, 0 100%);
+  animation: era2-mountainShift 10s ease-in-out infinite alternate;
+}
+@keyframes era2-mountainShift { 0% { transform: translateY(0); } 100% { transform: translateY(6px); } }
+.era2-animation .mountain.one  { left: -12%; background: #4b7a42; z-index: 1; }
+.era2-animation .mountain.two  { left: 22%;  background: #5f9248; z-index: 2; }
+.era2-animation .mountain.three{ left: 58%;  background: #77b85a; z-index: 3; }
+
+/* Árvores */
+.era2-animation .trees .tree {
+  position: absolute;
+  bottom: 18px;
+  width: 12px;
+  height: 70px;
+  background: #5b3f2e;
+  border-radius: 6px;
+  transform-origin: center bottom;
+  animation: era2-sway 4s ease-in-out infinite alternate;
+  z-index: 4;
+}
+.era2-animation .trees .tree::after{
+  content: "";
+  position: absolute;
+  top: -46px;
+  left: -20px;
+  width: 50px;
+  height: 50px;
+  background: radial-gradient(circle, #78d07a 0%, #2f7f3f 70%);
+  border-radius: 50%;
+  z-index: 3;
+  box-shadow: 0 6px 0 rgba(0,0,0,0.05) inset;
+}
+@keyframes era2-sway { 0% { transform: rotate(-1.2deg) } 100% { transform: rotate(1.2deg) } }
+.era2-animation .trees .t1 { left: 12%; }
+.era2-animation .trees .t2 { left: 36%; }
+.era2-animation .trees .t3 { left: 62%; }
+.era2-animation .trees .t4 { left: 82%; }
+
+/* Folhas flutuantes */
+.era2-animation .leafContainer .leaf {
+  position: absolute;
+  width: 18px;
+  height: 10px;
+  background: linear-gradient(90deg,#7ed27f,#2f8a3f);
+  border-radius: 50% 50% 40% 40%;
+  opacity: 0.95;
+  transform-origin: center;
+  animation: era2-floatLeaf linear infinite;
+  will-change: transform, opacity;
+  z-index: 6;
+}
+@keyframes era2-floatLeaf {
+  0%   { transform: translateY(0) rotate(0deg); opacity: 0; }
+  10%  { opacity: 1; }
+  50%  { transform: translateY(160px) rotate(180deg); }
+  100% { transform: translateY(360px) rotate(360deg); opacity: 0; }
+}
+
+/* Partículas de luz */
+.era2-animation .particles { position: absolute; inset: 0; z-index: 7; pointer-events: none; }
+.era2-animation .particles .particle {
+  position: absolute;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: rgba(255,245,200,0.9);
+  animation: era2-spark 3s ease-in-out infinite alternate;
+}
+@keyframes era2-spark { 0% { transform: scale(1); opacity: .5 } 100% { transform: scale(1.6); opacity: 1 } }
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .era2-animation.container2 { height: 360px; }
+  .era2-animation .sun { width: 88px; height: 88px; top: 6%; }
+}
 
