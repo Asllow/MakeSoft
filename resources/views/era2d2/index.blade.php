@@ -3,12 +3,31 @@
 @section('title', 'ERA2-D2')
 
 @section('description', 'Esse é o site da equipe de robótica ERA2D2, destinada ao Torneio Brasil de Robótica - TBR, categoria HIGH')
+<style>
+        body {
+            background-color: #fff;
+        }
+
+        .title {
+            color:red #;
+            text-shadow: 0 0 10px #00e68a, 0 0 20px #00e68a;
+        }
+
+        button {
+            background-color: #00e68a;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    </style>
 
 @section('main')
     <main id="main">
         <section class="section" id="home">
             <div class="container page1">
-              <h1 class="title">Terra Viva</h1>
+              <h1 class="title">Terra Viva </h1>
 <h2 class="title subtitle">Monitoramento e preservação dos ecossistemas terrestres</h2>
 
              <div class="project-presentation" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
