@@ -6,19 +6,21 @@
 
 @section('main')
 <main id="main">
+
+    <!-- Seção Home -->
     <section class="section" id="home">
         <div class="container page1">
             <h1 class="title">Terra Viva</h1>
             <h2 class="title subtitle">Monitoramento e preservação dos ecossistemas terrestres</h2>
 
-            <div class="project-presentation" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
-                <div class="text" style="flex: 1; min-width: 300px;">
+            <div class="project-presentation">
+                <div class="text">
                     <p>&emsp;A ERA2-D2 é formada por alunos do CEFET-MG – Campus Divinópolis e foi criada em 2023 pelo grupo Estudos de Robótica e Automação (ERA). Em 2024, conquistou 1º lugar em Mérito Científico e, em 2025, chega com uma formação totalmente nova, composta por nove integrantes e orientada pelo técnico João Luiz Vieira e pelo mentor Diêgo Fernandes da Cruz. O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências em programação, eletrônica e trabalho em equipe.</p>
                     <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 desenvolve soluções tecnológicas voltadas à preservação dos ecossistemas. O projeto utiliza a robótica para monitorar e proteger habitats naturais, reforçando o compromisso com a sustentabilidade e a vida no planeta.</p>
                 </div>
 
-                <div class="image-animation" style="flex: 1; min-width: 300px; text-align: center;">
-                    <img src="{{ asset('public/img/sustentabilidade.jpg') }}" alt="ERA2-D2 Vida Terrestre" style="width: 100%; max-width: 400px; border-radius: 15px;">
+                <div class="image-animation">
+                    <img src="{{ asset('public/img/sustentabilidade.jpg') }}" alt="ERA2-D2 Vida Terrestre">
                 </div>
             </div>
         </div>
@@ -26,9 +28,11 @@
 
     <div class="divider1"></div>
 
+    <!-- Seção Equipe -->
     <section class="section" id="equipe">
         <div class="container grid">
             <h2 class="title">A Equipe</h2>
+
             <div class="description">
                 <div class="image">
                     <img alt="Logo da Equipe" src="{{ asset('public/img/logoera2d2.jpeg') }}">
@@ -36,19 +40,11 @@
                 <div class="text">
                     <p>Somos o ERA2D2, uma equipe de robótica formada por estudantes do ensino médio do CEFET-MG, em Divinópolis, Minas Gerais. Nossa jornada começou no início de 2023, dentro do grupo Estudos de Robótica e Automação (ERA), com o sonho de competir na categoria High do Torneio Brasil de Robótica (TBR).</p>
                     <p>O nome ERA2D2 nasceu em uma de nossas primeiras reuniões, quando decidimos unir nossa identidade com o ERA à paixão de muitos de nós por Star Wars. Assim, escolhemos homenagear o icônico e carismático R2D2, que agora também inspira nossa criatividade e espírito de equipe.</p>
-             <br 
-                 br>
-              <br
-                  br>
-                     <br
-                  br>
-                     <br
-                  br>
-                 
-            </div>
+                </div>
             </div>
         </div>
 
+        <!-- Cards de Projetos -->
         <div class="cards grid">
             <div id="condutividade" class="card">
                 <h3 class="title">Umidade do Solo</h3>
