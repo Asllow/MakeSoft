@@ -1,4 +1,4 @@
-/* Reset */
+* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -29,14 +29,14 @@ img {
     --header-height: 4.5rem;
 
     /* Cores principais - Natureza */
-    --base-color: green; /* Verde folha */
+    --base-color: rgb (green); /* Verde folha */
     --base-color-second: hsl(35, 35%, 80%); /* Bege suave */
     --base-color-alt: hsl(30, 30%, 40%); /* Marrom médio */
-    --title-color: hsl(120, 20%, 20%); /* Verde escuro para títulos */
+    --title-color: hsl(120, 20%, 20%); /* Verde escuro para textos */
     --text-color: hsl(0, 0%, 25%); /* Cinza escuro natural */
     --text-color-light: hsl(35, 25%, 85%); /* Bege claro */
     --body-color: hsl(0, 0%, 98%); /* Branco quase puro */
-    --body-color-trans: hsla(120, 20%, 90%, 0.5); /* Verde claro translúcido */
+    --body-color-trans: hsla(120, 20%, 90%, 0.5); /* Verde bem claro translúcido */
 
     --title-font-size: 1.5rem;
     --subtitle-font-size: 1rem;
@@ -237,29 +237,6 @@ nav ul li a.active {
     line-height: 1.6;
 }
 
-/* Projetos (antes inline styles) */
-.project-presentation {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.project-presentation .text,
-.project-presentation .image-animation {
-    flex: 1;
-    min-width: 300px;
-}
-
-.project-presentation .image-animation img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 15px;
-    display: block;
-    margin: 0 auto;
-}
-
 /* PDF */
 .section-pdf {
     display: flex;
@@ -285,7 +262,6 @@ nav ul li a.active {
     .page1 .project-presentation {
         flex-direction: row;
     }
-
     .description .text {
         width: 50%;
     }
@@ -295,9 +271,8 @@ nav ul li a.active {
     .cards {
         grid-template-columns: 1fr 1fr;
     }
-
     .container {
         margin-left: 3rem;
         margin-right: 3rem;
     }
-}
+} esse é meu css 
