@@ -29,7 +29,7 @@ img {
     --header-height: 4.5rem;
 
     /* Cores principais - Natureza */
-    --base-color: rgb (green); /* Verde folha */
+    --base-color: hsl (140, 45%, 30%); /* Verde folha */
     --base-color-second: hsl(35, 35%, 80%); /* Bege suave */
     --base-color-alt: hsl(30, 30%, 40%); /* Marrom médio */
     --title-color: hsl(120, 20%, 20%); /* Verde escuro para textos */
