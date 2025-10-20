@@ -8,7 +8,7 @@
 <main id="main">
     <section class="section" id="home">
         <div class="container page1">
-            <h1 class="title">Terra Viva LALALA</h1>
+            <h1 class="title">Terra Viva</h1>
             <h2 class="title subtitle">Monitoramento e preservação dos ecossistemas terrestres</h2>
 
             <div class="project-presentation" style="display: flex; align-items: center; justify-content: space-between; gap: 40px; flex-wrap: wrap;">
