@@ -28,7 +28,7 @@
                     <i class="bi bi-arrow-down-circle i-color"></i>
                     <div class="pdf">
                      <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
-     data-url="https://makesoftsolutions.com.br/public/pdf/Tecnoooo2025.pdf">
+     data-url="https://makesoftsolutions.com.br/public/pdf/TECNO2025.pdf">
 
 
                             <div id="loading" class="spinner-border" role="status">
