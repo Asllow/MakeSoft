@@ -11,12 +11,22 @@
                 <div class="page-header">
                     <h1 class="title">Tecnologia e Engenharia</h1>
                     <div class="text">
-                       <p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 no Torneio Brasil de Robótica (TBR), responsável por desenvolver soluções inovadoras que integrem tecnologia e sustentabilidade. Em 2025, com o tema “Vida Terrestre”, o desafio incentiva a criação de projetos que contribuam para a proteção da biodiversidade e a restauração dos ecossistemas naturais.</p>
-
-<p>&emsp;A subequipe desenvolveu um robô autônomo baseado no kit EV3, programado para executar as missões práticas do torneio de forma precisa e eficiente. Além da construção do robô, o grupo também busca aprimorar competências técnicas em eletrônica, programação e design de sistemas, aplicando a robótica como ferramenta de apoio à preservação ambiental.</p>
-
-<p>&emsp;Com espírito colaborativo e foco na inovação, os integrantes da equipe unem esforços para transformar conhecimento em ação, desenvolvendo soluções criativas, sustentáveis e alinhadas ao compromisso do ERA2-D2 com a conservação da vida terrestre.</p>
-
+                        <p>&emsp;A equipe de Tecnologia e Engenharia é um subgrupo do ERA2-D2 para o Torneio Brasil de
+                            Robótica, focado na construção de um robô capaz de cumprir as missões propostas no desafio
+                            prático do Torneio Brasil de Robótica (TBR). Para a categoria High (de 15 a 19 anos), o TBR
+                            desafiou a equipe a criar um robô autônomo que atenda a todos os critérios exigidos.</p>
+                        <p>&emsp;A subequipe de Tecnologia e Engenharia decidiu desenvolver um robô autônomo baseado em
+                            Arduino, integrando sensores e motores para resolver os problemas propostos. Além disso, a
+                            equipe enfatiza a importância de uma abordagem colaborativa, onde os membros trabalham em
+                            cooperação para integrar suas áreas e garantir que cada projeto seja eficiente e inovador. A
+                            adoção de práticas colaborativas e inovadoras é essencial para o sucesso da equipe no TBR
+                            2024.</p>
+                        <p>&emsp;A implementação dessas estratégias contribui para a formação de uma equipe técnica
+                            altamente
+                            qualificada, preparada para enfrentar os desafios tecnológicos do futuro e aplicar seus
+                            conhecimentos de forma prática e eficaz.</p>
+                    </div>
+                </div>
             </div>
         </section>
         <div class="divider1"></div>
@@ -24,13 +34,11 @@
             <div class="container grid">
                 <div class="section-pdf">
                     <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita da Tecnologia e Engenharia para o TBR
-                        2025</h2>
+                        2024</h2>
                     <i class="bi bi-arrow-down-circle i-color"></i>
                     <div class="pdf">
-                     <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
-     data-url="https://makesoftsolutions.com.br/public/pdf/TECNO2025.pdf">
-
-
+                        <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
+                             data-url="https://makesoftsolutions.com.br/public/pdf/tecno.pdf">
                             <div id="loading" class="spinner-border" role="status">
                                 <span class="sr-only">Carregando...</span>
                             </div>
