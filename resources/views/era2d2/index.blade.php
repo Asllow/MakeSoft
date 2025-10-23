@@ -24,7 +24,7 @@
                             água, facilitando a tomada de decisões informadas, a implementação de medidas corretivas e o
                             engajamento comunitário.</p>
                     </div>
-                    @yield('animation')
+                
                 </div>
             </div>
         </section>
