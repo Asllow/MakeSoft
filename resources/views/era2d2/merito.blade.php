@@ -11,12 +11,25 @@
                 <div class="page-header">
                     <h1 class="title">Mérito Científico</h1>
                     <div class="text">
-                       <p>&emsp;A equipe de Mérito Científico é um subgrupo do ERA2-D2 no Torneio Brasil de Robótica (TBR), responsável por desenvolver a pesquisa teórica e científica que fundamenta o projeto da equipe. Para a temporada 2025, inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU — Vida Terrestre — o desafio propõe criar soluções tecnológicas que contribuam para a preservação dos ecossistemas e da biodiversidade.</p>
-
-<p>&emsp;O grupo de Mérito Científico buscou compreender os impactos da ação humana sobre o equilíbrio ambiental e desenvolveu uma proposta voltada à conservação de habitats terrestres, com foco no reflorestamento e na proteção de espécies nativas. A equipe utilizou pesquisas de campo e dados ambientais para construir um embasamento sólido e propor ações práticas e sustentáveis.</p>
-
-<p>&emsp;Com base em estudos multidisciplinares, o Mérito Científico reafirma o compromisso do ERA2-D2 com a sustentabilidade e a inovação, demonstrando que a robótica e a ciência podem caminhar juntas na proteção do planeta. O projeto visa inspirar novas formas de interação entre tecnologia e natureza, promovendo o cuidado com a vida terrestre para as próximas gerações.</p>
-
+                        <p>&emsp;A equipe do Mérito Científico é um subgrupo do ERA2-D2 para o Torneio Brasil de
+                            Robótica,
+                            onde o objetivo principal é a extensão de pesquisas aprofundadas em tecnologia e robótica,
+                            permitindo que os alunos pratiquem os conhecimentos adquiridos durante o curso. Nesse
+                            sentido, relacionado ao Objetivo de Desenvolvimento Sustentável 6 (ODS 6) das Nações Unidas
+                            como proposta para a categoria High (de 15 a 19 anos), o TBR desafiou a criação de soluções
+                            para proteger e restaurar sistemas relacionados à água.</p>
+                        <p>&emsp;O Mérito, a partir de recursos viáveis e acessíveis, decidiu criar uma plataforma que
+                            monitorasse os parâmetros qualitativos aquáticos, sendo eles, condutividade, pH, temperatura
+                            e a turbidez. Sendo assim, o monitoramento contínuo desses parâmetros é crucial para a
+                            identificação de possíveis contaminações, a gestão adequada de recursos hídricos e a
+                            preservação da vida aquática, visando garantir a integridade dos recursos naturais e a
+                            qualidade de vida das futuras gerações. Além disso, a equipe reafirma a importância de
+                            tecnologias alcançáveis para comunidades e regiões em condições de difícil acesso aos
+                            recursos hídricos ou em locais que estão suscetíveis à poluição.</p>
+                        <p>&emsp;Portanto, o Mérito Científico não apenas busca cumprir o desafio do TBR, mas também
+                            contribuir de forma significativa para alcançar metas globais de sustentabilidade,
+                            promovendo a conservação dos recursos hídricos para as futuras gerações.</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -25,11 +38,11 @@
             <div class="container grid">
                 <div class="section-pdf">
                     <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita do Mérito Científico para o TBR
-                        2025</h2>
+                        2024</h2>
                     <i class="bi bi-arrow-down-circle i-color"></i>
                     <div class="pdf">
                         <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
-                             data-url="https://makesoftsolutions.com.br/public/pdf/MERITO2025.pdf">
+                             data-url="https://makesoftsolutions.com.br/public/pdf/merito.pdf">
                             <div id="loading" class="spinner-border" role="status">
                                 <span class="sr-only">Carregando...</span>
                             </div>
