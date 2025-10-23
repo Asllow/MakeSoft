@@ -57,8 +57,8 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
                         garantindo a saúde do solo e a sustentabilidade ambiental.</p>
                         </div>
                         <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
-                                Temperatura</a>
+                            <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico da Umidade do solo
+                    </a>
                         </div>
                     </div>
                     <div id="ph" class="card">
