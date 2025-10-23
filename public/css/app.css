@@ -19,7 +19,7 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height:auto ;
 }
 
@@ -29,10 +29,10 @@ img {
     --base-color: hsl(242, 100%, 67%);
     --base-color-second: hsl(298, 56%, 39%);
     --base-color-alt: hwb(259 13% 17%);
-   --title-color: hwb(244 20% 8%);
+    --title-color: hwb(244 20% 8%);
     --text-color: hwb(276 12% 21%);
-    --text-color-light: #f5f3ec;
-    --body-color: #f8f7f3;
+    --text-color-light: #000000;
+    --body-color: #000000;
     --body-color-trans: rgba(236, 245, 244, 0.4);
     --title-font-size: 1.5rem;
     --subtitle-font-size: 1rem;
@@ -86,7 +86,7 @@ h2.subtitle {
 
 .button {
     background-color: var(--base-color);
-    color: #fff;
+    color: hsl(0, 0%, 0%);
     height: 3rem;
     display: inline-flex;
     align-items: center;
@@ -328,8 +328,8 @@ nav.show div.bi-x {
 }
 
 .image img {
-    height: 12.5rem;
-    width: 12.5rem;
+    height: 12.5px;
+    width: 12.5px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--base-color-second);
