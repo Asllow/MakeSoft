@@ -26,14 +26,14 @@ img {
 /* Variables */
 :root {
     --header-height: 4.5rem;
-    --base-color: #2f7a4d;
-    --base-color-second: #a5855d;
-    --base-color-alt: #3e8b59;
-    --title-color: #1d3925;
-    --text-color: #3b3b3b;
+    --base-color: hsl(242, 100%, 67%);
+    --base-color-second: hsl(298, 56%, 39%);
+    --base-color-alt: hwb(259 13% 17%);
+    --title-color: hsl(188, 82%, 56%);
+    --text-color: hwb(276 12% 21%);
     --text-color-light: #f5f3ec;
     --body-color: #f8f7f3;
-    --body-color-trans: rgba(245, 243, 236, 0.4);
+    --body-color-trans: rgba(236, 245, 244, 0.4);
     --title-font-size: 1.5rem;
     --subtitle-font-size: 1rem;
     --title-font: 'Poppins', sans-serif;
@@ -342,7 +342,7 @@ nav.show div.bi-x {
 
 .card {
     padding: 3rem 1rem 0 1rem;
-    box-shadow: 0 0 12px rgba(47, 122, 77, 0.4);
+    box-shadow: 0 0 12px #4d16ef66;
     border-bottom: 0.25rem solid var(--base-color);
     border-radius: 0.25rem 0.25rem 0 0;
     background-color: #ffffff;
