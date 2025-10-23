@@ -1,4 +1,4 @@
-extends('era2d2.index')
+@extends('era2d2.index') 
 
 @section('animation')
     <div class="container2">
@@ -42,7 +42,6 @@ extends('era2d2.index')
         <!-- Triangle Container -->
         <div class="triangleContainer">
             <div class="triangleBar">
-                <span class="triangle"></span>
                 <span class="triangle"></span>
                 <span class="triangle"></span>
                 <span class="triangle"></span>
@@ -193,7 +192,6 @@ extends('era2d2.index')
     <script>
         const bubbleContainer = document.querySelector('.bubbleContainer');
 
-        // Função para criar um elemento <style> no DOM
         function addKeyframes(rule) {
             const styleElement = document.getElementById('dynamic-styles') || (() => {
                 const style = document.createElement('style');
@@ -204,13 +202,10 @@ extends('era2d2.index')
             styleElement.sheet.insertRule(rule, styleElement.sheet.cssRules.length);
         }
 
-        // Função para criar bolhas
         function createBubbles(count) {
             for (let i = 1; i <= count; i++) {
-                // Tamanho aleatório entre 2px e 5px
                 const size = Math.random() * 4 + 1;
 
-                // Bolha X
                 const bubbleX = document.createElement('span');
                 bubbleX.classList.add('bubbleX');
                 bubbleX.style.width = `${size}px`;
@@ -218,7 +213,6 @@ extends('era2d2.index')
                 bubbleX.style.animationName = `bubbleX${i}`;
                 bubbleX.style.animationDuration = '10s';
 
-                // Bolha Y
                 const bubbleY = document.createElement('span');
                 bubbleY.classList.add('bubbleY');
                 bubbleY.style.top = `${Math.random() * 100}px`;
@@ -226,10 +220,8 @@ extends('era2d2.index')
                 bubbleY.style.animationDelay = `${Math.random() * 3}s`;
                 bubbleY.appendChild(bubbleX);
 
-                // Adiciona bolha no contêiner
                 bubbleContainer.appendChild(bubbleY);
 
-                // Adiciona animação dinâmica para bubbleX
                 const keyframes = `
                     @keyframes bubbleX${i} {
                     0% { transform: translateX(0); }
@@ -244,7 +236,7 @@ extends('era2d2.index')
             }
         }
 
-        // Gera 10 bolhas
         createBubbles(10);
     </script>
 @endsection
+
