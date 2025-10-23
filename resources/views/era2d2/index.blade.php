@@ -17,12 +17,7 @@
                             a preservação dos recursos hídricos e promover um futuro sustentável. Assim, essa plataforma
                             é capaz de registrar parâmetros como pH, turbidez, níveis de oxigênio dissolvido,
                             temperatura e condutividade.</p>
-                        <p>&emsp;Inspirada no 6º Objetivo de Desenvolvimento Sustentável da ONU (Água Potável e
-                            Saneamento), a
-                            plataforma utiliza sensores para coletar dados em tempo real sobre parâmetros essenciais da
-                            qualidade da água. Esses dados estão disponíveis para visualização e análise da qualidade da
-                            água, facilitando a tomada de decisões informadas, a implementação de medidas corretivas e o
-                            engajamento comunitário.</p>
+                        <p>&emsp;Inspirada no 15º Objetivo de Desenvolvimento Sustentável da ONU (Vida Terrestre), a equipe ERA2-D2 desenvolve soluções tecnológicas voltadas à preservação dos ecossistemas. O projeto utiliza a robótica para monitorar e proteger habitats naturais, reforçando o compromisso com a sustentabilidade e a vida no planeta.</p>
                     </div>
                 
                 </div>
