@@ -29,7 +29,7 @@ img {
     --base-color: hsl(242, 100%, 67%);
     --base-color-second: hsl(298, 56%, 39%);
     --base-color-alt: hwb(259 13% 17%);
-    --title-color: hsl(188, 82%, 56%);
+   --title-color: hwb(244 20% 8%);
     --text-color: hwb(276 12% 21%);
     --text-color-light: #f5f3ec;
     --body-color: #f8f7f3;
