@@ -1,4 +1,4 @@
-* Reset */
+/* Reset */
 * {
     margin: 0;
     padding: 0;
@@ -13,7 +13,6 @@ p {
     font: 500 1rem var(--body-font);
     color: var(--text-color);
 }
-
 a {
     text-decoration: none;
     color: var(--base-color);
@@ -27,17 +26,14 @@ img {
 /* Variables */
 :root {
     --header-height: 4.5rem;
-
-    /* Cores principais - Natureza */
-    --base-color: rgb (green); /* Verde folha */
-    --base-color-second: hsl(35, 35%, 80%); /* Bege suave */
-    --base-color-alt: hsl(30, 30%, 40%); /* Marrom médio */
-    --title-color: hsl(120, 20%, 20%); /* Verde escuro para textos */
-    --text-color: hsl(0, 0%, 25%); /* Cinza escuro natural */
-    --text-color-light: hsl(35, 25%, 85%); /* Bege claro */
-    --body-color: hsl(0, 0%, 98%); /* Branco quase puro */
-    --body-color-trans: hsla(120, 20%, 90%, 0.5); /* Verde bem claro translúcido */
-
+    --base-color: #2f7a4d;
+    --base-color-second: #a5855d;
+    --base-color-alt: #3e8b59;
+    --title-color: #1d3925;
+    --text-color: #3b3b3b;
+    --text-color-light: #f5f3ec;
+    --body-color: #f8f7f3;
+    --body-color-trans: rgba(245, 243, 236, 0.4);
     --title-font-size: 1.5rem;
     --subtitle-font-size: 1rem;
     --title-font: 'Poppins', sans-serif;
@@ -50,6 +46,10 @@ html {
     scroll-behavior: smooth;
 }
 
+#disabled {
+    display: none;
+}
+
 body {
     font: 400 1rem var(--body-font);
     color: var(--text-color);
@@ -60,29 +60,33 @@ body {
 .title {
     font: 700 var(--title-font-size) var(--title-font);
     color: var(--title-color);
+    -webkit-font-smoothing: subpixel-antialiased;
 }
 
-h1.title,
-h2.title {
+h1.title {
+    font: 700 2.5rem var(--title-font);
     color: var(--base-color);
-    font-weight: 700;
+}
+
+h2.title {
+    font: 700 2.25rem var(--title-font);
+    color: var(--base-color);
 }
 
 h2.title.subtitle {
-    color: var(--base-color-alt);
-    font-weight: 600;
+    font: 600 2rem var(--title-font);
+    color: var(--base-color-second);
     padding-top: 0.5rem;
 }
 
-.subtitle {
-    color: var(--base-color-alt);
-    font-weight: 600;
+h2.subtitle {
+    font: 600 1.2rem var(--body-font);
+    color: var(--base-color);
 }
 
-/* Botões */
 .button {
     background-color: var(--base-color);
-    color: #ffffff;
+    color: #fff;
     height: 3rem;
     display: inline-flex;
     align-items: center;
@@ -90,22 +94,21 @@ h2.title.subtitle {
     padding: 0 2rem;
     border-radius: 1.25rem;
     font: 500 1rem var(--body-font);
-    transition: 0.4s ease;
+    transition: background 0.4s, transform 0.2s;
 }
 
 .button:hover {
-    background-color: var(--base-color-alt);
+    background: var(--base-color-second);
     transform: scale(1.05);
 }
 
-/* Divisores */
 .divider1 {
-    height: 1px;
+    height: 2px;
     background: linear-gradient(90deg, var(--base-color), transparent);
 }
 
 .divider2 {
-    height: 1px;
+    height: 2px;
     background: linear-gradient(90deg, transparent, var(--base-color));
 }
 
@@ -118,7 +121,7 @@ h2.title.subtitle {
 .grid {
     display: grid;
     gap: 2rem;
-    justify-items: center;
+    justify-items: center
 }
 
 .section {
@@ -137,13 +140,17 @@ h2.title.subtitle {
     text-align: center;
 }
 
+.section5 {
+    padding: calc(3rem + var(--header-height)) 0 0;
+}
+
 strong {
     color: var(--base-color);
 }
 
-/* Header */
+/*********Header***************/
 #header {
-    border-bottom: 1px solid var(--base-color);
+    border-bottom: 2px solid var(--base-color);
     margin-bottom: 2rem;
     display: flex;
     width: 100%;
@@ -154,7 +161,7 @@ strong {
     background-color: var(--body-color);
 }
 
-/* Navigation */
+/*********Navigation***************/
 nav {
     height: var(--header-height);
     display: flex;
@@ -164,25 +171,78 @@ nav {
     background-color: var(--body-color);
 }
 
+nav ul li {
+    text-align: center;
+}
+
 nav ul li a {
-    color: var(--base-color);
-    transition: color 0.2s;
+    transition: color 0.3s;
     position: relative;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-    color: var(--base-color-alt);
+    color: var(--base-color-second);
 }
 
-/* Ícones */
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: var(--base-color);
+    position: absolute;
+    left: 0;
+    bottom: -0.3rem;
+    transition: width 0.2s;
+}
+
+nav ul li a:hover::after,
+nav ul li a.active::after {
+    width: 100%;
+}
+
 .i-color {
     width: 2rem;
     height: 2rem;
     color: var(--base-color);
 }
 
-/* Botão menu */
+nav .menu {
+    opacity: 0;
+    visibility: hidden;
+    top: -20rem;
+    transition: 0.2s;
+}
+
+nav .menu ul {
+    display: none;
+}
+
+/*Mostrar Menu*/
+nav.show .menu {
+    opacity: 1;
+    visibility: visible;
+    background: var(--base-color-alt);
+    height: 100dvh;
+    width: 100dvw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-content: center;
+}
+
+nav.show .menu ul {
+    margin-top: -5.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+nav.show ul.grid {
+    gap: 2rem;
+}
+
+/*toggle menu*/
 .toggle {
     color: var(--base-color);
     font-size: 1.5rem;
@@ -190,7 +250,24 @@ nav ul li a.active {
     padding-top: 0.5rem;
 }
 
-/* Back to Top */
+nav .bi-x {
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1.5rem;
+    right: 1.5rem;
+    transition: 0.2s;
+    color: var(--title-color);
+}
+
+nav.show div.bi-x {
+    visibility: visible;
+    opacity: 1;
+    top: 1.5rem;
+    color: var(--title-color);
+    z-index: 2;
+}
+/****************BAck to Top**********/
 .back-to-top {
     background: var(--base-color);
     color: var(--text-color-light);
@@ -213,31 +290,80 @@ nav ul li a.active {
     transform: translateY(0%);
 }
 
-/* Cards */
+.container.page1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.page1 .project-presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-presentation .text {
+    padding-top: 1.5rem;
+    text-align: center;
+}
+
+.text p {
+    padding-top: 1rem;
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.description .image {
+    width: 12.5rem;
+    height: 12.5rem;
+}
+
+.description .text {
+    text-align: center;
+    padding-top: 1.5rem;
+}
+
+.image img {
+    height: 12.5rem;
+    width: 12.5rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--base-color-second);
+}
+
+/****************Cards*****************/
 .cards.grid {
     gap: 3rem;
 }
 
 .card {
     padding: 3rem 1rem 0 1rem;
-    box-shadow: 0 0 10px rgba(27, 125, 75, 0.3);
+    box-shadow: 0 0 12px rgba(47, 122, 77, 0.4);
     border-bottom: 0.25rem solid var(--base-color);
     border-radius: 0.25rem 0.25rem 0 0;
     background-color: #ffffff;
     text-align: center;
+    transition: transform 0.3s;
 }
 
-.card .title {
-    color: var(--base-color);
-    font-weight: 600;
+.card:hover {
+    transform: translateY(-5px);
 }
 
-.card .text p {
-    color: var(--text-color);
-    line-height: 1.6;
+.card title {
+    font-size: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
-/* PDF */
+.hold-button .button {
+    position: relative;
+    top: 1.5rem;
+}
+
 .section-pdf {
     display: flex;
     flex-direction: column;
@@ -254,25 +380,176 @@ nav ul li a.active {
     width: 3rem;
     height: 3rem;
     font-size: 3rem;
+}
+
+.head {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 5rem;
+}
+
+.head .bi.bi-arrow-left-circle {
+    font-size: 2rem;
     color: var(--base-color);
 }
 
-/* Responsividade */
+.head a {
+    padding-top: .5rem;
+}
+
+.cont-grad {
+    display: grid;
+    justify-items: center;
+    height: 100%;
+}
+
+.project-presentation .text {
+    text-align: justify;
+}
+
 @media screen and (min-width: 720px) {
+    :root {
+        --title-font-size: 1.5rem;
+        --subtitle-font-size: 1rem;
+    }
+
+    .description .text {
+        width: 50%;
+    }
     .page1 .project-presentation {
         flex-direction: row;
     }
-    .description .text {
-        width: 50%;
+    .project-presentation .text {
+        width: 26rem;
+    }
+
+    h2.title.subtitle {
+        width: 32rem;
+    }
+
+    .cont-grad {
+        margin-right: 1.5rem;
+        margin-left: 1.5rem;
+    }
+}
+
+@media screen and (max-height: 700px) {
+    div.background {
+        border-bottom: 12rem solid var(--body-color);
+    }
+
+    nav.show .menu ul {
+        margin-top: -8rem;
+    }
+}
+
+@media screen and (max-height: 500px) {
+    div.background {
+        display: none;
+    }
+
+    nav.show .menu ul {
+        margin-top: 0;
     }
 }
 
 @media screen and (min-width: 1200px) {
+    nav {
+        width: auto;
+        position: absolute;
+        right: 0;
+    }
+
     .cards {
         grid-template-columns: 1fr 1fr;
+    }
+
+    nav.container {
+        padding-left: 1rem;
+        padding-right: 3rem;
+        border-radius: 0 0 0 1rem;
+        margin: 0;
     }
     .container {
         margin-left: 3rem;
         margin-right: 3rem;
     }
-} 
+    #header {
+        border-bottom: none;
+    }
+    .section header {
+        max-width: 32rem;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .grafico {
+        width: 60%;
+    }
+    .button {
+        height: 3.125rem;
+    }
+
+    nav .menu {
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+    }
+
+    nav .menu ul {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+    }
+
+    nav .menu ul li a.title {
+        font: 400 1rem var(--body-font);
+        -webkit-font-smoothing: antialiased;
+    }
+
+    nav .icon-menu {
+        display: none;
+    }
+
+    div.background {
+        display: none;
+    }
+
+    .toggle {
+        display: none;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        color: var(--base-color);
+    }
+
+    nav .menu ul li a.title.active {
+        font-weight: bold;
+    }
+
+    nav ul li a::after {
+        content: '';
+        width: 0;
+        height: 2px;
+        background: var(--base-color);
+        position: absolute;
+        left: 0;
+        bottom: -1.7rem;
+        transition: width 0.2s;
+    }
+
+    .container.page1 {
+        margin-top: -6rem;
+    }
+
+    .container.grafico-container {
+        margin-top: -7rem;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+}
