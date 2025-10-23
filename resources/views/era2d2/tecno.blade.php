@@ -20,7 +20,7 @@
                             equipe enfatiza a importância de uma abordagem colaborativa, onde os membros trabalham em
                             cooperação para integrar suas áreas e garantir que cada projeto seja eficiente e inovador. A
                             adoção de práticas colaborativas e inovadoras é essencial para o sucesso da equipe no TBR
-                            2024.</p>
+                            2025.</p>
                         <p>&emsp;A implementação dessas estratégias contribui para a formação de uma equipe técnica
                             altamente
                             qualificada, preparada para enfrentar os desafios tecnológicos do futuro e aplicar seus
