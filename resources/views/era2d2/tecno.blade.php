@@ -26,7 +26,7 @@
             <div class="container grid">
                 <div class="section-pdf">
                     <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita da Tecnologia e Engenharia para o TBR
-                        2024</h2>
+                        2025</h2>
                     <i class="bi bi-arrow-down-circle i-color"></i>
                     <div class="pdf">
                         <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
