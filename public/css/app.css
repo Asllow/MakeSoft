@@ -328,8 +328,8 @@ nav.show div.bi-x {
 }
 
 .image img {
-    height: 12.5px;
-    width: 12.5px;
+    height: 150px;
+    width: 150px;
     object-fit: cover;
     border-radius: 50%;
     border: 3px solid var(--base-color-second);
