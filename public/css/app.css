@@ -28,7 +28,7 @@ img {
     --header-height: 4.5rem;
     --base-color: hsl(242, 100%, 67%);
     --base-color-second: hsl(298, 56%, 39%);
-    --base-color-alt: hwb(259 13% 17%);
+ --base-color-alt: lab(9.89% 39.94 -55.6);
     --title-color: hwb(244 20% 8%);
     --text-color: hwb(276 12% 21%);
     --text-color-light: #000000;
