@@ -47,20 +47,14 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
             <div class="container grid">
                 <div class="cards grid">
                     <div id="condutividade" class="card">
-                        <h3 class="title">Condutividade</h3>
+                        <h3 class="title">Umidade do solo</h3>
                         <div class="text">
-                            <p>A condutividade elétrica da água é um parâmetro que reflete sua capacidade de conduzir
-                                efetivamente correntes elétricas, servindo como um indicador da presença e concentração
-                                de íons na solução, como sais, ácidos e bases. A condutividade é influenciada pelos
-                                tipos e concentrações de íons presentes: íons com maior carga elétrica, mobilidade, e
-                                menor raio hidratado tendem a aumentar a capacidade de condução da água.</p>
-                            <p>Medições realizadas com um condutímetro permitem identificar alterações significativas na
-                                qualidade da água, detectar fontes de poluição e monitorar mudanças contínuas na
-                                composição química, especialmente em águas subterrâneas. Esses dados são essenciais para
-                                a gestão eficiente dos recursos hídricos e estudos hidrogeológicos aprofundados. O
-                                monitoramento contínuo da condutividade elétrica desempenha um papel crucial na
-                                preservação e proteção de aquíferos, garantindo a sustentabilidade dos ecossistemas
-                                aquáticos e a saúde ambiental duradoura.</p>
+                           <p>A umidade do solo indica a quantidade de água presente nos poros do solo, sendo essencial
+                        para o crescimento das plantas e manutenção da biodiversidade. A variação na umidade
+                        influencia processos como infiltração, evaporação e absorção de nutrientes pelas raízes.</p>
+                    <p>Medições regulares com sensores de umidade ajudam a monitorar a irrigação, prevenir
+                        estresse hídrico em culturas agrícolas e gerenciar recursos hídricos de forma eficiente,
+                        garantindo a saúde do solo e a sustentabilidade ambiental.</p>
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico de
