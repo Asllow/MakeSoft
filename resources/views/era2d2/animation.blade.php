@@ -1,4 +1,4 @@
-@extends('era2d2.index')
+extends('era2d2.index')
 
 @section('animation')
     <div class="container2">
