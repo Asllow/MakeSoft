@@ -10,7 +10,7 @@
             <div class="container page1">
           <h1 class="title">Terra Viva</h1>
 <h2 class="title subtitle">Soluções tecnológicas para a preservação dos ecossistemas terrestres</h2>
-                <img src="sustentabilidade.jpg" alt="Imagem sobre sustentabilidade"
+                <img src="img/sustentabilidade.jpg" alt="Imagem sobre sustentabilidade"
 
                 <div class="project-presentation">
                     <div class="text">
