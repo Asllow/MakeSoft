@@ -8,21 +8,22 @@
 .bloco-sustentabilidade {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 30px 0;
+  justify-content: flex-start;
+  gap: 30px; /* espaço entre o texto e a imagem */
+  margin: 40px 0;
+}
+
+.bloco-sustentabilidade img {
+  width: 270px; /* tamanho da imagem */
+  border-radius: 10px;
 }
 
 .bloco-sustentabilidade p {
   font-size: 1.2rem;
-  max-width: 55%;
+  text-align: justify; /* deixa o texto em bloco */
   line-height: 1.6;
+  max-width: 55%;
 }
-
-.bloco-sustentabilidade img {
-  width: 250px;
-  border-radius: 10px;
-}
-
 
 ul {
     list-style: none;
