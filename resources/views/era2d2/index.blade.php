@@ -10,8 +10,7 @@
             <div class="container page1">
           <h1 class="title">Terra Viva</h1>
 <h2 class="title subtitle">Soluções tecnológicas para a preservação dos ecossistemas terrestres</h2>
-                <img src="img/sustentabilidade.jpg" alt="Imagem sobre sustentabilidade"
-
+                 <img alt="Sustentabilidade" src="{{ asset('public/img/sustentabilidade.jpg') }}">
                 <div class="project-presentation">
                     <div class="text">
                         <p>&emsp;A ERA2-D2 é formada por alunos do CEFET-MG – Campus Divinópolis e foi criada em 2023 pelo grupo Estudos de Robótica e Automação (ERA).
