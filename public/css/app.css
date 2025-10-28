@@ -5,6 +5,17 @@
     box-sizing: border-box;
 }
 
+.bloco-sustentabilidade {
+  display: flex;
+  align-items: center;
+}
+
+.bloco-sustentabilidade img {
+  width: 150px;
+  margin-right: 15px;
+  border-radius: 8px;
+}
+
 ul {
     list-style: none;
 }
