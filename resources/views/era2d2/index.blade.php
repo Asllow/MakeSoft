@@ -10,7 +10,7 @@
             <div class="container page1">
           <h1 class="title">Terra Viva</h1>
 <h2 class="title subtitle">Soluções tecnológicas para a preservação dos ecossistemas terrestres</h2>
-                 <img alt="Sustentabilidade" src="{{ asset('public/img/sustentabilidade.jpg') }}">
+           
                 <div class="bloco-sustentabilidade">
   <img alt="Sustentabilidade" src="{{ asset('public/img/sustentabilidade.jpg') }}">
 
