@@ -11,7 +11,7 @@
   justify-content: space-between;
   flex-direction: row-reverse; /* inverte os lados */
   gap: 40px;
-  margin: 500px 0;
+  margin: 40px 0;
 }
 
 .bloco-sustentabilidade p {
