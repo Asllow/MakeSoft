@@ -10,7 +10,7 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row-reverse; /* inverte os lados */
-  gap: 40px;
+  gap: 500px;
   margin: 40px 0;
 }
 
