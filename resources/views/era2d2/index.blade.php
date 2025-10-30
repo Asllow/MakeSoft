@@ -61,35 +61,11 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
                         garantindo a saúde do solo e a sustentabilidade ambiental.</p>
                         </div>
                         <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'condutividade') }}">Gráfico da Umidade do solo
+                            <a class="button" href="{{ route('era.grafico', 'umidade') }}">Gráfico da Umidade do solo
                     </a>
                         </div>
                     </div>
-                    <div id="ph" class="card">
-                        <h3 class="title">PH</h3>
-                        <div class="text">
-                            <p>
-                                O potencial hidrogeniônico(pH) de uma solução aquosa é medido por meio da concentração
-                                de íons de hidrogênio nessa solução, é representado por uma faixa que vai de 0 a 14,
-                                sendo consideradas soluções acidas números menores que 7, neutras iguais a 7 e básicas,
-                                maiores que 7. Para a vida na água se manter, o pH deve estar entre 6 e 9, níveis
-                                diferentes desses levam a morte dos organismos marinhos. Os mesmos níveis se aplicam a
-                                água própria para o consumo.
-                            </p>
-                            <p>
-                                Nos últimos anos os oceanos e aquíferos estão apresentando um pH acido, que ocorre
-                                principalmente a partir da absorção de CO₂ vindo da atmosfera e produzido pelo ser
-                                humano. Esse fenômeno impacta tanto na vida marinha, prejudicando o desenvolvimento e a
-                                reprodução dos seres, quanto na humana, com a redução de peixes e outras fontes de
-                                alimentos, atrapalhando a alimentação e emprego de milhões de pessoas. O monitoramento
-                                do pH das águas mostra a sua importância com base nas informações acima, visando
-                                proteção e restauração da vida aquática.
-                            </p>
-                        </div>
-                        <div class="hold-button button-ph">
-                            <a class="button" href="{{ route('era.grafico', 'ph') }}">Gráfico de PH</a>
-                        </div>
-                    </div>
+                  
                     <div id="temperatura" class="card">
                         <h3 class="title">Temperatura</h3>
                         <div class="text">
@@ -109,35 +85,11 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
                                 pressão humana sobre os recursos naturais.</p>
                         </div>
                         <div class="hold-button button-temperatura">
-                            <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
+                            <a class="button" href="{{ route('era.grafico', 'temperatura1') }}">Gráfico de
                                 Temperatura</a>
                         </div>
                     </div>
-                    <div id="turbidez" class="card">
-                        <h3 class="title">Turbidez</h3>
-                        <div class="text">
-                            <p>Turbidez da água é a medida da transparência da água e indica a quantidade de partículas
-                                em suspensão que estão presentes no meio. Ela é um fator de monitoramento importante
-                                para a
-                                avaliação da qualidade da água, tanto para o consumo e uso em processos industriais,
-                                quanto para a vida presente em ecossistemas aquáticos. Sedimentos, como partículas de
-                                solo que entram na água devido à erosão ou atividades humanas, matéria orgânica (folhas,
-                                galhos e outros detritos), microorganismos, dejetos de minérios e poluentes industriais
-                                são fatores que
-                                interferem na claridade da água.</p>
-                            <p>A ausência de acompanhamento preventivo gera maiores gastos com processos de tratamento
-                                de água. A medição precisa é feita por meio de um turbidímetro, que avalia a quantidade
-                                de luz refletida pelas partículas em suspensão e se dá em unidades de NTU (Unidades
-                                Nefelométricas de Turbidez). Para o consumo humano, a OMS indica que a turbidez da água
-                                não exceda 5 NTU e, idealmente, seja inferior a 1 NTU. E para corpos d'água naturais, a
-                                turbidez varia de acordo com a legislação local e os usos específicos da água.</p>
-                        </div>
-                        <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'turbidez') }}">Gráfico de Turbidez</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+                 
         </section>
         <div class="divider1"></div>
     </main>
