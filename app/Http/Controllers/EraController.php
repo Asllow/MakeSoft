@@ -40,6 +40,7 @@ class EraController extends Controller
     public function grafico(string $selector)
     {
         $page = 'home';
+        
         return view('era2d2.grafico', compact('page', 'selector'));
     }
 
