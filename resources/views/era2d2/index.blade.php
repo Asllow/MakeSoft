@@ -70,7 +70,7 @@ recuperar os ecossistemas brasileiros.</p>
 
                         </div>
                         <div class="hold-button">
-                            <a class="button" href="{{ route('era.grafico', 'umidade') }}">Gráfico da Umidade do solo
+                            <a class="button" href="{{ route('era.grafico', 'umidade do solo') }}">Gráfico da Umidade do solo
                     </a>
                         </div>
                     </div>
