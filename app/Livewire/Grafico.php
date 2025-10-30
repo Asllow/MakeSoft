@@ -33,10 +33,10 @@ use Livewire\Component;
             case 'condutividade':
                 $model = Condutividade::class;
                 break;
-            case 'temperatura':
+            case 'temperatura2':
                 $model = Temperatura2::class;
                 break;
-             case 'temperatura1':
+             case 'temperatura':
                 $model = Temperatura::class;
                 break;
              case 'umidade':
