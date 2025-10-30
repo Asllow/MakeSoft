@@ -8,7 +8,7 @@ use App\Models\PH;
 use App\Models\Temperatura2;
 use App\Models\Turbidez;
 use App\Models\Temperatura;
-use App\Models\Umidade;
+use App\Models\UmidadeDoSolo;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
@@ -40,7 +40,7 @@ use Livewire\Component;
                 $model = Temperatura::class;
                 break;
              case 'umidade do solo':
-                $model = Umidade::class;
+                $model = UmidadeDoSolo::class;
                 break;
             case 'turbidez':
                 $model = Turbidez::class;
