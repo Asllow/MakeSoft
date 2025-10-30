@@ -7,6 +7,8 @@ use App\Models\Condutividade;
 use App\Models\PH;
 use App\Models\Temperatura;
 use App\Models\Turbidez;
+use App\Models\Temperatura1;
+use App\Models\Umidade;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 use Illuminate\Foundation\Application;
