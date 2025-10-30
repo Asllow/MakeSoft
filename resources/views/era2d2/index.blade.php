@@ -53,12 +53,21 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
                     <div id="condutividade" class="card">
                         <h3 class="title">Umidade do solo</h3>
                         <div class="text">
-                           <p>A umidade do solo indica a quantidade de água presente nos poros do solo, sendo essencial
-                        para o crescimento das plantas e manutenção da biodiversidade. A variação na umidade
-                        influencia processos como infiltração, evaporação e absorção de nutrientes pelas raízes.</p>
-                    <p>Medições regulares com sensores de umidade ajudam a monitorar a irrigação, prevenir
-                        estresse hídrico em culturas agrícolas e gerenciar recursos hídricos de forma eficiente,
-                        garantindo a saúde do solo e a sustentabilidade ambiental.</p>
+                           <p>A umidade do solo representa a quantidade de água retida entre as partículas do solo e é um dos
+principais indicadores da sua fertilidade e vitalidade. A manutenção desse equilíbrio hídrico é
+essencial para o desenvolvimento das plantas, para a preservação dos ecossistemas terrestres e
+para o combate à degradação ambiental.</p>
+
+<p>No contexto da temporada 2025 – <strong>Vida Terrestre</strong>, compreender e monitorar a umidade do solo
+permite prevenir a desertificação e o empobrecimento da terra, além de otimizar o uso dos recursos
+hídricos na agricultura. Sensores de umidade possibilitam o acompanhamento preciso das
+condições do solo, contribuindo para práticas de irrigação mais sustentáveis e para a conservação
+da biodiversidade.</p>
+
+<p>Controlar a umidade é garantir a base da vida terrestre. Essa medição contínua favorece a saúde do
+solo, promove o equilíbrio entre tecnologia e meio ambiente e reforça o compromisso de proteger e
+recuperar os ecossistemas brasileiros.</p>
+
                         </div>
                         <div class="hold-button">
                             <a class="button" href="{{ route('era.grafico', 'umidade') }}">Gráfico da Umidade do solo
@@ -69,20 +78,21 @@ O grupo busca aperfeiçoar o desempenho técnico e fortalecer suas competências
                     <div id="temperatura" class="card">
                         <h3 class="title">Temperatura</h3>
                         <div class="text">
-                            <p>A temperatura da água é um dos fatores mais determinantes para a preservação e
-                                conservação de ecossistemas aquáticos. Ela regula o equilíbrio das espécies que dependem
-                                de faixas de temperatura específicas para sobreviver, controlando tanto a proliferação
-                                de algas quanto o comportamento de migração e reprodução de diversas espécies,
-                                controlando suas condições de vida ideais. Além
-                                disso, a temperatura influencia diretamente os níveis de oxigênio dissolvido, elemento
-                                essencial para a manutenção da vida nos corpos d'água.</p>
-                            <p>A medição e o monitoramento contínuo da temperatura são fundamentais para interpretar os
-                                impactos do aquecimento global e da poluição térmica nos ecossistemas aquáticos. Esses
-                                dados auxiliam na gestão eficiente dos recursos hídricos, permitindo ações de
-                                conservação mais assertivas. Esforços para controlar alterações na temperatura da água
-                                são cruciais não apenas para a saúde dos ecossistemas aquáticos, mas também para
-                                garantir a sustentabilidade ambiental em um cenário de mudanças climáticas e crescente
-                                pressão humana sobre os recursos naturais.</p>
+                           <p>A umidade do solo representa a quantidade de água retida entre as partículas do solo e é um dos
+principais indicadores da sua fertilidade e vitalidade. A manutenção desse equilíbrio hídrico é
+essencial para o desenvolvimento das plantas, para a preservação dos ecossistemas terrestres e
+para o combate à degradação ambiental.</p>
+
+<p>No contexto da temporada 2025 – <strong>Vida Terrestre</strong>, compreender e monitorar a umidade do solo
+permite prevenir a desertificação e o empobrecimento da terra, além de otimizar o uso dos recursos
+hídricos na agricultura. Sensores de umidade possibilitam o acompanhamento preciso das
+condições do solo, contribuindo para práticas de irrigação mais sustentáveis e para a conservação
+da biodiversidade.</p>
+
+<p>Controlar a umidade é garantir a base da vida terrestre. Essa medição contínua favorece a saúde do
+solo, promove o equilíbrio entre tecnologia e meio ambiente e reforça o compromisso de proteger e
+recuperar os ecossistemas brasileiros.</p>
+
                         </div>
                         <div class="hold-button button-temperatura">
                             <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
