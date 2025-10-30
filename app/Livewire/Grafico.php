@@ -36,6 +36,12 @@ use Livewire\Component;
             case 'temperatura':
                 $model = Temperatura::class;
                 break;
+             case 'temperatura1':
+                $model = Temperatura1::class;
+                break;
+             case 'umidade'
+                $model = Umidade::class;
+                break;
             case 'turbidez':
                 $model = Turbidez::class;
                 break;
