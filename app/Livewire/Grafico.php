@@ -39,7 +39,7 @@ use Livewire\Component;
              case 'temperatura':
                 $model = Temperatura::class;
                 break;
-             case 'umidade do solo':
+             case 'umidade':
                 $model = Umidade::class;
                 break;
             case 'turbidez':
