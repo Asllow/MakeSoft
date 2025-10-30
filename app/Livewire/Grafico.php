@@ -5,9 +5,9 @@ namespace App\Livewire;
 use AllowDynamicProperties;
 use App\Models\Condutividade;
 use App\Models\PH;
-use App\Models\Temperatura;
+use App\Models\Temperatura2;
 use App\Models\Turbidez;
-use App\Models\Temperatura1;
+use App\Models\Temperatura;
 use App\Models\Umidade;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -34,10 +34,10 @@ use Livewire\Component;
                 $model = Condutividade::class;
                 break;
             case 'temperatura':
-                $model = Temperatura::class;
+                $model = Temperatura2::class;
                 break;
              case 'temperatura1':
-                $model = Temperatura1::class;
+                $model = Temperatura::class;
                 break;
              case 'umidade':
                 $model = Umidade::class;
