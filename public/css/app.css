@@ -27,9 +27,9 @@ img {
 :root {
     --header-height: 4.5rem;
     --base-color: hwb(0 0% 100%);
-    --base-color-second: hsl(0, 0%, 0%);
+    --base-color-second: rgba(52, 157, 178);
     --base-color-alt: lab(0% 0 0);
-    --title-color: lab(0% 0 0);
+    --title-color: rgba(52, 157, 178);
     --text-color: hwb(0 0% 100%);
     --text-color-light: #fcfcff;
     --body-color: #ffffff;
@@ -39,6 +39,7 @@ img {
     --title-font: 'Poppins', sans-serif;
     --body-font: 'DM Sans', sans-serif;
     --font-size: 1rem;
+}
 }
 
 /* Base */
