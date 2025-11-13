@@ -11,14 +11,24 @@
                 <div class="page-header">
                     <h1 class="title">Mérito Científico</h1>
                     <div class="text">
-                       <p>&emsp;O Mérito Científico do ERA2-D2, na Temporada 2025 do Torneio Brasil de Robótica (TBR), tem como principal foco o Objetivo de Desenvolvimento Sustentável nº 15 da ONU — “Vida Terrestre”, que propõe proteger, recuperar e promover o uso sustentável dos ecossistemas terrestres. Dentro desse contexto, a equipe desenvolveu um projeto voltado à conservação da biodiversidade e à gestão responsável dos recursos naturais.</p>
-
-<p>&emsp;O grupo buscou compreender os desafios ambientais enfrentados nos ecossistemas brasileiros, como o desmatamento, a degradação do solo e a perda de habitats naturais, propondo soluções tecnológicas acessíveis que auxiliem no monitoramento e na preservação desses ambientes. Assim, o projeto une ciência e tecnologia para gerar impacto positivo e contribuir diretamente com os princípios da sustentabilidade.</p>
-
-<p>&emsp;Para isso, foram utilizados sensores e dispositivos de automação capazes de coletar dados ambientais e transformá-los em informações úteis para análise e tomada de decisão. Essa abordagem reforça o compromisso do ERA2-D2 em utilizar a robótica como ferramenta de apoio à conservação ambiental, estimulando o pensamento científico e a inovação entre os membros da equipe.</p>
-
-<p>&emsp;Mais do que atender aos requisitos do torneio, o Mérito Científico do ERA2-D2 reflete o desejo de seus integrantes em aplicar o conhecimento técnico adquirido em sala de aula para promover mudanças reais na sociedade. O projeto representa o espírito da equipe — comprometido com a pesquisa, o aprendizado e a preservação da vida terrestre.</p>
-
+                        <p>&emsp;A equipe do Mérito Científico é um subgrupo do ERA2-D2 para o Torneio Brasil de
+                            Robótica,
+                            onde o objetivo principal é a extensão de pesquisas aprofundadas em tecnologia e robótica,
+                            permitindo que os alunos pratiquem os conhecimentos adquiridos durante o curso. Nesse
+                            sentido, relacionado ao Objetivo de Desenvolvimento Sustentável 6 (ODS 6) das Nações Unidas
+                            como proposta para a categoria High (de 15 a 19 anos), o TBR desafiou a criação de soluções
+                            para proteger e restaurar sistemas relacionados à água.</p>
+                        <p>&emsp;O Mérito, a partir de recursos viáveis e acessíveis, decidiu criar uma plataforma que
+                            monitorasse os parâmetros qualitativos aquáticos, sendo eles, condutividade, pH, temperatura
+                            e a turbidez. Sendo assim, o monitoramento contínuo desses parâmetros é crucial para a
+                            identificação de possíveis contaminações, a gestão adequada de recursos hídricos e a
+                            preservação da vida aquática, visando garantir a integridade dos recursos naturais e a
+                            qualidade de vida das futuras gerações. Além disso, a equipe reafirma a importância de
+                            tecnologias alcançáveis para comunidades e regiões em condições de difícil acesso aos
+                            recursos hídricos ou em locais que estão suscetíveis à poluição.</p>
+                        <p>&emsp;Portanto, o Mérito Científico não apenas busca cumprir o desafio do TBR, mas também
+                            contribuir de forma significativa para alcançar metas globais de sustentabilidade,
+                            promovendo a conservação dos recursos hídricos para as futuras gerações.</p>
                     </div>
                 </div>
             </div>
@@ -28,11 +38,11 @@
             <div class="container grid">
                 <div class="section-pdf">
                     <h2 class="subtitle">Aqui, você verá o nosso projeto e escrita do Mérito Científico para o TBR
-                        2025</h2>
+                        2024</h2>
                     <i class="bi bi-arrow-down-circle i-color"></i>
                     <div class="pdf">
                         <div id="test-id-1" style="text-align: center; width: 100%; height: 100%" class="embed-pdf"
-                             data-url="https://makesoftsolutions.com.br/public/pdf/MERITO2025.pdf">
+                             data-url="https://makesoftsolutions.com.br/public/pdf/merito.pdf">
                             <div id="loading" class="spinner-border" role="status">
                                 <span class="sr-only">Carregando...</span>
                             </div>
@@ -91,4 +101,5 @@
         });
     </script>
 @endsection
+
 
