@@ -5,31 +5,6 @@
     box-sizing: border-box;
 }
 
-.bloco-sustentabilidade {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: row-reverse; /* inverte os lados */
-  gap: 40px;
-  margin: 40px 0;
-}
-
-.bloco-sustentabilidade p {
-  flex: 1;
-  text-align: justify;
-  font-size: 1.1rem;
-  line-height: 1.8;
-
-}
-
-.bloco-sustentabilidade img {
-  width: 500px;
-  border-radius: 12px;
-  object-fit: cover;
-}
-
-
-
 ul {
     list-style: none;
 }
@@ -44,18 +19,18 @@ a {
 }
 
 img {
-    max-width: 100%;
+    max-width: 50%;
     height:auto ;
 }
 
 /* Variables */
 :root {
     --header-height: 4.5rem;
- --base-color: hwb(245 13% 0%);
-    --base-color-second: hsl(298, 56%, 39%);
-    --base-color-alt: lab(9.89% 39.94 -55.6);
-    --title-color: hwb(244 20% 8%);
-    --text-color: hwb(276 12% 21%);
+    --base-color: hwb(0 0% 100%);
+    --base-color-second: hsl(0, 0%, 0%);
+    --base-color-alt: lab(0% 0 0);
+    --title-color: lab(0% 0 0);
+    --text-color: hwb(0 0% 100%);
     --text-color-light: #fcfcff;
     --body-color: #ffffff;
     --body-color-trans: rgba(236, 245, 244, 0.4);
@@ -578,3 +553,5 @@ nav.show div.bi-x {
 
 @media screen and (min-width: 1500px) {
 }
+
+
