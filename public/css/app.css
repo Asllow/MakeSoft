@@ -334,6 +334,7 @@ nav.show div.bi-x {
     border-radius: 50%;
     border: 3px solid var(--base-color-second);
 }
+}
 
 /****************Cards*****************/
 .cards.grid {
