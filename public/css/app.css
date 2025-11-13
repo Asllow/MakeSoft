@@ -26,7 +26,7 @@ img {
 /* Variables */
 :root {
     --header-height: 4.5rem;
-    --base-color:hwb(0 0% 100%);
+    --base-color:rgba(52, 157, 178);
     --base-color-second:hwb(0 0% 100%);
     --base-color-alt: hwb(0 0% 100%);
     --title-color:   hwb(0 0% 100%);
