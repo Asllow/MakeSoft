@@ -30,7 +30,7 @@ img {
     --base-color-second:hwb(0 0% 100%);
     --base-color-alt: hwb(0 0% 100%);
     --title-color:   hwb(0 0% 100%);
-    --text-color:   rgba(52, 157, 178);
+    --text-color:  hwb(0 0% 100%);
     --text-color-light: #fcfcff;
     --body-color: #ffffff;
     --body-color-trans: rgba(236, 245, 244, 0.4);
