@@ -118,7 +118,7 @@
                                 pressão humana sobre os recursos naturais.</p>
                         </div>
                         <div class="hold-button button-temperatura">
-                            <a class="button" href="{{ route('era.grafico', 'temperatura') }}">Gráfico de
+                            <a class="button" href="{{ route('era.grafico', 'temperatura.') }}">Gráfico de
                                 Temperatura</a>
                         </div>
                     </div>
