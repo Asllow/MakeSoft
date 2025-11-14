@@ -332,7 +332,7 @@ nav.show div.bi-x {
 }
 
 .image img {
-    height: 200px;
+    height: 100px;
     width: 200px;
     object-fit: cover;
     border-radius:100%;
