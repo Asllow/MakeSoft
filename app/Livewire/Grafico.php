@@ -7,7 +7,7 @@ use App\Models\Condutividade;
 use App\Models\PH;
 use App\Models\Temperatura;
 use App\Models\Turbidez;
-use App\Models\Temperatura3;
+use App\Models\Temperatura2;
 use App\Models\Umidade;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
@@ -33,11 +33,11 @@ use Livewire\Component;
             case 'condutividade':
                 $model = Condutividade::class;
                 break;
-            case 'temperatura.':
+            case 'temperatura':
                 $model = Temperatura::class;
                 break;
-             case 'temperatura 3':
-                $model = Temperatura::class;
+             case 'temperatura2':
+                $model = Temperatura2::class;
                 break;
              case 'umidade':
                 $model = Umidade::class;
