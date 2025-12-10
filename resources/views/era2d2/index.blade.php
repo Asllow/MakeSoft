@@ -1,4 +1,4 @@
-@extends('era2d2.header')
+       @extends('era2d2.header')
 
 @section('title', 'ERA2-D2')
 
@@ -146,6 +146,21 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </section>
+        <div class="divider1"></div>
+    </main>
+@endsection
+
+
+
+
+
+
+
+
+
+
             </div>
         </section>
         <div class="divider1"></div>
